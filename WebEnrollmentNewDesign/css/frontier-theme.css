@@ -1,0 +1,33 @@
+.backbutton{
+background: #fff;
+height: 40px;
+width: 200px;
+display: block;
+background-size: 100%;
+background-position: left !important;
+TEXT-ALIGN: CENTER;
+LINE-HEIGHT: 38PX;
+color:#faa61a;
+margin-top: -82px;
+margin-bottom: 30px;
+margin-left: -40px;
+font-weight:600;
+}
+.backbutton i{padding-right:8px}
+
+
+@media only screen and (max-width: 767px) and (min-width: 320px){
+.Brand_enroll .mt_105 {
+margin-top: 698px !important;
+}
+
+
+
+.backbutton{
+margin-left: -14px;}
+
+}
+
+@media only screen and (max-width: 320px) and (min-width: 220px){
+.Brand_enroll .mt_105 {margin-top: 620px !important;}
+}

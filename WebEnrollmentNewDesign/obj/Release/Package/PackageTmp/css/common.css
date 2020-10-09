@@ -1,0 +1,226 @@
+body{background:#cccccc; color:#000;}
+ .p_fixed{border-bottom:0px solid #fff; background:#cccccc}
+ .p_fixed .container{border-bottom:1px solid #d9d9d9; background-color:#FFF}
+ 
+ section.cta_head_section h1{font-size: 26px;padding-top: 10px;font-family: arial;color: #f58522;}
+
+ .container{border:solid 1px #d9d9d9; border-width:0px 1px; background:#fff}
+ .bg_color .container {border:solid 0px; margin-left:-10px;  }
+
+ div.pricing_plan_item {box-shadow: 0 0 8px rgba(22, 22, 22, .27) !important;background: #f9f9f9;height: 340px;}
+ .pricing_plan_button_container .button.solid_orange{color:#fff;font-size: 15px;padding: 5px 10px;height: 34px;font-weight:600;}
+ .bg_color .container{width: 940px !important;}
+
+ .Brand .bg_color{border: solid 3px #efefef ; border-top:solid 0px #fff ;}
+ 
+
+
+.cta_head_section h1{
+    font-family: arial;
+    font-weight: bold;
+    color: #f58522;
+    text-align: left;
+    padding: 0px;
+    margin-bottom: 15px;
+}
+
+
+.cta_head_section .row strong{
+    font-size: 12px;
+    font-family: arial;
+    text-align: left;
+    float: left;
+color: #000;}
+
+ 
+ .Brand .bg_color .container{border:solid 0px #efefef}
+
+.Brand_index .container .cta_head_section .container {width:101% !important;}
+
+footer .copyright {background:#fff;}
+
+
+footer .copyright .container{ border:solid 0px #fff}
+
+
+
+.cta_head_section .row strong{
+    font-size: 12px;
+    font-family: arial;
+    text-align: left;
+    float: left;
+color: #000;}
+section.cta_head_section{text-align:left;}
+section.cta_head_section strong{font-size: 16px;color:#000;}
+
+.Brand .Brand_index .nav-tabs > li > a {font-size: 14px;}
+
+}
+.text18 {
+font-size: 12px;}
+*{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}
+span.kwh_choice_container label{padding:4px 8px; font-size:11px }
+
+
+.Brand .Brand_index .btn_pd {padding: 3px 8px !important; font-size:11px; border-radius:5px}
+
+
+
+.container {
+    padding-left: 32px;
+    padding-right: 32px;
+    }
+
+
+.col-lg-3 {padding-left: 10px !important;}
+
+.row .col-lg-3:first-child{/* padding-left: 0px !important; */display: inline-grid;}
+
+.nav-tabs .nav-item {
+    margin-bottom: 0px;
+    border-radius: 18px !important;
+}.nav-tabs {
+    border-bottom: 1px solid #13456a !important;
+}
+
+.Brand .Brand_index .landing.nav-tabs .nav-link.active {
+    background-color: #13456a !important;
+    color: #FFE !important;
+    }
+
+.nav-tabs .nav-link {
+    margin: 0px 4px !important;
+    padding: 5px 21px !important;
+    width:auto; min-width: 100px;
+    text-align:center;
+    }
+
+.Brand .Brand_index .nav-tabs > li > a{border:solid 1px #13456a !important;border-bottom :solid 0px #fff !important;border-radius: 1px;}
+
+*{font-size: 12px;}
+.clear-left{clear:left}
+.label-prod {font-size: 14px !important;}
+
+span.kwh_choice_container span.rates_text{font-size:12px; line-height:24px}
+
+.Brand_index .container {max-width:1000px !important; }
+
+.Brand_index .bg_color .container {width: 102% !important;padding: 4px;}
+
+
+.container .row .col-lg-9 img{margin-left:-20px;}
+
+section.cta_head_section{padding-left:0px;}
+.location_address_text.text18{padding-bottom: 12px;font-size: 12px;}
+.zip_text{float: left;display:inline-block;}
+
+div.plan_head_text h3{font-size: 18px;color:#13456a !important;padding-top: 12px;}
+
+span.plan_price_value, .plan_price_symbol{font-size: 34px;color:#50b948 !important;font-weight: 400;} 
+
+.plan_price_symbol{margin-top:-4px;}
+
+.button.solid_orange{background:#f58320;border:solid 0px #fff;color: #fff;
+    font-size: 15px;
+    padding: 5px 10px;
+    height: 34px;
+    font-weight: 600; min-width:90px; width:auto}
+span.plan_price_measure{color:#000;}
+
+.learn_more_item_text{font-size:10px !important}
+
+
+section.pricing_disclaimers, .pricing_disclaimers em{padding:0px; font-size:10px}
+
+.set3 .button.btn_pd.promo_code_entry{padding: 8px !important;margin: 16px 3px !important;}
+div.learn_more {bottom: 25px;}
+
+.Brand .Brand_index .nav-link:hover{background-color: #efefef!important; }
+.logo {float:left; width:200px;}
+.call {float:right; width:200px; text-align:right}
+.row {display:block;}
+#PartnerOfferImages{  max-height: 225px;}
+#PartnerOfferImages img {width:106%; }
+.set1, .set2 {width: 30%;float: left;}
+.set3 {width: 196px;float: right;padding: 6px  15px !important;}
+.zip {font-size:12px;float: right !important;padding: 0px !important;line-height: 11px;padding-left: 5px !important;}
+
+.Brand #divInfo .row {
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+}
+
+.bg_color .row.pt-4.pb-4{background-color:#f3f3f3;height:85px;margin-bottom: 20px;padding-top: 5px !important;margin-top: -4px;}
+
+
+.container-fluid h5{font-size:20px;}
+
+
+.container-fluid .row h3{font-size: 27px;font-weight: 600 !important;}
+
+.container-fluid .row .col-lg-4.col-12.pt-3.p-0{ height:120px}
+.container-fluid .row .col-lg-4.col-12.pt-3.p-0 strong{ height:18px !important;}
+
+.modal-content{border-radius:0px}
+.close {text-shadow: 0 0px 0 #ffffff;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-weight: lighter !important;font-size: 25px !important;margin: -10px;padding-bottom: 6px !important;line-height: 15px;}
+.modal.show{/* background: rgba(0,0,0,.25); */}
+.modal-body, .modal-body b{font-size:14px; color:#808080; font-size:14px !important; font-weight:normal !important; line-height:30px;}
+.modal-body b{font-weight:normal !important;}
+
+
+.container-fluid .row .col-lg-4 ul, .container-fluid .row .col-lg-4 ul li {font-size:14px;text-align: left !important;}
+
+@media only screen and (max-width: 767px) and (min-width: 320px){
+
+ .Brand .Brand_index .nav-tabs > li > a{
+     width: 100%;
+     padding: 10px 20px !important;
+     border-radius: 0px !important;
+     }
+
+
+
+}
+
+
+@media (min-width:1024px) {
+
+    #PartnerOfferImages img {width: 999px;}
+    
+    
+}
+
+
+@media (max-width: 1020px) {
+
+#PartnerOfferImages{  max-height: 180px;}
+    #PartnerOfferImages img {width:108% }
+    
+.set1 {width:180px;float: left;}
+.set2 {width: 50%;float: left;}
+.set3 {width:100px; padding:0px;}
+.zip u{font-size:10px}
+
+}
+
+
+
+.conf .header {display:block; height:90px; border-bottom:solid 1px #d9d9d9; }
+.conf .header .logo { margin: 0 auto;
+    float: none;
+    display: block;
+    position: initial;
+    width: 250px;  }
+.conf .container {border:solid 0px #fff;}
+
+
+
+.conf .message b{font-size:28px; font-weight:normal; color:#003366;}
+.conf .amount div {width:100%;float:left;text-align:center;font-size:32px;margin-top:25px;color: #4e9e11;}
+.conf .amount div label{font-size:32px;}
+.conf .amount {text-align:right;}
+
+
+.conf .message b{font-size:28px; font-weight:normal; color:#003366;}

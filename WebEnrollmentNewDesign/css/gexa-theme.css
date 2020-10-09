@@ -1,0 +1,117 @@
+
+.logo  {
+    background: url(../images/gexa-logo.png) no-repeat bottom !important;
+    height: 60px;
+    width: 173px;
+}
+
+
+.logo img {
+    width: 0px;
+}
+
+
+h3, section.cta_head_section h1 {color:#00456A !important}
+
+#PartnerOfferImages img{filter:hue-rotate(150deg);}
+
+.button.solid_orange{background-color:#ffa200; color:#000 !important}
+span.plan_price_value, .plan_price_symbol{font-weight:500;}
+
+.Brand .Brand_enroll h3{color:#50b948 !important}
+.Brand .call {display: none; !important;}
+
+.Brand .Brand_enroll .call h3{color: #00456a !important;}
+div.stylized_radio_input input:checked + label,  .Home_p.tab-pane.active.p-0, .Home_p .nav-link.active{ background: #00456a !important;}
+div.stylized_radio_input label, .Home_p .nav-link.active { border-color: #00456a !important;}
+.container-fluid h3{margin-top:15px}
+.container-fluid strong{display:inline-block !important;}
+.plan_price_value, .plan_price_symbol{color:#50b948 !important;}
+.plan_price_value{font-weight:400 !important; font-size:34px !important;}
+.container-fluid ul{TExt-align:left !important}
+.container-fluid ul li{  list-style:none !important}
+/*.container-fluid ul li:before{content: '';position: absolute;left: 22px;top: 24px;border-radius: 100px;background-color: #ccc;width: 6px;height: 6px;  }*/
+
+.container-fluid .learn_more_item_text{display:inline-block; clear:both !important; width:100%}
+.user_information h3{font-size:18px; font-weight:700; border-color:#003366 !important}
+#sideBar h3, #sideBar h5{color:#000 !important;}
+.pb-2{font-weight:400 !important; font-size:16px !important}
+.Brand .modal-body h5{color:#00456a  !important;}
+.table th{color:#00456a; font-weight:400}
+img.orange_tool { filter: hue-rotate(180deg) !important; margin: 14px 5px; }
+img.orange_tool:hover {background-color: #3e2509 !important; }
+.Brand .Brand_enroll #menu4, .Brand .Brand_enroll #menu4 div div {  background-color: #00456a !important;}
+
+.Brand .Brand_enroll .btn-Brand{padding:10px 18px !important; width:auto !important; height:auto !important; background-color: #151412 !important;  font-size:22px; }
+#PSBillingSameAddress.Home_p, #PSBillingSame2.Home_p {background-color:#00456a !important}
+
+.Home_p .nav-link{color:#00456a !important;font-weight:500}
+
+.Brand .Brand_enroll .btn-Brand{ width:auto !important; height:auto !important; background-color: #ffa200 !important;  font-size:22px; font-weight:400 }
+ 
+.link {color:#00456a}
+
+
+.Home_p .nav-link { border:solid 4px #00456a !important; margin-right:1px !important; border-bottom:none 0px #fff !important}
+
+
+
+.ui-datepicker *{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important; font-weight:400;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{background-image:none;}
+.ui-datepicker-header{border-radius:0px !important; background-color:#efefef; background-image:none}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next  {background: #efefef; border-radius: 0px;}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {color:#00456a; font-weight:700}
+
+
+.btn-Brand {
+    color: white !important;
+    background-color: #ffa200!important;
+    border-color: #ffa200 !important;
+}
+
+
+.bg-blue {background-color:#00456a !important;
+}
+
+
+#AnotherUserInfo .bg-blue {background-color:#00456a !important;
+}
+.backbutton{
+    background: #fff;
+    height: 40px;
+    width: 200px;
+    display: block;
+    background-size: 100%;
+    background-position: left !important;
+    TEXT-ALIGN: CENTER;
+    LINE-HEIGHT: 38PX;
+    color:#00456a;
+    margin-top: -82px;
+    margin-bottom: 30px;
+    margin-left: -40px;
+    font-weight:600;
+}
+.backbutton i{padding-right:8px}
+
+
+@media only screen and (max-width: 767px) and (min-width: 320px){
+.Brand_enroll .mt_105 {
+    /*margin-top: 698px !important;*/
+       margin-top: 760px !important;
+}
+
+
+    
+.backbutton{
+  margin-left: -14px;}
+
+}
+
+@media only screen and (max-width: 320px) and (min-width: 220px){
+.Brand_enroll .mt_105 {
+margin-top: 800px !important;
+}
+}

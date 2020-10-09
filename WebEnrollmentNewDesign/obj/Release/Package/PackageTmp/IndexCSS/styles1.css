@@ -1,0 +1,429 @@
+orange{color:#ee8d40 !important}
+.airline label{color:#000!important}
+h3{font-weight:700 !important;color:#ee8d40 !important}
+/*label::after {
+    content: '*';
+	color:#ee8d40 !important
+}*/
+div.stylized_radio_input input:checked+label {background-color:#ee8d40 !important}
+div.stylized_radio_input label {border-color:#ee8d40 !important;}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #259cc0 !important;
+    border-color: #dee2e6 #dee2e6 #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-tabs .nav-link {font-size: 17px;}
+.nav-tabs .nav-link {text-decoration: none;}
+section.user_identity_verification div.id_verify_entry { background-color: #259cc0 !important;}
+div.order_form_left {margin-right:0px !important;}
+ div.order_form_right div.plan_head_text h3 {font-size:34px !important;}
+.electricity_summary a {
+    color: #007bff !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+.electricity_summary a:hover {
+    color: #0056b3 !important;
+    text-decoration: underline !important;
+}
+.links_col a {
+    color: #007bff !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+.links_col a:hover {
+    color: #0056b3 !important;
+    text-decoration: underline !important;
+}
+
+
+
+
+.nav-tabs .nav-link {
+    text-decoration: none;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    margin: 0px 15px !important;
+    padding: 10px 21px !important;
+	
+}
+.nav-tabs {
+    border-bottom:0px !important;
+}
+.plan_price_symbol{color:#ee8d40 !important}
+.plan_price_value{color:#ee8d40 !important}
+.Home_p .nav-link{margin:0px !important;background-color: #efefef !important;border-color: #efefef !important;color: #259cc0 !important;}
+.Home_p .nav-link.active{color:white !important;border-color:#259cc0 !important;}
+
+/* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New */
+.Brand .user_information {
+    padding: 40px;
+    margin: 0 0 40px 0;	
+	    background-color: #efefef;
+}
+.Brand .user_information h3 {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 0 0 10px 0;
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.Brand .mb_20 {margin-bottom:20px;}
+.Brand .form-control {height:45px;}
+ .p_fixed {
+        background-color: white;
+        border-bottom: 1px solid #d9d9d9;
+        position: fixed;
+        z-index: 1;
+        width:100% !important;
+        top:0;
+    }
+    .mt_data {
+        margin-top:85px !important;
+    }
+.tl_r {
+    text-align:right;
+}
+.pop_design {
+    max-width: 50%;
+    max-height: 60%;
+    overflow-y: scroll;
+}
+.pop_design_1 {
+    color: white !important;
+    background-color: #c80000 !important;
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    right: 0px;
+    border-radius: 50%;
+    opacity: 1 !important;
+    font-size: 26px !important;
+    font-weight: 100 !important;
+}
+.pop_design_11 {
+    color: white !important;
+    background-color: #c80000 !important;
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    right: 0px;
+    border-radius: 50%;
+    opacity: 1 !important;
+    font-size: 26px !important;
+    font-weight: 100 !important;
+}
+@media only screen and (min-width:320px) and (max-width: 767px) {
+    .mbl_tab {
+        width:100% !important;
+        text-align:center !important;
+    }
+    .ml_4 {
+        margin-left:4% !important;
+    }
+    .p_fixed {
+        background-color: white;
+        border-bottom: 1px solid #d9d9d9;
+        position: fixed;
+        z-index: 1;
+        width:100% !important;
+    }
+    .mt_data {
+        margin-top:85px !important;
+    }
+    .tabs_center {
+		margin-left:0px !important;
+	}
+	ul {
+		padding-left:0px;
+	}
+    .tl_r {
+    text-align:center;
+}
+    .pop_design {
+    max-width: 100%;
+    max-height: 60%;
+    overflow-y: scroll;
+}
+    .pop_design_1 {
+            color: white !important;
+    background-color: #c80000 !important;
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    right: 6px;
+    top: -21px;
+    border-radius: 50%;
+    opacity: 1 !important;
+    font-size: 26px !important;
+    font-weight: 100 !important;
+}
+    .mt_0 {
+        margin-top:0px !important;
+    }
+}
+@media only screen and (min-width:320px) and (max-width: 550px) {
+    .col-lg-3 {
+       padding-right:15px !important;
+       padding-left:15px !important;
+    }
+    .ml_10 {
+        margin-left:10% !important;
+    }
+    .mt_mobile {
+        margin-top:114px !important;
+    }
+      .imgDiv {
+   display: inline-block;
+    position: relative;
+    z-index: 0;
+    }
+    .imgDiv img { display: block;
+      border-radius:5px;
+    }
+    .imgDiv + img { position: absolute; z-index: 0; top: -68% !important; left: 10% !important; }
+.btn_right {
+    float:none !important;
+}
+}
+
+@media only screen and (min-width:320px) and (max-width: 360px) {
+    span.promo_code_entry {
+        font-size: 11px !important;
+    }
+}
+@media only screen and (min-width:361px) and (max-width: 375px) {
+    span.promo_code_entry {
+        font-size: 12px !important;
+    }
+}
+/*26-11-2019 CSS*/
+.Brand .bg_color {
+   background-color:#efefef;width:100%;"
+}
+/*Removed from viewplanning Zipcode --display:inline-block;width:22%;border:none"*/
+.Brand #divInfo {width:100%;line-height:1.5;}
+
+.Brand .Brand_index .nav-tabs > li > a {
+    color: #000000 !important;
+    background-color: white !important;
+    border: 0px solid #0073a8 !important; 
+}
+.Brand .Brand_index .landing.nav-tabs .nav-link.active {background-color:#efefef !important;color: #00456a !important;text-decoration:none !important; }
+.Brand .Brand_index .tabs_center {margin-left:7%;}
+.Brand .Brand_index .nav-link:hover {
+        background-color:#B5C0C8 !important;color: #00456a !important; 
+        text-decoration:none !important;
+    }
+.Brand .Brand_index .landing.nav-link.active {
+	    background-color: #efefef !important;
+        text-decoration:none !important;
+	}
+.Brand .Brand_index .modal-dialog {pointer-events:all !important;}
+.Brand .Brand_index .orange_tool:hover {
+        background-color:orange !important;
+        border-radius:6px;
+        color:white !important;
+        z-index: 9999 !important;
+    }
+.Brand .Brand_index a:hover, a:focus {
+    color: #003f5c !important;
+    text-decoration: underline !important;
+}
+.Brand .Brand_index a:focus {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+.Brand .Brand_index .disable-outside-clicks {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.Brand .Brand_index .enabled-clicks {
+  width: 200px;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px Arial;  
+}
+
+/*the container must be positioned relative:*/
+.Brand .Brand_index .autocomplete {
+  position: relative;
+  display: inline-block;
+  width:100%;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: white;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.Brand .Brand_index input[type=text] {
+  /*background-color: #f1f1f1;
+  width: 100%;*/
+}
+.Brand .Brand_index .round-field {
+        border-radius:4px;
+    }
+.Brand .Brand_index input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Brand .Brand_index .autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  /*height:200px;
+   overflow-y: scroll;*/
+   max-height: 200px;
+   overflow-y: auto;
+}
+
+.Brand .Brand_index .autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.Brand .Brand_index .autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.Brand .Brand_index .autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+.Brand .Brand_index #loadingmessage {
+   position: fixed;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  overflow: none;
+  /*margin: auto;*/
+  /*margin-left:20%;
+  margin-top:20%;*/
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+    background: url('../images/loading.gif') 50% 50%  no-repeat rgb(255,255,255);
+  opacity:0.8;
+}
+.Brand .Brand_index #loadingmessage2 {
+   position: fixed;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  overflow: none;
+  /*margin: auto;*/
+  /*margin-left:20%;
+  margin-top:20%;*/
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+    background: url('../images/loading.gif') 50% 50%  no-repeat rgb(255,255,255);
+  opacity:0.8;
+}
+.Brand .Brand_index .loadingmessage2 {
+   position:absolute;
+  z-index: 999;
+  height: 100%;
+  width: 20%;
+  overflow: none;
+  margin: auto;
+  /*margin-left:20%;
+  margin-top:-4%;*/
+  top: 70px;
+  left: 0;
+  bottom: 0;
+  background: url('../images/loader.gif') 50% 50%  no-repeat rgb(249,249,249);
+  opacity:0.8;
+}
+.Brand .Brand_index .zip_text {
+    background-color: #00456a;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.Brand .Brand_index .location_update_action {
+    cursor:pointer;
+}
+.Brand .Brand_index span.location_update_action {
+    margin:3px 0px 0px 0px !important;
+}
+.Brand .Brand_index span.kwh_choice_container {
+    margin-left:0px !important;
+}
+.Brand .Brand_index span.promo_code_entry::after {
+    content:none !important;
+}
+
+.Brand .Brand_index span.promo_code_entry {
+    margin:3px 0px 3px 10px !important;
+}
+.Brand .Brand_index .btn_pd {
+    padding:5px 8px !important;
+    border-width:1px !important;
+}
+.tooltip {
+        z-index:9999 !important;
+    }
+
+@media (min-width: 1024px) {
+.container {
+    width: 1200px !important;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .Brand .Brand_index span.location_update_action {
+        display:inline-block !important;
+        float:none !important;
+        margin: 3px 0 0 10px;
+    }
+    .mt_mobile {
+        margin-top:65px !important;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+    .mt_mobile {
+        margin-top:65px !important;
+    }
+}
+
+/*New CSS 23-12-2019*/
+.btn_right {
+    float:right;
+    margin-right:20px !important;
+}
+
+.Brand .Brand_index .footer a {
+    color:grey !important;
+}
+
+

@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddtoCompare" xml:space="preserve">
+    <value>Añadir para comparar</value>
+  </data>
+  <data name="Apartment" xml:space="preserve">
+    <value>apartamento</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>negocios</value>
+  </data>
+  <data name="Compare" xml:space="preserve">
+    <value>comparar</value>
+  </data>
+  <data name="CustomerDetails" xml:space="preserve">
+    <value>Detalles del Cliente</value>
+  </data>
+  <data name="DateofBirth" xml:space="preserve">
+    <value>Fecha de nacimiento</value>
+  </data>
+  <data name="DwellingType" xml:space="preserve">
+    <value>Tipo de vivienda</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="ESIID" xml:space="preserve">
+    <value>ESI ID</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="Go" xml:space="preserve">
+    <value>ir</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>casa</value>
+  </data>
+  <data name="House" xml:space="preserve">
+    <value>casa</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>idioma</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>apellido</value>
+  </data>
+  <data name="MiddleInitial" xml:space="preserve">
+    <value>inicial</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>móvil</value>
+  </data>
+  <data name="MobileNo" xml:space="preserve">
+    <value>Número de móvil</value>
+  </data>
+  <data name="MoveType" xml:space="preserve">
+    <value>mueva Tipo</value>
+  </data>
+  <data name="MoveIn" xml:space="preserve">
+    <value>instalarse</value>
+  </data>
+  <data name="PhoneNo" xml:space="preserve">
+    <value>número de teléfono</value>
+  </data>
+  <data name="PlansAvailableYourLocation" xml:space="preserve">
+    <value>Planes disponibles para su ubicación</value>
+  </data>
+  <data name="PostPaid" xml:space="preserve">
+    <value>postpago</value>
+    <comment>PostPaid</comment>
+  </data>
+  <data name="PrePaid" xml:space="preserve">
+    <value>pre Pagado</value>
+    <comment>PrePaid</comment>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>avance</value>
+    <comment>Preview</comment>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>producto</value>
+    <comment>Product</comment>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Productos</value>
+    <comment>Products</comment>
+  </data>
+  <data name="RateInCents" xml:space="preserve">
+    <value>Cambio (en centavos)</value>
+  </data>
+  <data name="RefORPromoCode" xml:space="preserve">
+    <value>Referencia / Código Promocional</value>
+  </data>
+  <data name="SearchBy" xml:space="preserve">
+    <value>Búsqueda Por</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>seleccionar</value>
+  </data>
+  <data name="SelectProduct" xml:space="preserve">
+    <value>Seleccione un producto</value>
+  </data>
+  <data name="ServiceAddress" xml:space="preserve">
+    <value>servicio de Dirección</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>español</value>
+  </data>
+  <data name="SSN" xml:space="preserve">
+    <value>SSN</value>
+  </data>
+  <data name="Switch" xml:space="preserve">
+    <value>cambiar</value>
+  </data>
+  <data name="SwitchMoveInDate" xml:space="preserve">
+    <value>Cambie / Fecha de mudanza</value>
+  </data>
+  <data name="Term" xml:space="preserve">
+    <value>plazo</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>código postal</value>
+    <comment>Zip Code</comment>
+  </data>
+  <data name="DateOfBirthinvalid" xml:space="preserve">
+    <value>Fecha de nacimiento válido</value>
+  </data>
+  <data name="DateOfBirthRequired" xml:space="preserve">
+    <value>Fecha de nacimiento requerida</value>
+  </data>
+  <data name="Emailinvalid" xml:space="preserve">
+    <value>Email no válido</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>Email requerido</value>
+  </data>
+  <data name="ESIIDNotSelected" xml:space="preserve">
+    <value>ESIID no seleccionado</value>
+  </data>
+  <data name="ESIIDRequired" xml:space="preserve">
+    <value>ESIID requiere</value>
+  </data>
+  <data name="ESIIDORServiceAddress" xml:space="preserve">
+    <value>ESIID / Dirección de Servicio</value>
+  </data>
+  <data name="FirstNameRequired" xml:space="preserve">
+    <value>Nombre Requerido</value>
+  </data>
+  <data name="InvalidSSN" xml:space="preserve">
+    <value>Invalid Número de Seguro Social</value>
+  </data>
+  <data name="LastNameRequired" xml:space="preserve">
+    <value>Apellido requerido</value>
+  </data>
+  <data name="MinThreeCharsRequired" xml:space="preserve">
+    <value>Segundo Nombre necesario</value>
+  </data>
+  <data name="MinAge" xml:space="preserve">
+    <value>La edad mínima es de 18 años</value>
+  </data>
+  <data name="MobileNoInvalid" xml:space="preserve">
+    <value>Mobile Number invalid</value>
+  </data>
+  <data name="MobileNoRequired" xml:space="preserve">
+    <value>Número de móvil requerido</value>
+  </data>
+  <data name="NoCancallationfee" xml:space="preserve">
+    <value>No hay cuota de Cancallation</value>
+  </data>
+  <data name="NoDataFound" xml:space="preserve">
+    <value>No se encontraron datos</value>
+  </data>
+  <data name="PhoneNoInvalid" xml:space="preserve">
+    <value>Número de teléfono no válido</value>
+  </data>
+  <data name="ProductNotSelected" xml:space="preserve">
+    <value>Del producto no seleccionado</value>
+  </data>
+  <data name="ZipCodeRequired" xml:space="preserve">
+    <value>Código postal requerida</value>
+  </data>
+  <data name="EnterServiceAddress" xml:space="preserve">
+    <value>Ingrese su dirección de servicio aquí</value>
+  </data>
+  <data name="AccountHolder" xml:space="preserve">
+    <value>Titular de la cuenta</value>
+  </data>
+  <data name="AccountNumber" xml:space="preserve">
+    <value>Número de Cuenta</value>
+  </data>
+  <data name="AptNo" xml:space="preserve">
+    <value>Número de apartamento</value>
+  </data>
+  <data name="AptNoRequired" xml:space="preserve">
+    <value>Número de apartamento requerido</value>
+  </data>
+  <data name="BillingAddress" xml:space="preserve">
+    <value>Dirección de Facturación</value>
+  </data>
+  <data name="CityName" xml:space="preserve">
+    <value>Nombre de la ciudad</value>
+  </data>
+  <data name="CityNameRequired" xml:space="preserve">
+    <value>Nombre de la ciudad requiere</value>
+  </data>
+  <data name="ContactDetails" xml:space="preserve">
+    <value>Datos de contacto</value>
+  </data>
+  <data name="ContactMethod" xml:space="preserve">
+    <value>Método de contacto</value>
+  </data>
+  <data name="ContactType" xml:space="preserve">
+    <value>Tipo de contactos</value>
+  </data>
+  <data name="ContactTypeDetails" xml:space="preserve">
+    <value>Contacto Tipo Detalles</value>
+  </data>
+  <data name="Contract_Term" xml:space="preserve">
+    <value>Contrac Term</value>
+  </data>
+  <data name="CreditCheck" xml:space="preserve">
+    <value>verificación de crédito</value>
+  </data>
+  <data name="DepositAmount" xml:space="preserve">
+    <value>We are not able to determine your credit history. To avoid paying a deposit of $ {0} , please provide a previous address that we can use to help identify you</value>
+  </data>
+  <data name="EFLFileName" xml:space="preserve">
+    <value>EFL Nombre del archivo</value>
+  </data>
+  <data name="Enroll" xml:space="preserve">
+    <value>inscribirse</value>
+  </data>
+  <data name="EnrollmentSuccessfull" xml:space="preserve">
+    <value>Exitoso Inscripción</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>correo</value>
+  </data>
+  <data name="Online_Only_YN" xml:space="preserve">
+    <value>Sólo en línea ¿Sí o no</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>contraseña</value>
+  </data>
+  <data name="PasswordEmpty" xml:space="preserve">
+    <value>Contraseña vacía</value>
+  </data>
+  <data name="PasswordsMismatch" xml:space="preserve">
+    <value>contraseñas desajuste</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>teléfono</value>
+  </data>
+  <data name="PowerOfAttorney" xml:space="preserve">
+    <value>Poder</value>
+  </data>
+  <data name="Prepay_YN" xml:space="preserve">
+    <value>Prepago Sí o no</value>
+  </data>
+  <data name="PricePlanID" xml:space="preserve">
+    <value>Precio Plan de ID</value>
+  </data>
+  <data name="ProductID" xml:space="preserve">
+    <value>Identificación del producto</value>
+  </data>
+  <data name="ProductSelected" xml:space="preserve">
+    <value>producto seleccionado</value>
+  </data>
+  <data name="Product_Desc" xml:space="preserve">
+    <value>Descripción del producto</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>registro</value>
+  </data>
+  <data name="RegistertoMyFUNAccount" xml:space="preserve">
+    <value>Registrarse para MyFUNAccount</value>
+  </data>
+  <data name="RetypePassword" xml:space="preserve">
+    <value>Vuelva a escribir la contraseña</value>
+  </data>
+  <data name="RetypePasswordEmpty" xml:space="preserve">
+    <value>Vuelva a escribir la contraseña vacía</value>
+  </data>
+  <data name="Spouse" xml:space="preserve">
+    <value>cónyuge</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Nombre del Estado</value>
+  </data>
+  <data name="StateNameRequired" xml:space="preserve">
+    <value>Nombre del Estado requerido</value>
+  </data>
+  <data name="StreetName" xml:space="preserve">
+    <value>Nombre de Calle</value>
+  </data>
+  <data name="StreetNameRequired" xml:space="preserve">
+    <value>Nombre de Calle requiere</value>
+  </data>
+  <data name="StreetNo" xml:space="preserve">
+    <value>Número de la calle</value>
+  </data>
+  <data name="StreetNoRequired" xml:space="preserve">
+    <value>Número de la calle requiere</value>
+  </data>
+  <data name="TDSP_Code" xml:space="preserve">
+    <value>Código TDSP</value>
+  </data>
+  <data name="Unit_Price" xml:space="preserve">
+    <value>Precio unitario</value>
+  </data>
+  <data name="ServiceAddressAsBilling" xml:space="preserve">
+    <value>Utilice el servicio de dirección como la dirección de facturación</value>
+  </data>
+  <data name="YourAccountNumberIs" xml:space="preserve">
+    <value>Su número de cuenta es</value>
+  </data>
+  <data name="FUNWebEnrollment" xml:space="preserve">
+    <value>Matriculación de Web FUN</value>
+  </data>
+  <data name="ServiceAddressRequired" xml:space="preserve">
+    <value>Dirección del servicio se requiere</value>
+  </data>
+  <data name="productHeader" xml:space="preserve">
+    <value>Select a Product_es</value>
+  </data>
+  <data name="Right_of_Recission" xml:space="preserve">
+    <value>Spanish Right of Recission comes here</value>
+  </data>
+  <data name="ServiceAddressReq" xml:space="preserve">
+    <value>Por favor, entre en servicio Dirección</value>
+  </data>
+  <data name="ContractExpYes" xml:space="preserve">
+    <value>Tenga en cuenta que esta inscripción
+no hacer caso omiso de cualquier cancelación anticipada
+Honorarios que pueda incurrir se rompa
+su contrato.</value>
+  </data>
+  <data name="SSNRequired" xml:space="preserve">
+    <value>SSN Required</value>
+  </data>
+  <data name="ValidCCNumber" xml:space="preserve">
+    <value>Enter valid Credit Card Number</value>
+  </data>
+  <data name="ValidKWH" xml:space="preserve">
+    <value>Enter valid kWh</value>
+  </data>
+  <data name="Right_of_Recission2" xml:space="preserve">
+    <value>Right_of_Recission2</value>
+  </data>
+  <data name="Right_of_Recission3" xml:space="preserve">
+    <value>Right_of_Recission3</value>
+  </data>
+  <data name="depositAmt_note" xml:space="preserve">
+    <value>We are not able to determine your credit history. Please provide a previous address that we can use to help identify you.</value>
+  </data>
+  <data name="enterSSN" xml:space="preserve">
+    <value>Please enter your SSN</value>
+  </data>
+  <data name="Step1Header" xml:space="preserve">
+    <value>Step1: Select a Product_Spanish</value>
+  </data>
+  <data name="TDSP_NullPrompt" xml:space="preserve">
+    <value>Sorry, Not able to Identifiy your TDSP &lt;br&gt; Please Call Frontier at 1-866-926-8192</value>
+  </data>
+  <data name="ValidDollars" xml:space="preserve">
+    <value>Please enter valid Amount</value>
+  </data>
+  <data name="ValidAmount" xml:space="preserve">
+    <value>Enter valid Amount</value>
+  </data>
+</root>

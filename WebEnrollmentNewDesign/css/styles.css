@@ -1,0 +1,2512 @@
+
+/*
+Blue:#00456a;
+Green:#50b948;
+Light Gray:;
+Dark Gray:;
+Black:#000;
+White:#FFF;
+*/
+
+/* RESETS
+------------------------------------------------------------*/
+
+* {
+	font-size: 1.5rem;
+}
+
+.tab-display {
+	display: none;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+head, html, body {
+	padding: 0;
+	margin: 0;
+}
+
+div {
+	display: block;
+	position: relative;
+}
+
+br {
+	clear: both;
+	display: block;
+}
+
+a {
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* COLORS
+------------------------------------------------------------*/
+
+/*blue*/
+
+div.lightbox_content .lightbox_content_inner h5, div.lightbox_content .lightbox_content_inner input[type=checkbox]+label, div.lightbox_content .lightbox_content_inner table th, span.promo_code_entry, .kwh_choice_container label, section.user_service_information .user_entered_address, section.user_identity_verification label, div.info_hover::before, div.stylized_radio_input label, div.pricing_plan_item h3, section.cta_head_section h1, span.learn_more_item_text, li.pricing_tab_item, a, .blue {
+	color: #00456a;
+}
+
+div.order_form_right::before, span.pricing_tab_text_header, span.promo_code_entry::after, span.kwh_choice_container input:checked+label:hover, span.kwh_choice_container input:checked+label, .address_box_container input:checked+label.premise_choice, .address_box_container, section.user_service_information div.auto_pay_settings, div.full_address_entry, .user_drivers_active .gov_id_container, .social_id_active .social_container, /* section.user_identity_verification input:checked + label,*/
+section.user_identity_verification div.id_verify_entry, div.info_hover:hover::before, div.stylized_radio_input input:checked+label, div.special_offer_flag.blue_flag, .blue_back {
+	background-color: #00456a;
+}
+
+.kwh_choice_container label, div.info_hover::before, div.stylized_radio_input label, div.order_form_left section h3, .blue_border {
+	border-color: #00456a;
+}
+
+/*green*/
+
+div.order_form_container .required label::after, div.order_form_left section h3, .plan_price_symbol, .plan_price_value, .green, .required.switch_move_date::after {
+	color: #50b948;
+}
+
+div.special_offer_flag.green_flag, .green_back {
+	background-color: #50b948;
+}
+
+.green_border {
+	border-color: #50b948;
+}
+
+/*dark green*/
+
+.dark_green {
+	color: #50b948;
+}
+
+.dark_green_back {
+	background-color: #50b948;
+}
+
+.dark_green_border {
+	border-color: #50b948;
+}
+
+/*orange*/
+
+.orange {
+	color: #FFA200;
+}
+
+.confirmation_account button.button, .button.solid_orange, .orange_back {
+	background-color: #FFA200;
+}
+
+.confirmation_account button.button, .button.solid_orange, .orange_border {
+	border-color: #FFA200;
+}
+
+/*red*/
+
+.red {
+	color: #c80000;
+}
+
+.close_lightbox, .red_back {
+	background-color: #c80000;
+}
+
+.red_border {
+	border-color: #c80000;
+}
+
+/*dark_red*/
+
+.dark_red {
+	color: #960000;
+}
+
+.close_lightbox:hover, .dark_red_back {
+	background-color: #960000;
+}
+
+.dark_red_border {
+	border-color: #960000;
+}
+
+/*gray*/
+
+div.lightbox_content .lightbox_content_inner em, .pricing_disclaimers em, .gray {
+	color: #666666;
+}
+
+.kwh_choice_container label:hover, .address_box_container label.premise_choice, section.user_identity_verification label:hover, div.info_hover div.info_hover_content, div.stylized_radio_input label:hover, div.learn_more_content::before, div.learn_more_content, li.pricing_tab_item.inactive_tab:hover, .gray_back, .whatthis_hover_content {
+	background-color: #ccc;
+}
+
+table.confirmation_summary_contents, div.confirmation_account form div input, div.order_form_right div.plan_item_links, div.order_form_right ul.plan_features_list, div.lightbox_content .lightbox_content_inner table, div.order_page_customer_service, div.plan_location_summary, section.legal_verification div.legal_verification_container, div.all_plans_plan_container div.pricing_plan_item.plan_card, ul.all_plans_grid_head, .gray_border {
+	border-color: #ccc;
+}
+
+/*light_gray*/
+
+span.kwh_choice_container input:checked+label, .address_box_container input:checked+label.premise_choice, div.full_address_entry h5, .light_gray {
+	color: #efefef;
+}
+
+div.order_form_right, table.confirmation_summary_contents tr th, table.confirmation_summary_contents tr:nth-child(odd) td, div.confirmation_account form, div.lightbox_content .lightbox_content_inner table th, div.image_container, section.plan_cross_sell div.all_plans_plan_container, div.plan_cta div.cta_plan_content, div.order_form_left section, section.pricing_display, li.pricing_tab_item.active_tab, div.lightbox_content .lightbox_content_inner table tr:nth-child(odd) td, .light_gray_back {
+	background-color: #efefef;
+}
+
+.div.full_address_entry h5, .light_gray_border {
+	border-color: #efefef;
+}
+
+/*dark_gray*/
+
+body, .dark_gray {
+	color: #333;
+}
+
+.dark_gray_back {
+	background-color: #333;
+}
+
+.dark_gray_border {
+	border-color: #333;
+}
+
+/*black*/
+
+input:checked+label div.info_hover div.info_hover_content, .solid_orange, .hollow_black, .black {
+	color: #000;
+}
+
+.hollow_black:hover, div.lightbox_background, .black_back {
+	background-color: #000;
+}
+
+.hollow_black, .black_border {
+	border-color: #000;
+}
+
+/*near black*/
+
+div.lightbox_content .lightbox_content_inner table td, .near_black {
+	color: #252525;
+}
+
+div.top_nav_container, .near_black_back {
+	background-color: #252525;
+}
+
+.near_black_border {
+	border-color: #252525;
+}
+
+/*white*/
+
+span.pricing_tab_text_header, input:checked+label div.info_hover::before, .cta_container .cta_content a.cta_link, .cta_container .cta_content h1, .address_box_container form label, div.billing_address_edit label, div.checkbox_display label, section.user_service_information div.service_address_container div.service_address_edit label, section.user_identity_verification input:checked+label, div.info_hover:hover::before, .social_id_active .social_container div.info_hover::before, .social_id_active .social_container, .user_drivers_active .gov_id_container div.info_hover::before, .user_drivers_active .gov_id_container, div.stylized_radio_input input:checked+label, div.special_offer_flag.blue_flag, div.special_offer_flag.green_flag, .hollow_black:hover, .white {
+	color: #fff;
+}
+
+.pricing_tab_selection ul, span.pricing_tab_text_header::before, span.pricing_tab_text_header::after, div.all_plans_plan_container, ul.all_plans_grid_head, .close_lightbox::after, .close_lightbox::before, div.lightbox_content, div.pricing_plan_item, .white_back {
+	background-color: #fff;
+}
+
+div.order_form_right::after, .user_drivers_active .gov_id_container div.info_hover::before, .social_id_active .social_container div.info_hover::before, input:checked+label div.info_hover::before, .white_border {
+	border-color: #fff;
+}
+
+/*transparent*/
+
+section.plan_cross_sell div.all_plans_plan_container .pricing_plan_item, div.order_form_left section.legal_verification, .transparent {
+	background-color: transparent;
+}
+
+/*gray gradient bottom:e8e8e8 to #fff*/
+
+nav, .gray_gradient {
+	background: #e8e8e8;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #fff 0%, #e8e8e8 100%);
+	background: -webkit-linear-gradient(top, #fff 0%, #e8e8e8 100%);
+	background: linear-gradient(to bottom, #fff 0%, #e8e8e8 100%);
+}
+
+div.special_offer_flag.green_flag::after, .green_gradient {
+	background: -moz-linear-gradient(top, #50b948 0%, #3b8835 100%);
+	background: -webkit-linear-gradient(top, #50b948 0%, #3b8835 100%);
+	background: linear-gradient(to bottom, #50b948 0%, #3b8835 100%);
+}
+
+div.special_offer_flag.blue_flag::after, .blue_gradient {
+	background: -moz-linear-gradient(top, #00456a 0%, #003450 100%);
+	background: -webkit-linear-gradient(top, #00456a 0%, #003450 100%);
+	background: linear-gradient(to bottom, #00456a 0%, #003450 100%);
+}
+
+@media only screen and (max-width: 768px) {
+	div.order_form_left section {
+		/*background-color: transparent;*/
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	div.order_form_right {
+		background-color: transparent;
+	}
+}
+
+/* FONTS
+------------------------------------------------------------*/
+
+body {
+	font-family: arial, helvetica, sans-serif;
+}
+
+/* FONT SIZES
+------------------------------------------------------------*/
+
+.font10 {
+	font-size: 10px;
+}
+
+span.plan_price_measure, section.user_service_information label.user_entered_address, .pricing_disclaimers em, .font12 {
+	font-size: 12px;
+}
+
+span.promo_code_entry, div.cta_plan_content span.plan_price_measure, div.full_address_entry div.input_field_item label, div.all_plans_plan_container ul.plan_features_list.plan_top_features li.plan_feature_item, .font14 {
+	font-size: 14px;
+}
+
+div.all_plans_plan_container span.plan_price_symbol, section.cta_head_section strong, span.plan_price_symbol, div.full_address_entry h5, div.full_address_entry label, span.location_update_action, body, .font16 {
+	font-size: 16px;
+}
+
+div.lightbox_content .lightbox_content_inner h5, span.location_text, span.kwh_choice_container span.rates_text, div.input_field_item h5, div.plan_cta div.cta_plan_content .plan_head_text h3, div.all_plans_plan_container .plan_order_button, div.input_field_item input, div.input_field_item label, li.pricing_tab_item, .font18 {
+	font-size: 18px;
+}
+
+.confirmation_account button.button, div.confirmation_account form div input, table.confirmation_summary_contents tr th, .button.large_button, section.user_service_information div.user_service_address_display strong, div.lightbox_content h3, .lightbox_content form .button, .plan_order_button, .font22 {
+	font-size: 22px;
+}
+
+span.mobile_plan_selector, div.cta_plan_content span.plan_price_symbol, div.pricing_plan_item h3, .font26 {
+	font-size: 26px;
+}
+
+.font30 {
+	font-size: 30px;
+}
+
+div.all_plans_plan_container span.plan_price_value, span.plan_price_value, div.order_form_right div.plan_head_text h3, .button.huge_button, .font34 {
+	font-size: 34px;
+}
+
+.font38 {
+	font-size: 38px;
+}
+
+section.cta_head_section h1, .cta_container .cta_content h1, .font42 {
+	font-size: 42px;
+}
+
+div.cta_plan_content span.plan_price_value, .font60 {
+	font-size: 60px;
+}
+
+.font72 {
+	font-size: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+	section.cta_head_section strong, .font22 {
+		font-size: 22px;
+	}
+	div.pricing_plan_item h3, .font26 {
+		font-size: 26px;
+	}
+}
+
+/* IMAGES
+------------------------------------------------------------*/
+
+/*nav h2 {
+	background-image: url(../images/logo.png);
+}*/
+
+/*.home_cta .cta_content {background-image: url(../img/family.jpg);}*/
+
+/* BUTTONS
+------------------------------------------------------------*/
+
+a.button, button, .button {
+	padding: 8px 16px;
+	border-width: 2px;
+	border-style: solid;
+	transition: all .25s;
+	cursor: pointer;
+	border-radius: 8px;
+	text-decoration: none;
+}
+
+.huge_button {
+	padding: 12px 24px;
+	border-radius: 10px;
+}
+
+/* WIDTH LIMITED
+------------------------------------------------------------*/
+
+div.confirmation_content_container, div.plan_page_content, div.order_form_container, div.inner_nav_container, div.pricing_content, section.pricing_disclaimers em, span.location_text_container, .pricing_tab_selection ul, .max_width_item {
+	padding-right: 20px;
+	max-width: 1200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen (min-width: 768px) {
+	div.confirmation_content_container, div.plan_page_content, div.order_form_container, div.inner_nav_container, div.pricing_content, section.pricing_disclaimers em, span.location_text_container, .pricing_tab_selection ul, .max_width_item {
+		width: 90%;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+
+/* AFTER CLEARS
+------------------------------------------------------------*/
+
+section.user_identity_verification div.id_verify_entry::after, div.confirmation_content_container::after, span.kwh_choice_container::after, section.plan_page_content::after, div.full_address_entry::after, section.online_account::after, div.stylized_radio_input::after, span.location_text_container::after, div.order_form_container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* NAV
+------------------------------------------------------------*/
+
+nav {
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+/*nav div.top_nav_container {
+		height: 40px;
+		width: 100%;
+	}*/
+
+nav div.inner_nav_container {
+	height: 60px;
+}
+
+nav h2 {
+	width: 169px;
+	height: 45px;
+	background-repeat: no-repeat;
+	text-indent: -10000px;
+	overflow: hidden;
+}
+
+/* HOME
+------------------------------------------------------------*/
+
+.cta_container {
+	height: 400px;
+}
+
+.cta_container .cta_content {
+	height: 100%;
+	width: calc(100% - 400px);
+	background-position: cover;
+}
+
+.cta_container .cta_content img.hero_image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.cta_inner_content {
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 60px;
+	transform: translateY(-50%);
+	z-index: 10;
+}
+
+.cta_container .cta_content h1 {
+	padding: 0;
+	margin: 0 0 40px 0;
+	font-weight: 400;
+}
+
+.cta_container .cta_content a.button {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.cta_container .cta_content a.cta_link {
+	display: block;
+}
+
+.address_box_container {
+	width: 400px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+
+.address_box_container label.premise_choice {
+	position: absolute;
+	top: 0;
+	line-height: 40px;
+	width: 50%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.address_box_container label.premise_choice:hover {
+	font-weight: 600;
+}
+
+.address_box_container label.premise_choice.residential_electricity {
+	left: 0;
+}
+
+.address_box_container label.premise_choice.business_electricity {
+	right: 0;
+}
+
+.address_box_container input[type=radio] {
+	display: none;
+}
+
+.address_box_container form {
+	padding: 20px;
+}
+
+.address_box_container form div.input_fields_container {
+	display: block;
+}
+
+.address_box_container .input_field_item {
+	display: block;
+}
+
+.address_box_container .input_field_item.street_address {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.address_box_container .input_field_item input {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.address_box_container .input_field_item.zip_code, .address_box_container .input_field_item.apt_suite {
+	float: left;
+	margin: 0;
+	width: calc(50% - 20px);
+	box-sizing: border-box;
+}
+
+.address_box_container .input_field_item.apt_suite {
+	margin-right: 40px;
+}
+
+.address_box_container .input_field_item.zip_code {}
+
+.address_box_container button {
+	margin-top: 20px;
+}
+
+/* PLAN PAGE
+------------------------------------------------------------*/
+
+div.plan_cta div.cta_inner_content {}
+
+div.plan_cta div.cta_plan_content {
+	/*
+	position: absolute;
+	top:50%;
+	left: 50px;
+	transform: translateY(-50%);
+	*/
+	border-radius: 2000px;
+	z-index: 10;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+}
+
+div.plan_cta div.cta_plan_content span.plan_price_measure {
+	margin-left: -10px;
+}
+
+div.plan_cta div.cta_plan_content .plan_head_text {
+	margin-bottom: 10px;
+	padding: 20px 0 0 0;
+}
+
+div.plan_cta div.cta_plan_content .plan_head_text h3 {
+	width: 75%;
+	margin: 0 auto 5px auto;
+}
+
+div.plan_cta div.cta_plan_content .plan_price_element {
+	margin-bottom: 0;
+}
+
+div.plan_page_content {
+	padding-top: 60px;
+}
+
+div.plan_page_content section {
+	margin: 0 0 60px 0;
+}
+
+div.plan_content_left {
+	width: calc(100% - 440px);
+	float: left;
+	margin-right: 40px;
+}
+
+div.plan_content_right {
+	width: 400px;
+	padding: 60px 0 0 0;
+	float: left;
+}
+
+div.image_container {
+	width: 100%;
+	text-align: center;
+	padding: 60px 0;
+	margin-bottom: 60px;
+}
+
+/* CTA
+------------------------------------------------------------*/
+
+section.cta_head_section {
+	text-align: center;
+	display: block;
+	padding: 60px 20px 8px 20px;
+}
+
+section.cta_head_section h1, section.cta_head_section strong {
+	padding: 0;
+	margin: 0;
+}
+
+section.cta_head_section h1 {
+	margin-bottom: 20px;
+}
+
+section.cta_head_section strong {
+	font-weight: 400;
+}
+
+/* PRICE GRID
+------------------------------------------------------------*/
+
+section.pricing_display {}
+
+/*pricing tabs*/
+
+div.pricing_tabs {}
+
+.pricing_tab_selection ul {
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+}
+
+li.pricing_tab_item {
+	cursor: pointer;
+	padding: 10px 20px;
+	margin: 0 0 0 0;
+	border-radius: 8px 8px 0 0;
+	transition: all .25s;
+}
+
+li.pricing_tab_item.active_tab {}
+
+li.pricing_tab_item.inactive_tab {}
+
+@media only screen and (max-width: 768px) {
+	span.pricing_tab_text_header {
+		display: block;
+		position: relative;
+		margin: 0 20px;
+	}
+	span.pricing_tab_text_header em {
+		display: block;
+		text-align: center;
+		padding: 20px 55px 0 20px;
+	}
+	.mobile_plan_selector {
+		display: block;
+		padding: 10px 55px 20px 20px;
+		line-height: 100%;
+		text-align: center;
+	}
+	span.pricing_tab_text_header::before, span.pricing_tab_text_header::after {
+		content: '';
+		height: 4px;
+		width: 25px;
+		position: absolute;
+		bottom: 30px;
+		transform: rotate(45deg);
+	}
+	span.pricing_tab_text_header::before {
+		transform: rotate(45deg);
+		right: 25px;
+	}
+	span.pricing_tab_text_header::after {
+		transform: rotate(-45deg);
+		right: 10px;
+	}
+	.pricing_tab_selection ul {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 5%;
+		width: 90%;
+		z-index: 100;
+		border-radius: 8px;
+		box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+		padding: 20px 0;
+	}
+	.active_tabs .pricing_tab_selection ul {
+		display: block;
+	}
+	.pricing_tab_selection ul li {
+		margin: 0 20px;
+		border-radius: 0;
+	}
+	span.location_text {
+		text-align: center;
+		padding: 0;
+		margin: 0 0 10px 0;
+	}
+	/*.pricing_tab_text_header:hover + .pricing_tab_selection ul {
+		display: block;
+	}*/
+}
+
+@media only screen and (min-width: 768px) {
+	li.pricing_tab_item {
+		display: inline-block;
+		margin: 0 10px 0 0;
+	}
+}
+
+/*pricing head items*/
+
+div.pricing_location_information {
+	padding: 20px 0 40px 0;
+}
+
+span.location_text_container {
+	justify-content: center;
+}
+
+span.location_text {
+	display: block;
+	padding: 5px;
+}
+
+span.view_plans_text {
+	display: none;
+}
+
+span.location_update_action {
+	display: inline-block;
+	margin: 3px 10px 0 0;
+	border-width: 1px;
+	padding: 4px 8px;
+}
+
+span.promo_code_entry {
+	margin: 7px 0px 3px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+}
+
+span.promo_code_entry::after {
+	content: '';
+	height: 1px;
+	width: 90%;
+	left: 5%;
+	position: absolute;
+	bottom: -3px;
+	transition: all .25s;
+}
+
+span.promo_code_entry:hover::after {
+	opacity: 0;
+}
+
+span.kwh_choice_container {
+	display: block;
+	padding-top: 10px;
+}
+
+span.kwh_choice_container input {
+	display: none;
+}
+
+span.kwh_choice_container span.rates_text {
+	display: block;
+	padding: 5px;
+	text-align: center;
+	width: 100%;
+}
+
+span.kwh_choice_container label {
+	display: block;
+	float: left;
+	border-width: 1px;
+	border-style: solid;
+	padding: 4px 8px;
+	border-right: none;
+	cursor: pointer;
+	margin-top: 3px;
+	width: calc(33% - 18px);
+	text-align: center;
+}
+
+span.kwh_choice_container label:first-of-type {
+	border-radius: 8px 0 0 8px;
+}
+
+span.kwh_choice_container label:last-of-type {
+	border-radius: 0 8px 8px 0;
+	border-right-width: 1px;
+	border-right-style: solid;
+}
+
+@media only screen and (min-width: 768px) {
+	div.pricing_location_information {
+		/* padding: 40px 0; */
+	}
+	span.pricing_tab_text_header {
+		display: none;
+	}
+	span.location_text {
+		float: left;
+	}
+	span.view_plans_text {
+		display: inline;
+	}
+	span.location_update_action {
+		display: block;
+		float: left;
+		margin: 3px 0 0 10px;
+	}
+	span.promo_code_entry {
+		display: block;
+		float: left;
+		margin: 7px 0px 3px 20px;
+	}
+	span.kwh_choice_container {
+		float: left;
+		margin-left: 20px;
+		text-align: left;
+		padding-top: 0;
+	}
+	span.kwh_choice_container span.rates_text {
+		float: left;
+		margin-right: 10px;
+		width: auto;
+	}
+	span.kwh_choice_container label {
+		width: auto;
+	}
+}
+
+/*plan cards*/
+
+div.pricing_content.active_segment {}
+
+div.pricing_content.inactive_segment {
+	display: none;
+}
+
+div.pricing_content {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+div.pricing_plan_item {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+	text-align: center;
+	padding: 10px 10px 35px 10px;
+	/*box-shadow: 0 0 15px rgba(0, 0, 0, .1);*/
+	box-sizing: border-box;
+}
+
+div.pricing_plan_item:nth-child(4n+0) {
+	margin-right: 0;
+	flex-break: after;
+}
+
+div.special_offer_flag {
+	display: none;
+	position: absolute;
+	top: -30px;
+	left: 2.5%;
+	height: 30px;
+	text-align: center;
+	width: 95%;
+	line-height: 30px;
+	font-weight: 600;
+}
+
+div.special_offer_flag::after {
+	content: '';
+	height: 10px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: .5;
+	z-index: 1;
+}
+
+div.special_offer_flag span.special_offer_flag_internal {
+	z-index: 10;
+	display: block;
+	position: relative;
+}
+
+ div.special_offer_flag {
+	display: block;
+}
+
+div.plan_head_text {
+	margin-bottom: 20px;
+}
+
+div.plan_head_text h3 {
+	margin: 0 0 20px 0;
+}
+
+div.plan_head_text strong.plan_details {
+	font-weight: 400;
+	margin: 0 0 0 0;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	height: auto !important;
+}
+
+div.plan_price_element {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+span.plan_price_value {
+	line-height: 100%;
+}
+
+span.plan_price_symbol {}
+
+span.plan_price_measure {
+	align-self: flex-end;
+	padding: 0 0 3px 0;
+	margin: 0 0 0 -7px;
+}
+
+div.pricing_plan_button_container {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+div.pricing_plan_button_container .button {
+	display: inline-block;
+}
+
+ul.plan_features_list {
+	padding: 20px;
+	margin: 0 0 0 0;
+	list-style: none;
+	text-align: left;
+}
+
+li.plan_feature_item {
+	margin-bottom: 0px;
+	padding-left: 15px;
+	position: relative;
+}
+
+li.plan_feature_item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 4px;
+	border-radius: 100px;
+	background-color: #ccc;
+	width: 6px;
+	height: 6px;
+}
+
+li.plan_feature_item:last-child {
+	margin-bottom: 0;
+}
+
+ul.plan_features_list.plan_top_features {}
+
+div.learn_more {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+}
+
+span.learn_more_item_text {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+span.learn_more_item_text:hover {
+	text-decoration: none;
+}
+
+div.learn_more_content {
+	display: none;
+	position: absolute;
+	width: calc(100% - 20px);
+	top: 20px;
+	padding: 10px;
+	z-index: 10000;
+}
+
+div.learn_more_content::before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	display: block;
+	top: -7px;
+	left: 50%;
+	margin-left: -7.5px;
+	transform: rotate(45deg);
+}
+
+div.learn_more:hover div.learn_more_content {
+	display: block;
+}
+
+ul.plan_sub_features {}
+
+ul.plan_sub_features li.plan_feature_item {}
+
+div.plan_item_links {}
+
+div.plan_item_links a {
+	display: block;
+	margin-bottom: 5px;
+
+}
+
+div.plan_item_links a:last-child {
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	strong.plan_details {
+		height: auto !important;
+	}
+	.order_form_left {
+		padding-bottom: 40px;
+	}
+	a.button.solid_orange.large_button {
+		margin: 0 40px;
+		white-space: nowrap;
+	}
+	.mobile_active .order_form_right {
+		overflow: auto;
+		height: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	div.pricing_content {
+		flex-direction: row;
+	}
+	div.pricing_plan_item {
+		width: calc(25% - 15px);
+		margin-right: 20px;
+	}
+}
+
+/*all plans segment*/
+
+div.pricing_content.all_plans {}
+
+ul.all_plans_grid_head {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	list-style: none;
+	padding: 10px;
+	margin: 0 0 0 0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+li.all_plan_grid_head_item {}
+
+div.all_plans_plan_container div.plan_head_text, div.all_plans_plan_container div.plan_price_element, div.all_plans_plan_container div.pricing_plan_button_container, div.all_plans_plan_container ul.plan_top_features, li.all_plan_grid_head_item.plan_name_details, li.all_plan_grid_head_item.plan_price_head, li.all_plan_grid_head_item.order_button_head, li.all_plan_grid_head_item.plan_features_short, li.all_plan_grid_head_item.details_empty, li.all_plan_grid_head_item.plan_full_details {
+	padding: 0;
+	margin: 0;
+}
+
+div.all_plans_plan_container div.plan_head_text, li.all_plan_grid_head_item.plan_name_details {
+	flex-grow: 1;
+}
+
+div.all_plans_plan_container div.plan_price_element, li.all_plan_grid_head_item.plan_price_head {
+	/* flex: 0 0 150px; */
+	flex-grow: 0;
+	padding:0 20px;
+}
+
+div.all_plans_plan_container div.pricing_plan_button_container, li.all_plan_grid_head_item.order_button_head {
+	flex: 0 0 150px;
+}
+
+div.all_plans_plan_container ul.plan_top_features, li.all_plan_grid_head_item.plan_features_short {
+	flex: 0 0 300px;
+}
+
+div.all_plans_plan_container div.learn_more, li.all_plan_grid_head_item.details_empty {
+	flex: 0 0 0;
+}
+
+li.all_plan_grid_head_item.plan_name_details {
+	text-align: center;
+	width: calc(100% - 660px);
+	flex-grow: 0;
+}
+
+li.all_plan_grid_head_item.plan_price_head {
+	text-align: left;
+}
+
+li.all_plan_grid_head_item.order_button_head {}
+
+li.all_plan_grid_head_item.plan_features_short {
+	box-sizing: border-box;
+	padding-left: 10px;
+	text-align: center;
+}
+
+li.all_plan_grid_head_item.details_empty {}
+
+li.all_plan_grid_head_item.plan_full_details {
+	text-align: center;
+}
+
+div.all_plans_plan_container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	/*padding-right: 210px;*/
+}
+
+div.all_plans_plan_container div.pricing_plan_item.plan_card {
+	width: 100%;
+	flex-direction: row;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	margin: 0;
+	box-shadow: none;
+	padding: 10px;
+}
+
+div.all_plans_plan_container div.plan_top_features, div.all_plans_plan_container ul.plan_top_features, div.all_plans_plan_container div.pricing_plan_button_container, div.all_plans_plan_container div.plan_price_element, div.all_plans_plan_container div.plan_head_text {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+div.all_plans_plan_container div.plan_head_text {
+	flex-direction: column;
+	text-align: center;
+	align-self: center;
+	width: 400px;
+	flex-grow: 0;
+	padding-bottom: 35px;
+}
+
+div.all_plans_plan_container div.plan_head_text h3 {
+	margin-bottom: 10px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+div.all_plans_plan_container div.plan_price_element {
+	flex-direction: row;
+	align-self: center;
+	width: 120px;
+}
+
+div.all_plans_plan_container div.plan_price_element span.plan_price_measure {
+	margin-left: -5px;
+	/* padding-bottom: 5px; */
+}
+
+div.all_plans_plan_container div.pricing_plan_button_container {
+	align-self: center;
+	box-sizing: border-box;
+	padding: 0 20px;
+	white-space: nowrap;
+}
+
+div.all_plans_plan_container ul.plan_features_list.plan_top_features {
+	text-align: left;
+	padding: 10px;
+	box-sizing: border-box;
+	flex-grow: 1;
+	align-self: center;
+}
+
+div.all_plans_plan_container div.learn_more {
+	align-self: center;
+	width: 410px;
+	padding-top: 10px;
+}
+
+div.all_plans_plan_container div.learn_more div.learn_more_content {
+	right: 0;
+	width: 200%;
+	z-index: 1000;
+}
+
+div.all_plans_plan_container div.learn_more div.learn_more_content::before {
+	right: 55px;
+	left: auto;
+	margin-left: 0;
+}
+
+div.all_plans_plan_container div.special_offer_flag {
+	top: 0;
+	left: 0;
+	width: 410px;
+}
+
+div.all_plans_plan_container div.special_offer_flag::after {
+	top: 0;
+	bottom: auto;
+	transform: rotate(180deg);
+	z-index: 1;
+}
+
+div.all_plans_plan_container div.special_offer_flag_active div.plan_head_text {
+	padding-top: 35px;
+}
+/*all plans mobile*/
+@media only screen and (max-width: 768px) {
+	ul.all_plans_grid_head {display: none;}
+	div.all_plans_plan_container div.pricing_plan_item {
+		display: block;
+	}
+		div.all_plans_plan_container div.special_offer_flag {
+			position: relative;
+			width: 100%;
+		}
+		div.all_plans_plan_container div.special_offer_flag,
+		div.all_plans_plan_container div.pricing_plan_item ul.plan_features_list,
+		div.all_plans_plan_container div.pricing_plan_item div.pricing_plan_button_container,
+		div.all_plans_plan_container div.pricing_plan_item div.plan_price_element,
+		div.all_plans_plan_container div.pricing_plan_item div.plan_head_text {
+			margin-bottom: 10px;
+		}
+		div.all_plans_plan_container div.pricing_plan_item div.plan_head_text {
+			padding:0;
+			width: 100%;
+		}
+		div.all_plans_plan_container div.plan_price_element {
+			width: 100%;
+		}
+		div.all_plans_plan_container div.pricing_plan_item div.learn_more {
+			position: relative;
+			width: 100%;
+		}
+}
+
+/*disclaimers*/
+
+section.pricing_disclaimers {
+	padding: 60px 10px;
+}
+
+section.pricing_disclaimers em {
+	display: block;
+	margin-bottom: 20px;
+}
+
+section.pricing_disclaimers em:last-child {
+	margin-bottom: 0;
+}
+
+/* LIGHT BOX
+------------------------------------------------------------*/
+
+div.lightbox_container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	/* display: none; */
+}
+
+div.lightbox_container.active_lightbox {
+	display: block;
+}
+
+div.lightbox_background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+	z-index: 1;
+}
+
+div.lightbox_content {
+	z-index: 10;
+	width: 90%;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	max-height: 80%;
+	overflow: auto;
+	margin-left: -45%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+div.lightbox_content div.lightbox_inner_content {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+
+div.close_lightbox {
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	/* margin: -15px -15px 0 0; */
+	border-radius: 100px;
+	height: 28px;
+	width: 28px;
+	cursor: pointer;
+	z-index: 10000;
+}
+
+div.close_lightbox::before, div.close_lightbox::after {
+	content: '';
+	height: 2px;
+	width: 16px;
+	position: absolute;
+	top: 12px;
+	left: 6px;
+}
+
+div.close_lightbox::before {
+	transform: rotate(45deg);
+}
+
+div.close_lightbox::after {
+	transform: rotate(-45deg);
+}
+
+div.lightbox_content h3 {
+	padding: 40px 40px 10px 40px;
+	margin: 0;
+	display: block;
+	text-align: center;
+}
+
+div.update_lightbox div.lightbox_content h3.begin_order, div.order_lightbox div.lightbox_content h3.update_address {
+	display: none
+}
+
+div.lightbox_content form {
+	padding: 40px;
+	text-align: right;
+}
+
+div.input_fields_container {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin: 0 0 0 0;
+}
+
+div.input_field_item {
+	flex-direction: column;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+div.input_field_item input, div.input_field_item select {
+	padding: 8px 16px;
+	margin: 0;
+	border: 1px solid #CCCCCC;
+	/* margin-bottom: 10px; */
+	height:45px;
+}
+
+div.input_field_item label {
+	margin: 0 0 10px 0;
+}
+
+div.input_field_item h5 {
+	font-weight: 400;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+div.input_field_item.promo_code {
+	width: 100%;
+}
+
+div.input_field_item.apt_suite, div.input_field_item.zip_code, div.input_field_item.street_address {
+	width: 100%;
+}
+
+/*
+				div.input_field_item.street_address {
+					width: 50%;
+					flex-grow: 1;
+				}
+				div.input_field_item.apt_suite,
+				div.input_field_item.zip_code {
+					width: 20%;
+					margin: 0 0 0 40px;
+				}
+				*/
+
+div.lightbox_content form button {
+	display: block;
+	width: 100%;
+}
+
+div.lightbox_content.plan_details_content {
+	text-align: left;
+}
+
+div.lightbox_content .lightbox_content_inner {
+	padding: 40px;
+}
+
+div.lightbox_content .lightbox_content_inner h3 {
+	text-align: left;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+
+div.lightbox_content .lightbox_content_inner h5 {
+	margin: 3% 0 1px 0;
+}
+
+div.lightbox_content .lightbox_content_inner table, div.lightbox_content .lightbox_content_inner div.plan_item_links, div.lightbox_content .lightbox_content_inner ul.plan_features_list {
+	padding: 0;
+	margin: 0 0 0 0;
+}
+
+div.lightbox_content .lightbox_content_inner table {
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+div.lightbox_content .lightbox_content_inner table td, div.lightbox_content .lightbox_content_inner table th {
+	padding: 5px 10px;
+}
+
+div.lightbox_content .lightbox_content_inner table td {
+	text-align: center;
+}
+
+div.lightbox_content .lightbox_content_inner table th {
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+div.lightbox_content .lightbox_content_inner table tr:nth-child(even) td {}
+
+div.lightbox_content .lightbox_content_inner input[type=checkbox] {
+	display: none;
+}
+
+div.lightbox_content .lightbox_content_inner input[type=checkbox]+label {
+	text-decoration: underline;
+	cursor: pointer;
+	padding: 0;
+	margin: 0 0 20px 0;
+	display: block;
+}
+
+div.lightbox_content .lightbox_content_inner input[type=checkbox]:checked+label {
+	margin-bottom: 10px;
+}
+
+div.lightbox_content .lightbox_content_inner input[type=checkbox]+label:hover {
+	text-decoration: none;
+}
+
+div.lightbox_content .lightbox_content_inner span.checkbox_label_show {
+	display: none;
+	padding: 5px 10px;
+	margin: 0 0 20px 0;
+}
+
+div.lightbox_content .lightbox_content_inner input[type=checkbox]:checked+label+span.checkbox_label_show {
+	display: block;
+}
+
+div.input_field_item.mover_switcher_choice h5 {
+	display: none;
+	padding-top: 10px;
+}
+
+div.input_field_item.mover_switcher_choice input:checked+label+input+label+div+br+h5 {
+	display: block;
+}
+
+div.input_field_item.mover_switcher_choice input+label+input:checked+label+div+br+h5+h5 {
+	display: block;
+}
+
+input#datepicker {
+	width: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+	div.input_fields_container {
+		flex-direction: row;
+	}
+	div.lightbox_content {
+		width: 50%;
+		top: 20%;
+		max-height: 60%;
+		margin-left: -25%;
+	}
+	div.close_lightbox {
+		top: 18%;
+		right: 24.5%;
+		/* margin: -15px -15px 0 0; */
+	}
+	div.input_field_item.street_address {
+		width: 50%;
+		flex-grow: 1;
+	}
+	div.input_field_item.apt_suite, div.input_field_item.zip_code {
+		width: 20%;
+		margin: 0 0 0 40px;
+	}
+	div.lightbox_content form button {
+		display: inline-block;
+		width: auto;
+	}
+}
+
+/* ORDER PAGE
+------------------------------------------------------------*/
+
+div.order_form_container {
+	padding: 60px 0;
+}
+
+.required_disclaimer {
+	padding: 0 40px 40px 40px;
+	display: block;
+}
+
+div.order_form_container .required label::after, .required.switch_move_date::after {
+	content: '*';
+}
+
+.stylized_radio_input.required label::after {
+	display: none;
+}
+
+div.order_form_left, div.order_form_right {
+	float: left;
+}
+
+div.order_form_left {
+	width: calc(100% - 290px);
+	margin-right: 40px;
+}
+
+div.order_form_left section {
+	padding: 40px;
+	margin: 0 0 40px 0;
+	/*background-color: #fff;*/
+}
+
+div.order_form_left section.confirmation_content_container{
+	background-color: #fff!important;
+}
+
+div.order_form_left section h3 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	padding: 0 0 10px 0;
+	margin: 0 0 20px 0;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+div.checkbox_input label {
+	/* margin-left: 20px; */
+}
+
+div.checkbox_input div.input_field_item label {
+	margin-left: 0px;
+	font-weight: 400;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* div.checkbox_input input[type=checkbox] {
+	position: absolute;
+	top: 3px;
+	left: 0;
+} */
+
+div.input_field_item.clear_both {
+	clear: both;
+}
+
+div.stylized_radio_input {
+	display: block;
+}
+
+div.stylized_radio_input input[type=radio] {
+	display: none;
+	clear: none;
+}
+
+div.stylized_radio_input label {
+	float: left;
+	display: block;
+	width: auto;
+	cursor: pointer;
+	border-width: 2px;
+	border-style: solid;
+	padding: 5px 10px;
+	margin: 0;
+	transition: all .25s;
+}
+
+div.stylized_radio_input label.left_select_radio {
+	border-right-width: 1px;
+	border-radius: 8px 0 0 8px;
+}
+
+div.stylized_radio_input label.right_select_radio {
+	border-left-width: 1px;
+	border-radius: 0 8px 8px 0;
+}
+
+div.stylized_radio_input label.right_select_radio+div.info_hover {
+	margin-left: 20px;
+}
+
+div.stylized_radio_input input:checked+label {
+	color: white;
+}
+
+div.info_hover {
+	float: left;
+	position: relative;
+}
+
+div.info_hover.nofloat {
+	float: none;
+	display: inline-block;
+	position: relative;
+	top: 3px;
+}
+
+h3 div.info_hover {
+	float: none;
+	display: inline-block;
+}
+
+div.info_hover::before {
+	content: '?';
+	border-width: 2px;
+	border-style: solid;
+	width: 15px;
+	height: 15px;
+	border-radius: 100px;
+	line-height: 15px;
+	display: block;
+	float: left;
+	text-align: center;
+	margin-top: 7px;
+	cursor: pointer;
+	transition: all .25s;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+label div.info_hover::before, h3 div.info_hover::before {
+	margin-top: -7px;
+}
+
+div.info_hover div.info_hover_content{
+	display: none;
+	width: 250px;
+	position: absolute;
+	left: 30px;
+	top: 50%;
+	z-index: 10000;
+	transform: translateY(-50%);
+	border-radius: 8px;
+}
+
+
+div.whatthis_hover_content {
+	display: none;
+	width: 250px;
+	position: absolute;
+	left: 75px;
+	top: 50%;
+	z-index: 10000;
+	transform: translateY(-50%);
+	border-radius: 8px;
+}
+
+div.whatthis_hover_content{
+	width: 350px;
+    font-weight: 400;
+}
+
+div.whatthis_hover_content ul{
+	color: #000;
+}
+
+div.info_hover div.info_hover_content::after, .whatthis_hover_content::after{
+	content: '';
+	width: 20px;
+	height: 20px;
+	transform: rotate(45deg);
+	position: absolute;
+	left: -10px;
+	top: 50%;
+	margin-top: -7.5px;
+	background-color: #ccc;
+	z-index: 1;
+}
+
+div.info_hover div.info_hover_content p, div.whatthis_hover_content p{
+	padding: 10px 10px 10px 15px;
+	margin: 0;
+	text-align: left;
+	line-height: 100%;
+	z-index: 100;
+	display: block;
+	font-weight: 400;
+	color: #000;
+	text-transform: none;
+}
+
+div.info_hover:hover div.info_hover_content {
+	display: block;
+}
+
+
+div.whatthis:hover div.whatthis_hover_content {
+	display: block;
+}
+
+section.user_service_information {}
+
+section.user_service_information div.service_address_container, section.user_service_information div.input_field_item {
+	margin-bottom: 20px;
+}
+
+section.user_service_information div.service_address_container {
+	display: block;
+	margin-bottom: 20px;
+}
+
+section.user_service_information div.service_address_container {
+	padding-left: 0;
+}
+
+section.user_service_information div.service_address_container label.user_entered_address, section.user_service_information div.service_address_container strong {
+	display: inline-block;
+	width: auto;
+}
+
+section.user_service_information div.service_address_container label.user_entered_address {
+	display: inline-block;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+section.user_service_information div.service_address_container label.user_entered_address:hover {
+	text-decoration: none;
+}
+
+section.user_service_information div.service_address_container input[type=checkbox] {
+	display: none;
+}
+
+section.user_service_information div.service_address_container div.service_address_edit {
+	display: none;
+	margin-top: 10px;
+}
+
+section.user_service_information div.input_field_item.user_billing_verification {
+	padding: 0;
+	padding: 0;
+}
+
+section.user_service_information div.input_field_item.user_billing_verification label[for=billing_verification] {
+	/* margin-left: 20px; */
+}
+
+section.user_service_information div.auto_pay_settings, div.full_address_entry {
+	padding: 20px 40px 5px 40px;
+}
+
+section.user_service_information div.auto_pay_settings h5, div.full_address_entry h5 {
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 0;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	font-weight: 450;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+div.full_address_entry label {
+	font-weight: 400;
+	margin-left: 0;
+}
+
+div.full_address_entry div.input_field_item {
+	float: left;
+}
+
+div.input_field_item.two_third_width {
+	width: calc(66% - 14.4px);
+}
+
+/*div.input_field_item.one_third_width.two_item_row {
+						width: calc(33% - 20px);	
+					}*/
+
+div.input_field_item.one_third_width {
+	width: calc(33% - 26.6px);
+}
+
+div.input_field_item.middle_thirds, div.input_field_item.left_side_thirds {
+	margin-right: 40px;
+}
+
+section.user_service_information div.service_address_container input:checked+div.service_address_edit {
+	display: block;
+}
+
+section.user_service_information div.auto_pay_settings {}
+
+/*section.user_service_information input:checked + div.auto_pay_settings,*/
+
+section.user_service_information div.checkbox_display {
+	display: none;
+}
+
+section.user_service_information input:checked+div.checkbox_display {
+	display: block;
+}
+
+section.user_service_information input:checked+div.checkbox_hide {
+	display: none;
+}
+
+section.user_identity_verification {}
+
+div.user_identity_verification_content_container {
+	padding: 0 0 0 0;
+}
+
+div.identity_select_container {
+	display: flex;
+	flex-direction: row;
+}
+
+div.id_select_tab, div.user_identity_verification_content_container label {
+	/*width: calc(50% - 20px);
+					line-height: 40px;
+					position: absolute;
+					top:0;*/
+	text-align: left;
+	cursor: pointer;
+	/* padding: 10px; */
+}
+
+div.id_select_tab.div.id_select_tab {
+	margin-right: 20px;
+}
+
+div.user_identity_verification_content_container label {
+	content: '*';
+}
+
+div.user_identity_verification_content_container label[for=user_identity_social] {
+	left: 0;
+}
+
+div.user_identity_verification_content_container label[for=user_identity_drivers] {
+	right: 0;
+}
+
+div.user_identity_verification_content_container div.input_field_item {
+	margin-bottom: 0;
+}
+
+section.user_identity_verification input[type=radio] {
+	display: none;
+}
+
+div.id_verify_entry {
+	display: none;
+	padding: 20px;
+}
+
+section.user_identity_verification div.id_verify_entry {}
+
+section.user_identity_verification div.id_verify_entry input[type=text] {
+	margin-right: 5%;
+	display: block;
+	float: left;
+	border: none;
+}
+
+section.user_identity_verification div.id_verify_entry input[name=social_one] {
+	width: 30%;
+	width: calc(30% - 32px);
+}
+
+section.user_identity_verification div.id_verify_entry input[name=social_two] {
+	width: 20%;
+	width: calc(20% - 32px);
+}
+
+section.user_identity_verification div.id_verify_entry input[name=social_three] {
+	width: 50%;
+	width: calc(40% - 32px);
+	margin-right: 0;
+}
+
+.user_drivers_active .user_drivers_entry, .social_id_active .user_social_entry, section.user_identity_verification input:checked+label+div.id_verify_entry {
+	display: block;
+}
+
+section.online_account {}
+
+section.legal_verification label {}
+
+section.legal_verification div.legal_verification_container {
+	border-style: solid;
+	padding: 10px;
+	height: 100px;
+	overflow: auto;
+	border-width: 1px;
+}
+
+div.order_form_right {
+	width: 250px;
+	text-align: center;
+}
+
+div.order_form_right div.plan_head_text {
+	padding-top: 40px;
+}
+
+div.order_form_right div.plan_head_text h3 {}
+
+div.order_form_right div.plan_head_text strong {}
+
+div.order_form_right div.plan_item_links, div.order_form_right ul.plan_features_list, div.order_page_customer_service, div.plan_location_summary {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	padding: 20px 0;
+}
+
+div.order_form_right div.plan_item_links, div.order_form_right ul.plan_features_list {
+	padding: 20px 0;
+	margin: 0;
+}
+
+div.order_page_customer_service {
+	padding: 20px 0;
+}
+
+div.right_col_learn {
+	padding: 20px 0;
+}
+
+div.right_col_learn span.learn_more_link {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+div.right_col_learn span.learn_more_link:hover {
+	text-decoration: none;
+}
+
+section.user_identity_verification div.disclaimer_content {
+	padding: 0 0 15px 0;
+}
+
+@media only screen and (max-width: 768px) {
+	div.order_form_left {
+		width: 100%;
+	}
+	div.order_form_left section {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-bottom: 40px;
+	}
+	div.order_form_right {
+		width: 100%;
+		float: none;
+		position: fixed;
+		top: 100%;
+		margin-top: -100px;
+		transition: all .25s;
+	}
+	div.order_form_right::before, div.order_form_right::after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	div.order_form_right::before {
+		width: 40px;
+		height: 40px;
+		border-radius: 100px;
+		top: -20px;
+	}
+	div.order_form_right::after {
+		width: 15px;
+		height: 15px;
+		top: -5px;
+		left: 50%;
+		margin-left: -8px;
+		border-top-width: 2px;
+		border-left-width: 2px;
+		border-bottom-width: 0;
+		border-right-width: 0;
+		border-style: solid;
+		transform: rotate(45deg);
+	}
+	div.mobile_active div.order_form_right::after {
+		transform: rotate(-135deg);
+	}
+	div.mobile_active div.order_form_right {
+		top: 0;
+		margin-top: 0;
+	}
+	div.stylized_radio_input label {
+		
+	}
+	div.order_form_right {
+		box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+		display: none;
+	}
+	div.info_hover {
+		position: initial;
+	}
+	div.info_hover div.info_hover_content {
+		position: fixed;
+		width: 90%;
+		left: 5%;
+		height: auto;
+		top: auto;
+		bottom: 70px;
+	}
+	div.info_hover div.info_hover_content::after {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.required_disclaimer {
+		padding: 0;
+		position: absolute;
+		top: 60px;
+		right: 0;
+		width: 250px;
+	}
+	div.order_form_right {}
+	div.order_form_right div.plan_head_text {
+		padding-top: 40px;
+	}
+	div.stylized_radio_input label {
+		padding: 8px 16px;
+	}
+	div.input_field_item.left_side_half {
+		margin-right: 40px;
+		clear: both;
+	}
+	div.order_form_left div.input_field_item {
+		margin-bottom: 20px;
+	}
+	div.input_field_item:last-child {
+		margin-bottom: 10px;
+	}
+	div.input_field_item.right_side_half, div.input_field_item.left_side_half {
+		width: calc(50% - 20px);
+		float: left;
+	}
+	section.online_account div.input_field_item.account_password_confirm, section.online_account div.input_field_item.account_password {
+		margin-bottom: 0;
+	}
+	div.order_form_left section.legal_verification {
+		padding: 0;
+	}
+	section.user_identity_verification div.id_verify_entry input[type=text] {
+		margin-right: 40px;
+	}
+	section.user_identity_verification div.id_verify_entry input[name=social_one] {
+		width: 68px;
+	}
+	section.user_identity_verification div.id_verify_entry input[name=social_two] {
+		width: 55px;
+	}
+	section.user_identity_verification div.id_verify_entry input[name=social_three] {
+		width: 80px;
+	}
+}
+
+/* CONFIRMATION PAGE
+------------------------------------------------------------*/
+
+div.confirmation_content_container {
+	padding-bottom: 20px;
+}
+
+/*
+	div.confirmation_account,
+	div.confirmation_summary {
+		float: left;
+		width: calc(50% - 20px);
+	}*/
+
+div.confirmation_summary {
+	margin: 0 0 20px 0;
+}
+
+table.confirmation_summary_contents {
+	text-align: left;
+	border-width: 1px;
+	border-style: solid;
+}
+
+table.confirmation_summary_contents td, table.confirmation_summary_contents th {
+	padding: 10px;
+}
+
+table.confirmation_summary_contents th {
+	padding: 10px;
+}
+
+table.confirmation_summary_contents td {}
+
+table.confirmation_summary_contents td p {
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+table.confirmation_summary_contents td p:last-child {
+	margin: 0;
+}
+
+table.confirmation_summary_contents td strong {
+	font-weight: 400;
+}
+
+table.confirmation_summary_contents tr:nth-child(odd) td {}
+
+div.confirmation_account {}
+
+div.confirmation_account form {
+	padding: 20px;
+}
+
+div.confirmation_account form h3 {
+	padding: 0;
+	margin: 0 0 40px 0;
+}
+
+div.confirmation_account form div {
+	display: block;
+}
+
+div.confirmation_account form div label {
+	display: block;
+}
+
+div.confirmation_account form div input {
+	display: block;
+	padding: 5px 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-collapse: collapse;
+}
+
+@media only screen and (min-width: 768px) {
+	div.confirmation_account, div.confirmation_summary {
+		float: left;
+		width: calc(50% - 20px);
+	}
+	div.confirmation_summary {
+		margin: 0 40px 0 0;
+	}
+}
+
+/* Custome css */
+
+app-oef {
+	width: 100%;
+}
+
+input.ng-invalid.ng-touched {
+	border: 2px solid red!important;
+}
+
+.errorMessage {
+	color: red;
+}
+
+.errorMessageColor {
+	color: white;
+}
+
+.StateInput {
+	height: 45px;
+}
+
+.cardtype {
+	height: 45px;
+}
+
+.NameAppears {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.AccountType {
+	height: 45px;
+}
+
+.ExpDate {
+	height: 45px;
+}
+
+.DlState {
+	height: 45px;
+	float: left;
+	margin-bottom: 10px !important;
+	margin-right: 40px !important;
+	font-size: 18px;
+    color: rgb(33, 37, 41);
+}
+.ALTid{
+	float: left;
+	margin-bottom: 10px !important;
+	margin-right: 40px!important;
+	font-size: 18px;
+    color: rgb(33, 37, 41);
+}
+
+#Drivers_number{
+	height: 45px;
+}
+
+.clear_both{
+  clear: both;
+}
+
+.modal_errorMessage{
+    text-align: left;
+    color: red;
+	}
+	
+.TDU_Name {
+	text-align: left;
+}
+
+.inline {
+  display: inline;
+}
+
+.right {
+	float: right;
+	margin-right: 3rem;
+}
+
+.text18 {
+	font-size: 18px;
+}
+
+button[disabled]{
+	background-color: lightgray !important;
+	cursor: not-allowed;
+}
+
+.YeBtn {
+	margin-right: 5%;
+}
+
+.ErrorMsgBtns  {
+	justify-content: center;
+}
+
+.BtnMargin {
+	margin-right: 14px;
+}
+
+.NOPadding{
+  padding: 0!important;
+}
+
+.esi_height{
+	height: 40px;
+}
+
+.maxwidth {
+	max-width: 100%;
+}
+
+.middle_align label {
+	display: block;
+  float: left;
+  padding-right: 0px;
+	margin: 0px;
+}
+
+.middle_align input {
+	vertical-align: middle;
+	position: none;
+}
+
+.middle_align label span {
+  vertical-align: middle;
+}
+
+.col-xs-12 {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.col-sm-12 {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.col-md-12 {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.col-lg-12 {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.header {
+	background-color: #efefef;
+}
+
+label {
+  font-weight: 400;
+}
+
+.fontBold{
+	font-weight: 400;	
+}
+
+.mat-spinner {
+	z-index: 100000;
+	position: absolute;
+	top: 50%;
+	margin-left: 50%;
+	margin-top: 3%;
+}
+
+.col-xs-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.header {
+	background-color: #fff !important;
+}
+
+label {
+  font-weight: 400;
+}
+
+.fontBold{
+	font-weight: 400;	
+}
+
+.fontColor {
+	color: white;
+}
+
+div.info_hover_white::before{
+	color: white!important;
+	border-color: white!important;
+}
+
+.user_paperless_billing {
+	margin-bottom: 5px !important;
+}
+
+.street_address label {
+	color: #666666 !important;
+}
+
+.update_address {
+	color: #000000 !important;
+}
+
+.modal_margin {
+	margin: 40px !important;
+}
+
+.move_font {
+	font-size: 1.5rem;
+  height: 27px;
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+
+.selected_order {
+display: none;
+}
+
+.center {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+button[type="submit"]:disabled {
+  cursor: not-allowed;
+}
+	
+@media only screen and (max-width: 768px) {
+	.selected_order{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+		text-align: center;
+		padding: 10px 10px 35px 10px;
+		box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+		box-sizing: border-box;
+		}
+		div.order_form_container{
+			padding: 0;
+		}
+}
+
+.whatthis {
+    margin-bottom: 14px;
+    text-decoration: underline;
+    color: #00456a;    
+	display: inline-block;
+	font-size: 12px;
+}
+
+.whatthisContainer{
+	text-align: left;
+}
+
+.legalCheckbox{
+	height: auto!important;
+}
+
+a:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.image_hover::before {
+    margin-top: 0!important;
+    float: right!important;
+    margin-left: 4px;
+}
+
+.border_box {
+	border: 1.3px solid red !important;
+}
+
+@media only screen and (max-width: 768px) {
+	.mat-option-text{
+	  white-space: normal;
+	}
+	.mat-autocomplete-panel{
+	  width: 80% !important;
+	}
+	.mat-option{
+	  line-height: 20px;
+	  height: 54px;
+	}
+	.textalignCenter {
+		text-align: center;
+	}
+	section.pricing_disclaimers {
+		padding: 40px 10px;
+	}
+    .logo{
+    background: url(../images/logo.png) left no-repeat; height: 82px; width: 250px; display: block;background-size: 100%;
+}
+
+  }

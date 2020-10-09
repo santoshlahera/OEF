@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CommonService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://10.10.180.38:8085/FrontierCommonServices/CommonService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://10.10.180.38:8085/FrontierCommonServices/CommonService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://10.10.180.38:8085/FrontierCommonServices/CommonService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FrontierCommonServices" />
+      <xsd:import schemaLocation="http://10.10.180.38:8085/FrontierCommonServices/CommonService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/FrontierSendNotification" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICommonService_SendQuickPayLink_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendQuickPayLink" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendQuickPayLink_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendQuickPayLinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetCreditScore_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreditScore" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetCreditScore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreditScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_RunCreditCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:RunCreditCheck" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_RunCreditCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RunCreditCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_RunCreditCheck_NEW_InputMessage">
+    <wsdl:part name="parameters" element="tns:RunCreditCheck_NEW" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_RunCreditCheck_NEW_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RunCreditCheck_NEWResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_CheckInternalRule_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckInternalRule" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_CheckInternalRule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckInternalRuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_CompareCreditResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:CompareCreditResults" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_CompareCreditResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CompareCreditResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_InsertLogCreditCompareDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLogCreditCompareDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_InsertLogCreditCompareDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLogCreditCompareDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetDepositAmountDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepositAmountDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetDepositAmountDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepositAmountDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendSMSMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendSMSMessage" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendSMSMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendSMSMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendQuickRenewLink_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendQuickRenewLink" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendQuickRenewLink_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendQuickRenewLinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_PaComplete_InputMessage">
+    <wsdl:part name="parameters" element="tns:PaComplete" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_PaComplete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PaCompleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendPaymentLocationLink_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendPaymentLocationLink" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendPaymentLocationLink_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendPaymentLocationLinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SaveCallNote_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCallNote" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SaveCallNote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCallNoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetShortURL_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShortURL" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetShortURL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShortURLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_AddActivity_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddActivity" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_AddActivity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_AddActivityNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddActivityNew" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_AddActivityNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddActivityNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_UpdateActivity_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateActivity" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_UpdateActivity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendReviewInvite_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendReviewInvite" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendReviewInvite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendReviewInviteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendInvoiceLink_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendInvoiceLink" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendInvoiceLink_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendInvoiceLinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendQuickLink_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendQuickLink" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendQuickLink_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendQuickLinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GenerateCouponPDF_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateCouponPDF" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GenerateCouponPDF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateCouponPDFResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetCampAccountStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCampAccountStatus" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetCampAccountStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCampAccountStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_ResendCoupon_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResendCoupon" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_ResendCoupon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResendCouponResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_PushPaymentNotificationsToQueue_InputMessage">
+    <wsdl:part name="parameters" element="tns:PushPaymentNotificationsToQueue" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_PushPaymentNotificationsToQueue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PushPaymentNotificationsToQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GeneratePDFDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:GeneratePDFDocument" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GeneratePDFDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GeneratePDFDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendDocument" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmail" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendQuickPicLink_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendQuickPicLink" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SendQuickPicLink_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendQuickPicLinkResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICommonService">
+    <wsdl:operation name="SendQuickPayLink">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SendQuickPayLink" message="tns:ICommonService_SendQuickPayLink_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SendQuickPayLinkResponse" message="tns:ICommonService_SendQuickPayLink_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditScore">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetCreditScore" message="tns:ICommonService_GetCreditScore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetCreditScoreResponse" message="tns:ICommonService_GetCreditScore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RunCreditCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/RunCreditCheck" message="tns:ICommonService_RunCreditCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/RunCreditCheckResponse" message="tns:ICommonService_RunCreditCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RunCreditCheck_NEW">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/RunCreditCheck_NEW" message="tns:ICommonService_RunCreditCheck_NEW_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/RunCreditCheck_NEWResponse" message="tns:ICommonService_RunCreditCheck_NEW_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckInternalRule">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/CheckInternalRule" message="tns:ICommonService_CheckInternalRule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/CheckInternalRuleResponse" message="tns:ICommonService_CheckInternalRule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CompareCreditResults">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/CompareCreditResults" message="tns:ICommonService_CompareCreditResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/CompareCreditResultsResponse" message="tns:ICommonService_CompareCreditResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLogCreditCompareDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/InsertLogCreditCompareDetails" message="tns:ICommonService_InsertLogCreditCompareDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/InsertLogCreditCompareDetailsResponse" message="tns:ICommonService_InsertLogCreditCompareDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepositAmountDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetDepositAmountDetails" message="tns:ICommonService_GetDepositAmountDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetDepositAmountDetailsResponse" message="tns:ICommonService_GetDepositAmountDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SendSMSMessage" message="tns:ICommonService_SendSMSMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SendSMSMessageResponse" message="tns:ICommonService_SendSMSMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendQuickRenewLink">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SendQuickRenewLink" message="tns:ICommonService_SendQuickRenewLink_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SendQuickRenewLinkResponse" message="tns:ICommonService_SendQuickRenewLink_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PaComplete">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/PaComplete" message="tns:ICommonService_PaComplete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/PaCompleteResponse" message="tns:ICommonService_PaComplete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendPaymentLocationLink">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SendPaymentLocationLink" message="tns:ICommonService_SendPaymentLocationLink_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SendPaymentLocationLinkResponse" message="tns:ICommonService_SendPaymentLocationLink_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCallNote">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SaveCallNote" message="tns:ICommonService_SaveCallNote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SaveCallNoteResponse" message="tns:ICommonService_SaveCallNote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShortURL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetShortURL" message="tns:ICommonService_GetShortURL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetShortURLResponse" message="tns:ICommonService_GetShortURL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddActivity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/AddActivity" message="tns:ICommonService_AddActivity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/AddActivityResponse" message="tns:ICommonService_AddActivity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddActivityNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/AddActivityNew" message="tns:ICommonService_AddActivityNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/AddActivityNewResponse" message="tns:ICommonService_AddActivityNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActivity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/UpdateActivity" message="tns:ICommonService_UpdateActivity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/UpdateActivityResponse" message="tns:ICommonService_UpdateActivity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendReviewInvite">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SendReviewInvite" message="tns:ICommonService_SendReviewInvite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SendReviewInviteResponse" message="tns:ICommonService_SendReviewInvite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendInvoiceLink">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SendInvoiceLink" message="tns:ICommonService_SendInvoiceLink_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SendInvoiceLinkResponse" message="tns:ICommonService_SendInvoiceLink_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendQuickLink">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SendQuickLink" message="tns:ICommonService_SendQuickLink_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SendQuickLinkResponse" message="tns:ICommonService_SendQuickLink_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCouponPDF">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GenerateCouponPDF" message="tns:ICommonService_GenerateCouponPDF_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GenerateCouponPDFResponse" message="tns:ICommonService_GenerateCouponPDF_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampAccountStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetCampAccountStatus" message="tns:ICommonService_GetCampAccountStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetCampAccountStatusResponse" message="tns:ICommonService_GetCampAccountStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResendCoupon">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/ResendCoupon" message="tns:ICommonService_ResendCoupon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/ResendCouponResponse" message="tns:ICommonService_ResendCoupon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PushPaymentNotificationsToQueue">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/PushPaymentNotificationsToQueue" message="tns:ICommonService_PushPaymentNotificationsToQueue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/PushPaymentNotificationsToQueueResponse" message="tns:ICommonService_PushPaymentNotificationsToQueue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GeneratePDFDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GeneratePDFDocument" message="tns:ICommonService_GeneratePDFDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GeneratePDFDocumentResponse" message="tns:ICommonService_GeneratePDFDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SendDocument" message="tns:ICommonService_SendDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SendDocumentResponse" message="tns:ICommonService_SendDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SendEmail" message="tns:ICommonService_SendEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SendEmailResponse" message="tns:ICommonService_SendEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendQuickPicLink">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SendQuickPicLink" message="tns:ICommonService_SendQuickPicLink_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SendQuickPicLinkResponse" message="tns:ICommonService_SendQuickPicLink_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICommonService" type="tns:ICommonService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendQuickPayLink">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/SendQuickPayLink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditScore">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/GetCreditScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RunCreditCheck">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/RunCreditCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RunCreditCheck_NEW">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/RunCreditCheck_NEW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckInternalRule">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/CheckInternalRule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompareCreditResults">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/CompareCreditResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLogCreditCompareDetails">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/InsertLogCreditCompareDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepositAmountDetails">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/GetDepositAmountDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSMessage">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/SendSMSMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendQuickRenewLink">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/SendQuickRenewLink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaComplete">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/PaComplete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendPaymentLocationLink">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/SendPaymentLocationLink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCallNote">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/SaveCallNote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShortURL">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/GetShortURL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddActivity">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/AddActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddActivityNew">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/AddActivityNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActivity">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/UpdateActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendReviewInvite">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/SendReviewInvite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendInvoiceLink">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/SendInvoiceLink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendQuickLink">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/SendQuickLink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCouponPDF">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/GenerateCouponPDF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampAccountStatus">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/GetCampAccountStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResendCoupon">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/ResendCoupon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PushPaymentNotificationsToQueue">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/PushPaymentNotificationsToQueue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeneratePDFDocument">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/GeneratePDFDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendDocument">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/SendDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/SendEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendQuickPicLink">
+      <soap:operation soapAction="http://tempuri.org/ICommonService/SendQuickPicLink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CommonService">
+    <wsdl:port name="BasicHttpBinding_ICommonService" binding="tns:BasicHttpBinding_ICommonService">
+      <soap:address location="http://10.10.180.38:8085/FrontierCommonServices/CommonService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

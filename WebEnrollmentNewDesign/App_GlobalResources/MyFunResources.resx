@@ -1,0 +1,637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddtoCompare" xml:space="preserve">
+    <value>Add to Compare</value>
+    <comment>Add to Compare</comment>
+  </data>
+  <data name="Apartment" xml:space="preserve">
+    <value>Apartment</value>
+    <comment>Apartment</comment>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>Business</value>
+    <comment>Business</comment>
+  </data>
+  <data name="Compare" xml:space="preserve">
+    <value>Compare</value>
+    <comment>Compare</comment>
+  </data>
+  <data name="CustomerDetails" xml:space="preserve">
+    <value>Customer Details</value>
+    <comment>Customer Details</comment>
+  </data>
+  <data name="DateofBirth" xml:space="preserve">
+    <value>Date of Birth</value>
+    <comment>Date of Birth</comment>
+  </data>
+  <data name="DwellingType" xml:space="preserve">
+    <value>Dwelling Type</value>
+    <comment>Dwelling Type</comment>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+    <comment>Email</comment>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+    <comment>English</comment>
+  </data>
+  <data name="ESIID" xml:space="preserve">
+    <value>ESIID</value>
+    <comment>ESIID</comment>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First Name</value>
+    <comment>First Name</comment>
+  </data>
+  <data name="Go" xml:space="preserve">
+    <value>Go</value>
+    <comment>Go</comment>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+    <comment>Home</comment>
+  </data>
+  <data name="House" xml:space="preserve">
+    <value>House</value>
+    <comment>House</comment>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+    <comment>Language</comment>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last Name</value>
+    <comment>Last Name</comment>
+  </data>
+  <data name="MiddleInitial" xml:space="preserve">
+    <value>Middle Initial</value>
+    <comment>Middle Initial</comment>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobile</value>
+    <comment>Mobile</comment>
+  </data>
+  <data name="MobileNo" xml:space="preserve">
+    <value>Mobile No</value>
+    <comment>Mobile No</comment>
+  </data>
+  <data name="MoveType" xml:space="preserve">
+    <value>Move Type</value>
+    <comment>Move Type</comment>
+  </data>
+  <data name="MoveIn" xml:space="preserve">
+    <value>MoveIn</value>
+    <comment>MoveIn</comment>
+  </data>
+  <data name="PhoneNo" xml:space="preserve">
+    <value>Phone No</value>
+    <comment>Phone No</comment>
+  </data>
+  <data name="PlansAvailableYourLocation" xml:space="preserve">
+    <value>Plans available for your Location</value>
+    <comment>Plans available for your Location</comment>
+  </data>
+  <data name="PostPaid" xml:space="preserve">
+    <value>PostPaid</value>
+    <comment>PostPaid</comment>
+  </data>
+  <data name="PrePaid" xml:space="preserve">
+    <value>PrePaid</value>
+    <comment>PrePaid</comment>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+    <comment>Preview</comment>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+    <comment>Product</comment>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Products</value>
+    <comment>Products</comment>
+  </data>
+  <data name="RateInCents" xml:space="preserve">
+    <value>Rate(in Cents)</value>
+    <comment>Rate(in Cents)</comment>
+  </data>
+  <data name="RefORPromoCode" xml:space="preserve">
+    <value>Ref/Promo Code</value>
+    <comment>Ref/Promo Code</comment>
+  </data>
+  <data name="SearchBy" xml:space="preserve">
+    <value>Search By</value>
+    <comment>Search By</comment>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+    <comment>Select</comment>
+  </data>
+  <data name="SelectaProduct" xml:space="preserve">
+    <value>Select a Product</value>
+    <comment>Select a Product</comment>
+  </data>
+  <data name="ServiceAddress" xml:space="preserve">
+    <value>Service Address</value>
+    <comment>Service Address</comment>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>Spanish</value>
+    <comment>Spanish</comment>
+  </data>
+  <data name="SSN" xml:space="preserve">
+    <value>SSN</value>
+    <comment>SSN</comment>
+  </data>
+  <data name="Switch" xml:space="preserve">
+    <value>Switch</value>
+    <comment>Switch</comment>
+  </data>
+  <data name="SwitchMoveInDate" xml:space="preserve">
+    <value>Switch/MoveIn Date</value>
+    <comment>Switch/MoveIn Date</comment>
+  </data>
+  <data name="Term" xml:space="preserve">
+    <value>Term</value>
+    <comment>Term</comment>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>Zip Code</value>
+    <comment>Zip Code</comment>
+  </data>
+  <data name="DateOfBirthInvalid" xml:space="preserve">
+    <value>Date Of Birth invalid</value>
+  </data>
+  <data name="DateOfBirthRequired" xml:space="preserve">
+    <value>Date Of Birth required</value>
+  </data>
+  <data name="EmailInvalid" xml:space="preserve">
+    <value>Email invalid</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>Email required</value>
+  </data>
+  <data name="ESIIDNotSelected" xml:space="preserve">
+    <value>ESIID not selected</value>
+  </data>
+  <data name="ESIIDRequired" xml:space="preserve">
+    <value>ESIID required</value>
+  </data>
+  <data name="ESIIDORServiceAddress" xml:space="preserve">
+    <value>ESIID/Service Address</value>
+  </data>
+  <data name="FirstNameRequired" xml:space="preserve">
+    <value>First Name required</value>
+  </data>
+  <data name="InvalidSSN" xml:space="preserve">
+    <value>Invalid Social Security Number</value>
+  </data>
+  <data name="LastNameRequired" xml:space="preserve">
+    <value>Last Name required</value>
+  </data>
+  <data name="MiddleNameRequired" xml:space="preserve">
+    <value>Middle Name required</value>
+  </data>
+  <data name="MinThreeCharsRequired" xml:space="preserve">
+    <value>Minimum 3 chars required</value>
+  </data>
+  <data name="MinAge" xml:space="preserve">
+    <value>Minimum Age is 18 years</value>
+  </data>
+  <data name="MobileNoInvalid" xml:space="preserve">
+    <value>MobileNo invalid</value>
+  </data>
+  <data name="MobileNoRequired" xml:space="preserve">
+    <value>MobileNo required</value>
+  </data>
+  <data name="NoCancallationfee" xml:space="preserve">
+    <value>No Cancallation fee</value>
+  </data>
+  <data name="NoDataFound" xml:space="preserve">
+    <value>No Data Found</value>
+  </data>
+  <data name="PhoneNoInvalid" xml:space="preserve">
+    <value>PhoneNo invalid</value>
+  </data>
+  <data name="ProductNotSelected" xml:space="preserve">
+    <value>Product not selected</value>
+  </data>
+  <data name="ZipCodeRequired" xml:space="preserve">
+    <value>ZipCode required</value>
+  </data>
+  <data name="EnterServiceAddressHere" xml:space="preserve">
+    <value>Enter your service address here</value>
+  </data>
+  <data name="AccountHolder" xml:space="preserve">
+    <value>Account Holder</value>
+  </data>
+  <data name="AccountNumber" xml:space="preserve">
+    <value>Account Number</value>
+  </data>
+  <data name="AptNo" xml:space="preserve">
+    <value>AptNo</value>
+  </data>
+  <data name="AptNoRequired" xml:space="preserve">
+    <value>AptNo required</value>
+  </data>
+  <data name="BillingAddress" xml:space="preserve">
+    <value>Billing Address</value>
+  </data>
+  <data name="CityName" xml:space="preserve">
+    <value>CityName</value>
+  </data>
+  <data name="CityNameRequired" xml:space="preserve">
+    <value>CityName required</value>
+  </data>
+  <data name="ContactDetails" xml:space="preserve">
+    <value>Contact Details</value>
+  </data>
+  <data name="ContactMethod" xml:space="preserve">
+    <value>Contact Method</value>
+  </data>
+  <data name="ContactType" xml:space="preserve">
+    <value>Contact Type</value>
+  </data>
+  <data name="ContactTypeDetails" xml:space="preserve">
+    <value>Contact Type Details</value>
+  </data>
+  <data name="Contract_Term" xml:space="preserve">
+    <value>Contract_Term</value>
+  </data>
+  <data name="CreditCheck" xml:space="preserve">
+    <value>Credit Check</value>
+  </data>
+  <data name="DepositAmount" xml:space="preserve">
+    <value>We are not able to determine your credit history. To avoid paying a deposit of $ {0} , please provide a previous address that we can use to help identify you</value>
+  </data>
+  <data name="EFLFileName" xml:space="preserve">
+    <value>EFLFileName</value>
+  </data>
+  <data name="Enroll" xml:space="preserve">
+    <value>Enroll</value>
+  </data>
+  <data name="EnrollmentSuccessfull" xml:space="preserve">
+    <value>Enrollment Successfull</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="Online_Only_YN" xml:space="preserve">
+    <value>Online_Only_YN</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordEmpty" xml:space="preserve">
+    <value>Password Empty</value>
+  </data>
+  <data name="PasswordsMismatch" xml:space="preserve">
+    <value>Passwords mismatch</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="PowerOfAttorney" xml:space="preserve">
+    <value>Power Of Attorney</value>
+  </data>
+  <data name="Prepay_YN" xml:space="preserve">
+    <value>Prepay_YN</value>
+  </data>
+  <data name="PricePlanID" xml:space="preserve">
+    <value>PricePlanID</value>
+  </data>
+  <data name="ProductID" xml:space="preserve">
+    <value>ProductID</value>
+  </data>
+  <data name="ProductSelected" xml:space="preserve">
+    <value>ProductSelected</value>
+  </data>
+  <data name="Product_Desc" xml:space="preserve">
+    <value>Product_Desc</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="RegistertoMyFUNAccount" xml:space="preserve">
+    <value>Register to MyFUNAccount</value>
+  </data>
+  <data name="RetypePassword" xml:space="preserve">
+    <value>Retype Password</value>
+  </data>
+  <data name="RetypePasswordEmpty" xml:space="preserve">
+    <value>Retype Password Empty</value>
+  </data>
+  <data name="Spouse" xml:space="preserve">
+    <value>Spouse</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="StateNameRequired" xml:space="preserve">
+    <value>StateName required</value>
+  </data>
+  <data name="StreetName" xml:space="preserve">
+    <value>StreetName</value>
+  </data>
+  <data name="StreetNameRequired" xml:space="preserve">
+    <value>StreetName required</value>
+  </data>
+  <data name="StreetNo" xml:space="preserve">
+    <value>StreetNo</value>
+  </data>
+  <data name="StreetNoRequired" xml:space="preserve">
+    <value>StreetNo required</value>
+  </data>
+  <data name="TDSP_Code" xml:space="preserve">
+    <value>TDSP_Code</value>
+  </data>
+  <data name="Unit_Price" xml:space="preserve">
+    <value>Unit_Price</value>
+  </data>
+  <data name="ServiceAddAsBilling" xml:space="preserve">
+    <value>Use Service Address as Billing Address</value>
+  </data>
+  <data name="YourAccountNumberIs" xml:space="preserve">
+    <value>Your Account Number is</value>
+  </data>
+  <data name="FUNWebEnrollment" xml:space="preserve">
+    <value>FUN Web Enrollment</value>
+  </data>
+  <data name="productHeader" xml:space="preserve">
+    <value>Select a Product</value>
+  </data>
+  <data name="Right_of_Recission" xml:space="preserve">
+    <value>If you are switching service from another REP to Frontier Utilities, you may cancel this agreement without penalty or fee within the first 3 federal business days after you receive this Agreement. You may cancel the Agreement by:
+*calling 1-866-926-8192
+*writing to 5444 Westheimer Rd., Suite 1100, Houston, TX 77056
+*sending a fax to 1-866-926-8193
+*sending an email to care@frontierutilities.com
+no later than midnight of the 3rd federal business day. Please include:
+*your name and service address,
+*your Frontier Utilities account number or Electric Service Identifier (“ESI”),
+*the personal identification number (“PIN”) provided to you upon enrolling, and
+*a statement that you are cancelling your Agreement under this 3-day rescission right.
+The Right of Rescission is not applicable to an applicant requesting a move-in.
+
+If you have selected an online product, we will charge your credit card automatically on the date that your payment is due. All credit card details are held securely by Authorize.net. If there is a deposit for your enrollment, this will automatically be deducted from your credit card at the end of your enrollment process.</value>
+  </data>
+  <data name="ServiceAddressReq" xml:space="preserve">
+    <value>Please enter your Service Address</value>
+  </data>
+  <data name="ContractExpYes" xml:space="preserve">
+    <value>Please be aware that this enrollment
+will not overrule any Early Termination
+Fees you may incur from breaking
+your contract.</value>
+  </data>
+  <data name="SSNRequired" xml:space="preserve">
+    <value>SSN required</value>
+  </data>
+  <data name="ValidCCNumber" xml:space="preserve">
+    <value>Enter valid Credit Card Number</value>
+  </data>
+  <data name="ValidKWH" xml:space="preserve">
+    <value>Enter valid kWh</value>
+  </data>
+  <data name="Right_of_Recission2" xml:space="preserve">
+    <value>The Right of Recission is not applicable to an applicant requesting a move-in.</value>
+  </data>
+  <data name="Right_of_Recission3" xml:space="preserve">
+    <value>I understand that enrollment for service can be made only by an applicant or the applicant's authorized agent, and, in accordance with that requirement, I certify that I am at least 18 years of age and legally authorized to select or change Retail Electric Providers (REPs) for the address listed above. I authorize TXU Energy to become my new REP in place of my current REP, if applicable. I authorize TXU Energy to act as my agent to perform the necessary tasks to establish my electricity service account and, if required, switch me from my current REP and instruct my current REP to perform the necessary tasks in order to make this change. I authorize TXU Energy to request and obtain my utility payment data in order to determine whether an initial deposit will be required (applicable only to persons who are not existing TXU Energy customers; initial deposits for existing customers will be based on previous payment history with TXU Energy). The total of any required deposits will not exceed an amount equivalent to the greater of (i) 1/5 of estimated annual billing or (ii) the sum of estimated billings for the next two months. If an initial deposit is required, I understand that I must either pay the deposit, or I may obtain a deposit waiver if I agree to supply TXU Energy with a satisfactory Letter of Payment History from my current electric provider. I understand that I will receive a copy of the terms of service via email, or I can contact TXU Energy to request the information be sent in the mail. I understand that if my enrollment involves a switch request, I have the right to review and rescind the terms of service, without penalty, within three federal business days of receipt, as explained in the terms of service. I have read and understand this Authorization and the terms of service that describe the service I will be receiving.</value>
+  </data>
+  <data name="CVCCodeReq" xml:space="preserve">
+    <value>CVC Code Required</value>
+  </data>
+  <data name="ExpMonthReq" xml:space="preserve">
+    <value>Expiry Month Required</value>
+  </data>
+  <data name="ExpYearReq" xml:space="preserve">
+    <value>Expiry Year Required</value>
+  </data>
+  <data name="NameRequired" xml:space="preserve">
+    <value>Name Required</value>
+  </data>
+  <data name="depositAmt_note" xml:space="preserve">
+    <value>We are not able to determine your credit history. Please provide a previous address that we can use to help identify you.</value>
+  </data>
+  <data name="enterSSN" xml:space="preserve">
+    <value>Please enter your SSN</value>
+  </data>
+  <data name="Step1Header" xml:space="preserve">
+    <value>Step1: Select a Product</value>
+  </data>
+  <data name="TDSP_NullPrompt" xml:space="preserve">
+    <value>Sorry, Not able to Identifiy your TDSP &lt;br&gt; Please Call Frontier at 1-866-926-8192</value>
+  </data>
+  <data name="ValidDollars" xml:space="preserve">
+    <value>Please enter valid Amount</value>
+  </data>
+  <data name="ValidAmount" xml:space="preserve">
+    <value>Enter valid Amount</value>
+  </data>
+  <data name="creditCheckError_popup_ifNomsg" xml:space="preserve">
+    <value>If we should have found you via the address provided, please give us a call at 877.437.7440 to see if you qualify for a smaller deposit. </value>
+  </data>
+  <data name="creditCheckError_popup_ifYesmsg" xml:space="preserve">
+    <value>Please enter your old address and social security number again to try to find your  credit history. </value>
+  </data>
+  <data name="creditCheckError_popup_message" xml:space="preserve">
+    <value>We are unable to determine your credit history. Do you have another address that could help us find your credit score?</value>
+  </data>
+  <data name="CurrentElecticityContract_popupCaption" xml:space="preserve">
+    <value>Current Electicity Contract</value>
+  </data>
+  <data name="CurrentElecticityContract_popupMsg" xml:space="preserve">
+    <value>Please be aware that if you are still under contract with another electric company as of the selected date above, this enrollment will not overrule  any Early Termination Fees you may incur from breaking your contract. </value>
+  </data>
+  <data name="Mes_AmsNonAms" xml:space="preserve">
+    <value>This meter is Non AMS and is not eligible for Prepaid service. Please check your entry, &lt;br&gt;contact Frontier Utilities for support, or you may continue with a Postpaid selection.</value>
+  </data>
+  <data name="Prepay_House" xml:space="preserve">
+    <value>Prepaid services is not eligible for House. Please check your entry, contact Frontier Utilities for support, or you may continue with a Postpaid selection.</value>
+  </data>
+  <!--new-->
+  <data name="Credit_Check_Fraud" xml:space="preserve">
+    <value>Credit has been set as Fraud Alert.&lt;br&gt;
+If click Continue then the enrollment will be on hold until verification is confirmed with the customer.&lt;br&gt;
+Click on Stop button to go to main page for new enrollment.</value>
+  </data>
+  <data name="CreditCheckError_InternalRule" xml:space="preserve">
+    <value>Credit check failed in internal rule: {0}&lt;/br&gt;. Matched customer number(s):{1}</value>
+  </data>
+  <data name="BadDebt_Submit_Mes" xml:space="preserve">
+    <value>Enrollment is pending for further review.</value>
+  </data>
+  <data name="Enroll_rejected" xml:space="preserve">
+    <value>Enrollment rejected successfully</value>
+  </data>
+  <data name="AROUTBALANCE" xml:space="preserve">
+    <value>The Selected address is AROUTBALANCE. Do you wish to continue ?</value>
+  </data>
+  <data name="BADDEBT" xml:space="preserve">
+    <value>The Selected address is BADDEBT. Do you wish to continue ?</value>
+  </data>
+  <data name="BADDEBTOFFI" xml:space="preserve">
+    <value>The Selected address is BADDEBTOFFI. Do you wish to continue ?</value>
+  </data>
+  <data name="DISHON" xml:space="preserve">
+    <value>The Selected address is DISHON. Do you wish to continue ?</value>
+  </data>
+  <data name="DISHON_CHQ" xml:space="preserve">
+    <value>The Selected address is DISHON_CHQ. Do you wish to continue ?</value>
+  </data>
+  <data name="DISHON_DD" xml:space="preserve">
+    <value>The Selected address is DISHON_DD. Do you wish to continue ?</value>
+  </data>
+  <data name="DISHON_PN" xml:space="preserve">
+    <value>The Selected address is DISHON_PN. Do you wish to continue ?</value>
+  </data>
+  <data name="FEWO" xml:space="preserve">
+    <value>The Selected address is FEWO. Do you wish to continue ?</value>
+  </data>
+  <data name="PENDSWOUT" xml:space="preserve">
+    <value>The Selected address is PENDSWOUT.Do you wish to continue</value>
+  </data>
+  <data name="PENDSWOUT_and_AROUTBALANCE" xml:space="preserve">
+    <value>The Selected address is PENDSWOUT and AROUTBALANCE. Do you wish to continue ?</value>
+  </data>
+  <data name="SWITCH_HOLD" xml:space="preserve">
+    <value>The Selected address is SWITCH_HOLD. Do you wish to continue ?</value>
+  </data>
+  <data name="ReasonDesc" xml:space="preserve">
+    <value>The selected address has a  {0}. Do you wish to continue?</value>
+  </data>
+  <!--<data name="PendnfEnroll_Mes" xml:space="preserve">
+    <value>Enrollment is pending for further review. Here is your tracking number {0}.</value>
+  </data>-->
+  <data name="PendnfEnroll_Mes" xml:space="preserve">
+    <value>Here is your tracking number {0}.</value>
+  </data>
+  <data name="ExternalHold_mes" xml:space="preserve">
+    <value>The selected address requires additional review. The enrollment will be placed on hold for review. Do you wish to continue?</value>
+  </data>
+  <data name="PrepayFail" xml:space="preserve">
+    <value>The information entered matches our records. The enrollment will be placed on hold for review. Do you wish to continue?</value>
+  </data>
+  <data name="CreditCheckFraudIntbfrSMS" xml:space="preserve">
+    <value>Credit has been set as Fraud Alert.</value>
+  </data>
+</root>

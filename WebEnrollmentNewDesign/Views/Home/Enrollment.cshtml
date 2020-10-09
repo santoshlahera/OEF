@@ -1,0 +1,1806 @@
+﻿@*@model IEnumerable<WebEnrollmentNewDesign.Models.PaymentLocations> 
+@{  
+    WebGrid grid = new WebGrid(Model, rowsPerPage: 5);  
+}*@
+@using WebEnrollmentNewDesign.Models
+
+<!DOCTYPE html>
+<html lang="en">
+<head name="enrollHead">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+    
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css?v=2">
+    <link href="~/IndexCSS/common.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+@*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+@*   <script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.11/dist/jquery-input-mask-phone-number.js"></script>*@
+
+      <link rel="icon" type="image/x-icon" id="favicon_Font_Brand">
+      <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="Stylesheet"
+        type="text/css" />
+   
+    @*<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>*@
+    @*<script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>*@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+
+
+      @System.Web.Optimization.Styles.Render("~/css/Enrollmentcss")
+      @System.Web.Optimization.Scripts.Render("~/scripts/Enrollmentjs")
+    
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', '@System.Web.Configuration.WebConfigurationManager.AppSettings["GoogleTrackingCode"]');
+    </script>
+    <!-- End Google Tag Manager -->
+
+      @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>*@
+
+       
+</head>
+<body class="Brand">
+   @* <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>*@
+
+    
+    <input type="hidden" id="hnProdUrl" value='@System.Web.Configuration.WebConfigurationManager.AppSettings["ProdURL"]'/>
+    <input type="hidden" id="BrandCode" value='@System.Web.Configuration.WebConfigurationManager.AppSettings["BrandCode"]' />
+   <input type="hidden" id="hdnlogolink" value='@System.Web.Configuration.WebConfigurationManager.AppSettings["LogoUrl"]' />
+    <div class="Brand_enroll">
+		<div class="row p_fixed">
+            <div class="container">
+                <div class="row">
+                    <div class="logo">
+                        
+                    </div>
+                    <div class="call">
+                        <h3 class="mb-0 mt_0 mt-4" style="margin-top:5px !important;">Questions?</h3>
+                        <h3 class="mt-0" id="ContactNo" x-ms-format-detection="none">
+                            @*1-877-437-7442*@
+                        </h3>
+                    </div>
+                </div>
+            </div>	
+		</div>
+       <div id="loading_message" style="display:none; z-index:10000">
+          @* <div id="loadingmessage" style="display:none; z-index:10000">*@
+ 
+</div>
+		<div class="container">
+              <hr class="mt-2 mb-4" />
+            
+            <div id="CompleteInfo">
+			<div class="row mt_data">
+			<div  class="col-lg-9 col-12 user_information mt_105">
+                <div class="backbutton" onclick="history.back()" style="cursor: pointer;"><i class="fas fa-chevron-left"></i>Back to Shop For Plans</div>
+					<h3 >Customer Information</h3>
+                <div class="row">
+					<div class="astrik form-group col-lg-6 col-12 mt-4  mb_20">
+						@*<input type="text" id="txtName" maxlength="50" onkeyup="ValidationText()" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" onblur="CustomerInformation()" class="form-control ValidateControl" autocomplete="off" required>*@
+		                <input type="text" id="txtName" maxlength="50" onkeypress="return blockSpecialChar(event)" @*onkeyup="ValidationFirstname()"*@   @*onblur="CustomerInformation()"*@ class="form-control ValidateControl" autocomplete="off"
+                             
+                            required>
+
+						<label class="form-control-placeholder" for="name">First Name</label>
+                                                <span style="color: red;display:none;position: absolute;" class="txtNameEror">Please enter valid Name</span>
+
+                        </div>
+				@*	
+                <div class="form-group col-lg-5 col-12 offset-lg-1 mt-4 pl-2 pr-2 mb_20">
+						<input type="text" id="txtMName" class="form-control" required>
+						<label class="form-control-placeholder" for="name">Middle Name</label>
+					</div>*@
+					<div class="astrik form-group col-lg-6 col-12 mt-4 mb_20">
+                        <input type="text" id="txtLName" maxlength="50" onkeypress="return blockSpecialChar(event)" @*onkeyup="Validationlastname()"*@  onblur="CustomerInformation()" class="form-control ValidateControl"  autocomplete="off" required>
+					    @*<input type="text" id="txtLName" maxlength="50" onkeyup="Validationlastname()"  class="form-control ValidateControl" autocomplete="off" required>*@
+
+                        @*<input type="text" id="txtLName" maxlength="50" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" class="form-control ValidateControl" onblur="CustomerInformation()" autocomplete="off" required>*@
+						<label class="form-control-placeholder" for="name">Last Name</label>
+					     <span style="color: red;display:none;position: absolute;" class="txtLNameEror">Please enter valid Name</span>
+
+					</div>
+                <br>
+					<div class="astrik form-group col-lg-6 col-12  mt-5 mb_20">
+						<input type="text" id="txtCell1" onblur="validatePhoneNumber()" class="form-control ValidateControl"   @*onkeyup="return numberPressed(event)";*@ size="10" maxlength="10" autocomplete="off"  required>
+						<label class="form-control-placeholder" for="name">Phone Number</label>
+                        <span style="color: red;display:none;position: absolute;" class="mobilnumberEror">Please Enter 10 digit Mobile number</span>
+					</div>
+				@*	<div class="form-group col-lg-5 col-12  offset-lg-1 mt-4 pl-2 pr-2 mb_20">
+						<input type="text" id="tdalternate" class="form-control" onkeypress="return isNumber(event)" size="10" maxlength="10" required>
+						<label class="form-control-placeholder" for="name">Alternate Phone</label>
+					</div>*@
+              
+                <div class="astrik form-group col-lg-6 col-12 mt_4 mb_20" style="margin-top:0px !important;">
+							 <label class="" for="name" style="color: #5c5c5c;">Date of Birth</label>
+                             <input type="text" id="DateofBirth" maxlength="10" onblur="DateFormatValidation()" class="form-control unstyled ValidateControl"  placeholder="mm-dd-yyyy"autocomplete="off" required>
+                   @* <input type="date" id="DateofBirth" class="form-control unstyled ValidateControl" max="2001-12-31"  min="1950-01-01"  required>*@
+						<span style="color: red;display:none;position: absolute;" class="DateofBirthEror">Invalid date format (mm-dd-yyyy)</span>
+						</div>
+                 <br />
+                <div class="form-inline col-lg-12 col-12 mt-4 mb_20" id="Carrier" style="display:none">
+							<div class="mt_20">
+                                <span style="display: block;font-size: 15px;font-weight: bold;" class="pb-2" >Select your Carrier</span></div>&nbsp;&nbsp;
+							 <select id="CarrierType" class="form-control ValidateControl" ></select>
+						</div>
+                <br />
+					<div class="astrik form-group col-lg-12 col-12 mt-5 mb_20">
+						<input type="text" id="txtEmail" onblur="checkEmail()" class="form-control ValidateControl" maxlength="75" autocomplete="off"   required><label class="form-control-placeholder" for="name">Email ID</label>
+					<span style="color: red;position: absolute;left: 16px; display:none" class="txtEmailEror">Please enter a valid email.</span>
+
+					</div>
+                
+					@*<div class="astrik form-group col-lg-5 offset-lg-1 col-12 mt-4 pl-2 pr-2 mb_20">
+						<input type="email" id="txtEmail2" class="form-control ValidateControl" required>
+						<label class="form-control-placeholder" for="name">Re-enter Email</label>
+					</div>*@
+					@*<div class="form-group col-lg-5 col-12 mt-4 pl-2 pr-2 mb_20">
+						<input type="text" id="txtPromoCode" class="form-control" required>
+						<label class="form-control-placeholder" for="name">Promo Code</label>
+					</div>*@
+					<div style="display:none">
+                        <select id="ddlContactOptions">
+                             <option>Cell Phone</option>
+                             <option>Home Phone</option>
+                             <option>E-Mail</option>
+                        </select>
+                        <label class="form-control-placeholer" for="dd">What means of communication do you prefer?</label>
+					</div>
+					<div  class="col-lg-12 col-12 ">
+						<div  class="middle_align">
+							<label  for="email_contact">
+                                <div  class="input_field_item radio_input stylized_radio_input user_language_selection required">
+							<span style="display: block;font-size: 15px;font-weight: bold;" class="pb-2" > @* I want to receive contract-related notices, my contract expiration notice, and invoices via email.*@
+                                I agree to receive contract-related notices by email, including my contract expiration notice.
+							</span>
+
+							<input   id="Yes" name="Communication" type="radio" value="Yes" class="ng-untouched ng-pristine ng-valid" onclick="show_hideCommunication_img()">
+							<label  class="dual_select_radio left_select_radio" for="Yes"><img src="~/images/checkbox.png" id="imgYes" width="20" style="display:none" /> Yes</label>
+							<input checked="" id="No" name="Communication" type="radio" value="No" class="ng-untouched ng-pristine ng-valid" onclick="show_hideCommunication_img()">
+							<label  class="dual_select_radio right_select_radio" for="No"><img src="~/images/checkbox.png" id="imgNo" style="display:inline-block" width="20"/> No</label>
+						</div>
+							@*	<input   id="rbPaperlessBilling_Yes" name="email_contact" type="checkbox" ng-reflect-name="email_contact" class="ng-untouched ng-pristine ng-valid">*@
+								@*<span >
+                                    I want to receive contract-related notices by email, including my contract expiration
+									notice.</span>*@
+                            			
+
+							</label>
+						</div>
+					</div>
+					  <div  class="col-lg-12 col-12 mb-2" id="divInvoice">
+                              	<input   id="rbPaperlessBilling_Yes" name="email_contact" type="checkbox" ng-reflect-name="email_csontact" class="ng-untouched ng-pristine ng-valid">
+								<span >
+                                     @*Do you want to receive invoice via email?*@
+                                    Go Paperless! - I agree to receive my bills electronically.
+								</span>
+
+				</div>
+
+					<div  class="col-lg-12 col-12 ">
+						<div  class="input_field_item radio_input stylized_radio_input user_language_selection required">
+							<span style="display: block;font-size: 15px;font-weight: bold;" class="pb-2" >Preferred Language</span>
+
+							<input  checked="" id="english" name="user_language" type="radio" value="English" class="ng-untouched ng-pristine ng-valid" onclick="show_hideLanguage_img()">
+							<label  class="dual_select_radio left_select_radio" for="english"><img src="~/images/checkbox.png" id="imgEnglish" width="20" /> English</label>
+							<input  id="spanish" name="user_language" type="radio" value="Spanish" class="ng-untouched ng-pristine ng-valid" onclick="show_hideLanguage_img()">
+							<label  class="dual_select_radio right_select_radio" for="spanish"><img src="~/images/checkbox.png" id="imgSpanish" width="20"/> Spanish</label>
+						</div>
+					</div>
+					
+					<div  class="col-lg-12 col-12 "><span  class="orange">*</span> required fields</div>
+                    </div>
+			</div>
+                <div class="col-lg-3 col-12 mbl_style_sidebar">
+                   
+                    <div id="sideBar" style="margin-left:0px !important;">
+                   <div id="divPlanDetail">
+                         @Html.Raw(@TempData.Peek("planInfo"))
+                          
+                        </div>
+                </div>
+                </div>
+			</div>
+			
+		 
+				<div  class="col-lg-9 col-12 user_information">
+						<h3 >Your Service Information</h3>
+                    <div  class="col-lg-12 col-12 mb_20">
+						<div>
+							<label  for="email_contact" id="serviceAddress" style="font-size:medium"><b>
+                                
+							@Html.Raw(@TempData.Peek("Address"))		
+                              		</b>
+							</label>
+                         @*<span class="location_update_action font16 zip " data-toggle='modal' data-target='#myAddressModal' data-backdrop='static' data-keyboard='false'><u>Edit Service Address</u></span>*@                              
+                            <a href="#" id="Font_Brand" class="location_update_action font16 zip" data-toggle='modal' data-target='#myAddressModal' onclick="setforedit()" data-backdrop='static' data-keyboard='false'  style="color:#00456a"><u>Edit Service Address</u></a>
+						</div>
+                        <div class="mt-2">
+                            <label  for="email_contact" id="ESIDtitle" style="font-size:medium">
+                            <b>ESIID:</b>
+                                </label>
+							<label  for="email_contact" id="ESID">
+                                
+							@*@Html.Raw(@TempData["ESID"] )	*@
+                                @Html.Raw(@TempData.Peek("ESID"))
+							</label>
+                            
+						</div>
+					</div>
+                    			<div  class="col-lg-12 col-12 mb_20">
+						 <div  class="input_field_item radio_input stylized_radio_input user_language_selection required">
+							<span style="display: block;font-size: 15px;font-weight: bold;" class="pb-2" >Billing Address same as Service Address</span>
+
+							    <input  checked="" id="rbBillingSameYes" name="BillingAddress" type="radio" value="Yes" class="ng-untouched ng-pristine ng-valid" onclick="show_billingAddr_panel()">
+							<label  class="dual_select_radio left_select_radio" for="rbBillingSameYes"><img src="~/images/checkbox.png" id="imgBYes" width="20" /> Yes</label>
+							<input  id="rbBillingSameNo" name="BillingAddress" type="radio" value="No" class="ng-untouched ng-pristine ng-valid" onclick="show_billingAddr_panel()">
+							<label  class="dual_select_radio right_select_radio" for="rbBillingSameNo"><img src="~/images/checkbox.png" id="imgBNo" width="20"/> No</label>
+							
+						</div>
+							@*<label  for="email_contact">
+								<input  id="rbBillingSame"  type="checkbox"  onclick="show_billingAddr_panel()" checked>
+
+								<span >Is Billing Address same as Service Address?</span>
+                            </label>*@
+					
+					</div>
+                   
+                @*Service Address Open*@
+					<div style="display:none; border-radius:5px;" id="PSBillingSameAddress" class=" bg-blue  pb-2 mt_po col-lg-12 col-12 mb_20 Home_p">
+                              <div  class="col-lg-10 col-12 mt-2 ml-2 pt-2">
+						        <div  class="middle_align">
+							        <label  for="email_contact">
+                                        <span class="orange" >Is PO Box?	</span>
+								        <input  id="chkPOBox"  type="checkbox"  onclick="show_POBoxDiv()">
+
+							        </label>
+						        </div>
+					        </div>
+                           <div class="" style="display:none;" id="POBoxDiv">
+                             <div class="form-group col-lg-4 col-12   mt-5 mt_50" style="margin-top:22px;">
+								<input type="text" id="txtPOBoxNo" maxlength="50" onkeypress="allowNumericSpace(event)" class="form-control ValidateControl" required>
+								<label class="form-control-placeholder" for="name">PO Box #</label>
+		                        <span style="color: red;position: absolute; display:none;" class="txtPOBoxNoEror">Please enter the POBoxNo</span>
+							</div>
+                              </div>
+                        <div id="StrNoDiv">
+							<div class="form-group col-lg-4 col-12 mt-5 mt_50">
+								<input type="text" id="txtStreetNo_Billing" maxlength="10" class="form-control ValidateControl" onkeypress="return isNumber(event)" autocomplete="notrequired" required>
+								<label class="form-control-placeholder" for="name">Street No</label>
+							</div>
+							<div class="form-group col-lg-4 col-12 mt-5">
+								<input type="text" id="txtStreetName_Billing" @*onkeyup="ValidationStreetName()"*@ maxlength="100"  class="form-control ValidateControl" autocomplete="notrequired" required>
+								<label class="form-control-placeholder" for="name">Street Name</label>
+								<span style="color: red;display:none;position: absolute;" class="txtStreetEror">Please enter the Street No</span>
+							</div>
+							<div class="form-group col-lg-4 col-12 mt-5">
+								<input type="text" id="txtAptNo_Billing" maxlength="50" onkeypress="allowNumericSpace(event)" class="form-control ValidateControl" autocomplete="notrequired" required>
+								<label class="form-control-placeholder" for="name">Apt #</label>
+							</div>
+                          </div>
+							<div class="form-group col-lg-4 col-12 mt-5">
+								<input type="text" id="txtCity_Billing" 
+                                    @*onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" *@
+                                   onkeyup ="ValidationCity()" onkeypress="return blockSpecialChar(event)" maxlength="50" class="form-control ValidateControl" autocomplete="notrequired" required>
+								<label class="form-control-placeholder" for="name" >City</label>
+								<span style="color: red;display:none;position: absolute;" class="txtCityBillingEror">Please enter the City Name</span>
+
+                            </div>
+                        <div class="form-group col-lg-4 col-12" style="margin-top:8px !important;">
+								<label for="sel1 " class="clr_wht">State:</label>
+											  <select class="form-control" id="ddlState">
+												                            <option Value="AL">Alabama</option>
+                                                                            <option Value="AK">Alaska</option>
+                                                                            <option Value="AZ">Arizona</option>
+                                                                            <option Value="AR">Arkansas</option>
+                                                                            <option Value="CA">California</option>
+                                                                            <option Value="CO">Colorado</option>
+                                                                            <option Value="CT">Connecticut</option>
+                                                                            <option Value="DC">District of Columbia</option>
+                                                                            <option Value="DE">Delaware</option>
+                                                                            <option Value="FL">Florida</option>
+                                                                            <option Value="GA">Georgia</option>
+                                                                            <option Value="HI">Hawaii</option>
+                                                                            <option Value="ID">Idaho</option>
+                                                                            <option Value="IL">Illinois</option>
+                                                                            <option Value="IN">Indiana</option>
+                                                                            <option Value="IA">Iowa</option>
+                                                                            <option Value="KS">Kansas</option>
+                                                                            <option Value="KY">Kentucky</option>
+                                                                            <option Value="LA">Louisiana</option>
+                                                                            <option Value="ME">Maine</option>
+                                                                            <option Value="MD">Maryland</option>
+                                                                            <option Value="MA">Massachusetts</option>
+                                                                            <option Value="MI">Michigan</option>
+                                                                            <option Value="MN">Minnesota</option>
+                                                                            <option Value="MS">Mississippi</option>
+                                                                            <option Value="MO">Missouri</option>
+                                                                            <option Value="MT">Montana</option>
+                                                                            <option Value="NE">Nebraska</option>
+                                                                            <option Value="NV">Nevada</option>
+                                                                            <option Value="NH">New Hampshire</option>
+                                                                            <option Value="NJ">New Jersey</option>
+                                                                            <option Value="NM">New Mexico</option>
+                                                                            <option Value="NY">New York</option>
+                                                                            <option Value="NC">North Carolina</option>
+                                                                            <option Value="ND">North Dakota</option>
+                                                                            <option Value="OH">Ohio</option>
+                                                                            <option Value="OK">Oklahoma</option>
+                                                                            <option Value="OR">Oregon</option>
+                                                                            <option Value="PA">Pennsylvania</option>
+                                                                            <option Value="RI">Rhode Island</option>
+                                                                            <option Value="SC">South Carolina</option>
+                                                                            <option Value="SD">South Dakota</option>
+                                                                            <option Value="TN">Tennessee</option>
+                                                                            <option Value="TX" Selected="True">Texas</option>
+                                                                            <option Value="UT">Utah</option>
+                                                                            <option Value="VT">Vermont</option>
+                                                                            <option Value="VA">Virginia</option>
+                                                                            <option Value="WA">Washington</option>
+                                                                            <option Value="WV">West Virginia</option>
+                                                                            <option Value="WI">Wisconsin</option>
+                                                                            <option Value="WY">Wyoming</option>
+											  </select>
+							</div>
+							<div class="form-group col-lg-4 col-12  mt-5">
+								<input type="text" id="txtZip_Billing" class="form-control" ValidateControlclass="form-control"  size="5" maxlength="5"  onblur="ValidateZipCode()"
+                                                                                    @*onkeyup="movetoNext(this)"*@
+                                                                                    onkeypress="return isNumber(event)"  required>
+								<label class="form-control-placeholder" for="name">Zipcode</label>
+							</div>
+							
+                            </div>
+                     <div  class="col-lg-12 col-12 mb_20">
+						<div  class="input_field_item radio_input stylized_radio_input user_language_selection required">
+							<input  checked="" id="I'm Switching" name="user_address" type="radio" value="I'm Switching" class="ng-untouched ng-pristine ng-valid" onclick="show_Moviing_Panel()" >
+                            
+							<label  class="dual_select_radio left_select_radio" for="I'm Switching">
+                                <img src="~/images/checkbox.png" id="imgSwitching" width="20" />
+                                I'm Switching</label>
+							<input  id="I'm Moving" name="user_address" type="radio" value="I'm Moving" class="ng-untouched ng-pristine ng-valid" onclick="show_Moviing_Panel()">
+                            
+							<label  class="dual_select_radio right_select_radio" for="I'm Moving">
+                                <img src="~/images/checkbox.png" id="imgMoving" width="20" />
+                                I'm Moving</label>
+                           
+                         <img src="~/images/ccques.png" alt="Cell" class="orange_tool" data-toggle="tooltip" data-placement="right"  title="If you are currently receiving electric service at this location, please select SWITCH. If you are moving to a new location or are seeking to get service initiated for the first time at this location, please select MOVE."  />    
+                               
+						</div>
+                      
+                        
+					</div>
+                     <div  class="col-lg-12 col-12" id="MovingDetail" style="display:none">
+                        <div style=" border-radius:5px;" id="PSBillingSame2" class="bg-blue pb-2 mt_po col-lg-12 col-12 mb_20 Home_p">
+                        <div id="">
+                            <div class="form-group col-lg-12 col-12 mt-3 mb_20 pt-2">
+								<span class="clr_wht pl-4" for="name">ADDRESS MOVING FROM</span>
+							</div>
+							<div class="form-group col-lg-8 col-12 mt-4 mb_20">
+								<input type="text" id="txtStreetName_BillingPrevious" maxlength="100" class="form-control ValidateControl" autocomplete="notrequired" required>
+								<label class="form-control-placeholder" for="name">Street Address</label>
+							</div>
+							<div class="form-group col-lg-4 col-12 mt-4 mb_20">
+								<input type="text" id="txtAptNo_BillingPrevious" maxlength="50" onkeypress="allowNumericSpace(event)"  class="form-control ValidateControl" autocomplete="notrequired" required>
+								<label class="form-control-placeholder" for="name">Apt(Optional) #</label>
+							</div>
+                          </div>
+							<div class="form-group col-lg-4 col-12 mt-5">
+								<input type="text" id="txtCity_BillingPrevious" onkeyup="ValidationCityprevious()"
+                                    @*onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" *@
+                                     onkeypress="return blockSpecialChar(event)" 
+                                    maxlength="50"
+                                     class="form-control ValidateControl" autocomplete="notrequired" required>
+								<label class="form-control-placeholder" for="name">City</label>
+			                    <span style="color: red;display:none;position: absolute;" class="txtCityBillingPreviousEror">Please enter the City Name</span>
+
+                            </div>
+                        <div class="form-group col-lg-4 col-12" style="margin-top:8px !important;">
+								<label for="sel1 " class="clr_wht">State:</label>
+											  <select class="form-control" id="ddlStatePrevious">
+												                            <option Value="AL">Alabama</option>
+                                                                            <option Value="AK">Alaska</option>
+                                                                            <option Value="AZ">Arizona</option>
+                                                                            <option Value="AR">Arkansas</option>
+                                                                            <option Value="CA">California</option>
+                                                                            <option Value="CO">Colorado</option>
+                                                                            <option Value="CT">Connecticut</option>
+                                                                            <option Value="DC">District of Columbia</option>
+                                                                            <option Value="DE">Delaware</option>
+                                                                            <option Value="FL">Florida</option>
+                                                                            <option Value="GA">Georgia</option>
+                                                                            <option Value="HI">Hawaii</option>
+                                                                            <option Value="ID">Idaho</option>
+                                                                            <option Value="IL">Illinois</option>
+                                                                            <option Value="IN">Indiana</option>
+                                                                            <option Value="IA">Iowa</option>
+                                                                            <option Value="KS">Kansas</option>
+                                                                            <option Value="KY">Kentucky</option>
+                                                                            <option Value="LA">Louisiana</option>
+                                                                            <option Value="ME">Maine</option>
+                                                                            <option Value="MD">Maryland</option>
+                                                                            <option Value="MA">Massachusetts</option>
+                                                                            <option Value="MI">Michigan</option>
+                                                                            <option Value="MN">Minnesota</option>
+                                                                            <option Value="MS">Mississippi</option>
+                                                                            <option Value="MO">Missouri</option>
+                                                                            <option Value="MT">Montana</option>
+                                                                            <option Value="NE">Nebraska</option>
+                                                                            <option Value="NV">Nevada</option>
+                                                                            <option Value="NH">New Hampshire</option>
+                                                                            <option Value="NJ">New Jersey</option>
+                                                                            <option Value="NM">New Mexico</option>
+                                                                            <option Value="NY">New York</option>
+                                                                            <option Value="NC">North Carolina</option>
+                                                                            <option Value="ND">North Dakota</option>
+                                                                            <option Value="OH">Ohio</option>
+                                                                            <option Value="OK">Oklahoma</option>
+                                                                            <option Value="OR">Oregon</option>
+                                                                            <option Value="PA">Pennsylvania</option>
+                                                                            <option Value="RI">Rhode Island</option>
+                                                                            <option Value="SC">South Carolina</option>
+                                                                            <option Value="SD">South Dakota</option>
+                                                                            <option Value="TN">Tennessee</option>
+                                                                            <option Value="TX" Selected="True">Texas</option>
+                                                                            <option Value="UT">Utah</option>
+                                                                            <option Value="VT">Vermont</option>
+                                                                            <option Value="VA">Virginia</option>
+                                                                            <option Value="WA">Washington</option>
+                                                                            <option Value="WV">West Virginia</option>
+                                                                            <option Value="WI">Wisconsin</option>
+                                                                            <option Value="WY">Wyoming</option>
+											  </select>
+							</div>
+							<div class="form-group col-lg-4 col-12  mt-5">
+								<input type="text" id="txtZip_BillingPrevious" class="form-control ValidateControl" size="5" maxlength="5" onblur="ValidateZipCode()"
+                                                                                    @*onkeyup="movetoNext(this)"*@  clientidmode="Static"
+                                                                                    onkeypress="return isNumber(event)"  required>
+								<label class="form-control-placeholder" for="name">Zipcode</label>
+							</div>
+							
+                            </div>
+                         </div>
+		
+						@*<div  class="col-lg-12 col-12 mb_20">
+							<div  class="middle_align" id="chkLoc">
+								<label  for="email_contact">
+									<span >Does this location currently have electricity under your name?</span>
+									<input   id="Yes" name="rbSwitch_MoveIn" class="rdLoc ValidateControl" type="radio" value="Yes" />Yes
+									<input   id="No" name="rbSwitch_MoveIn" class="rdLoc ValidateControl" type="radio" value="No" />No
+									
+								</label>
+							</div>
+						</div>*@
+						<div class="form-inline col-lg-12 col-12 mt-4 pl-2 pr-2 mb_20">
+							<div class="mt_20" id="Move_Or_Switch" style="display: block;font-size: 15px;font-weight: bold;" class="pb-2">
+                               <span style="display: block;font-size: 15px;font-weight: bold;" class="pb-2" > Switch Date
+                                   </span>
+							</div>
+                            &nbsp;&nbsp;
+							@*<input type="date" id="ddlSwitchDates"  class="form-control ml-4 unstyled ValidateControl" required>*@
+                           @* <input type="text" id="ddlSwitchDates"  class="form-control ml-4 unstyled ValidateControl" required />*@
+                            @*<input type="text" id="ddlSwitchDates"  class="form-control ml-4 unstyled ValidateControl" required />*@
+                           @*  <select id="ddlSwitchDates" class="form-control ValidateControl" onchange="serviceInformation()"></select>*@
+                           <p id="ddlSDate"> <input id="ddlSwitchDates" type="text" style="max-width:150px;" class="form-control unstyled ValidateControl" placeholder="Select a date" onkeypress="return false;" autocomplete="off" >
+                       </p>
+							@*<label class="mt-4">After you select your date, there is no need to contact your current provider.</label>*@
+						</div>
+                        @*<div class="form-inline col-lg-12 col-12 mt-4 pl-2 pr-2 mb_20" style="display:none;">
+                            <div  class="middle_align">
+                                <label>
+                                    <input  id="paperless_billing" name="paperless_billing" type="checkbox" class="ng-valid ng-dirty ng-touched mt-0" />
+                                    <span style="font-weight:normal" id="spGoPaperless"><strong >Go Paperless!</strong> - I would like to receive my bills electronically.</span>
+                                </label>
+                            </div>
+                        </div> *@
+                        <div class="form-inline col-lg-12 col-12 mt-4 pl-2 pr-2 mb_20" id="PayMentInfo" style="display:none">
+                            <div  class="middle_align">
+
+                                <label id="lbAutoPay">
+                                    <input  id="AutoPay" name="paperless_billing" type="checkbox" class="ng-valid ng-dirty ng-touched mt-0" onclick="show_AutoPay_Panel()">
+                                    <span style="font-weight:normal"><strong >Auto Pay</strong> - I would like to enroll in auto bill pay.</span>
+                                   
+                                </label>
+                                 <img src="~/images/ccques.png" alt="Cell"    data-toggle="tooltip" data-placement="right"  title="Auto Bill Pay allow you to automatically pay your bill with the payment method of your choice"  />    
+                                <label class="pt-1"> &nbsp &nbsp<strong >Or&nbsp;</strong><span onclick="show_CashLocation_Panel()">Click here to view Cash Locations</span></label>
+                            </div>
+                        </div>                  
+
+        
+				<div  class="col-lg-12 col-12 user_information" style="margin:0px !important;padding:0px !important;display:none;" id="AutoPayDetail">
+					<div >
+						<div style="width:100%">
+							<ul class="Home_p nav nav-tabs" role="tablist">
+								<li class="nav-item item_1">
+                                     <iframe id="Enrollmentcciframe" style="width: 100%; height: 419px; border: none; display:none" scrolling="no"></iframe> 
+                                      <div class="splitter-container-2 splitter-content main-payment-sec" id="divTryAgain" >
+                              @*  <div>
+                                    <p style="margin: 20px 0px 10px 10px;" class="fl">Error while loading please Try Again.</p>
+                                    <button title="Try Again" class="k-button f-button" id="btnTryAgain" style="float: right; margin-top: 10px; margin-right: 10px;">Try Again</button>
+                                </div>*@
+                            </div>
+								  <a class="nav-link active" id="ddlPaymentMetho2" data-toggle="tab" href="#home" onclick="GetPaymentMethod('Credit')" >Credit card</a>
+								</li>
+								<li class="nav-item item_1">
+								  <a class="nav-link" id="ddlPaymentMethod3" data-toggle="tab" href="#menu1" onclick="GetPaymentMethod('Cash')">Cash</a>
+								</li>
+                                <li class="nav-item item_1">
+								  <a class="nav-link" id="ddlPaymentMethod4" data-toggle="tab" href="#menu2" onclick="GetPaymentMethod('ECheck')">E-Check</a>
+								</li>
+							</ul>
+                            <button id="btnPaymentType" style="display:none"></button>
+							  <!-- Tab panes -->
+							<div class="tab-content">
+								<div id="home" class=" Home_p tab-pane active p-0 bg-blue " style=" height: 470px;padding: 17px !important;padding-top: 10px !important;">
+                                    <div style="    padding: 0px 5px 11px;display:none"> 
+                                        <input type="checkbox"  ID="chkCreditAutoPay" value="I authorize storing this card for future automatic payments"
+                                                                 />
+                                        	<label class="clr_wht" style="display:inline">I authorize storing this card for future automatic payments</label>
+                                        <button ID="btncreditAutopay" OnClick="chkCreditAutoPay_CheckedChanged"
+                                                                 Style="display: none;" />
+                                    </div>
+										<div class="form-group col-lg-5 pl-2 pr-2">	
+											  <label class="clr_wht "for="sel1">Select list:</label>
+											  <select class="form-control" id="ddlCardType">
+												<option>Visa</option>
+												<option>Amex</option>
+												<option>Master</option>
+												<option>Discover</option>
+											  </select>
+										</div>
+										<div class="form-group col-lg-5 col-12 offset-lg-1 pl-2 pr-2 mb_20" style="margin-top:25px;">
+											<input type="Number" id="txtCreditCardNo" runat="server" clientidmode="Static"
+                                                         onblur="OnBlur_CC(this)" onkeypress="return isNumber(event)" class="form-control ValidateControl" autocomplete="notrequired" required>											<label class="form-control-placeholder" for="name">Credit Card #</label>
+										</div>
+										<div class="form-group col-lg-5 col-12 mt-4 pl-2 pr-2 mb_20">
+											<input type="text" id="txtNameOnCard" runat="server" clientidmode="Static"
+                                                                                onblur="OnBlur_Alpha(this)" onkeypress="return onlyAlphabets(event)"  class="form-control ValidateControl" autocomplete="notrequired" required>
+                                            
+											<label class="form-control-placeholder" for="name">Name on Card</label>
+										</div>
+										<div class="form-group col-lg-5 offset-lg-1 col-12 mt-4 pl-2 pr-2 mb_20">
+											<input type="text" id="txtBillingZipCode"  class="form-control ValidateControl" size="5" maxlength="5" onblur="ValidateZipCode()"
+                                                                                    onkeyup="movetoNext(this)"  clientidmode="Static"
+                                                                                    onkeypress="return isNumber(event)" required>
+											<label class="form-control-placeholder" for="name">Billing Zip Code</label>
+										</div>
+                                        <div class="form-group col-lg-3 pl-2 pr-2">	
+											  <label class="clr_wht "for="sel1">Expiration Date:</label>
+											   <select id="ddlExpMonth" class="form-control ValidateControl" onchange=" Val_ccExpiryDate()"></select>
+										</div>
+                                        <div class="form-group col-lg-3 pl-2 pr-2">	
+                                            <label class="clr_wht "for="sel1">&nbsp</label>
+											  <select id="ddlExpYear" class="form-control ValidateControl" onchange="Val_ccExpiryDate()"></select>
+										</div>
+                                        <div class="form-group col-lg-5 col-12 pl-2 pr-2 mb_20" style="margin-top:22px;">
+											<input type="number" id="txtCvcCode" class="form-control ValidateControl" onkeypress="return isNumber(event)"  required>
+											<label class="form-control-placeholder" for="name">CVV Code:</label>
+                                        </div>
+                                    <div class="form-group col-lg-5 col-12 mt-4 pl-2 pr-2 mb_20">
+											<input type="text" id="" runat="server" clientidmode="Static"
+                                                                                onblur="OnBlur_Alpha(this)" onkeypress="return onlyAlphabets(event)"  class="form-control ValidateControl" autocomplete="notrequired" required>
+                                            
+											<label class="form-control-placeholder" for="name">Amount($)</label>
+										</div>
+                                    <div class="form-group col-lg-12 col-12 pl-2 pr-2">
+                                         <div  class="middle_align">
+                                         <label style="color:white;">
+                                             <span>Autopay:</span>
+                                               <input  id="" name="IsTCPAAgreed" type="checkbox" class="mt-0">
+                                          </label>
+                                         </div>
+                                     </div>
+
+                                     <div class="form-group col-lg-12 col-12 pl-2 pr-2">
+                                         <div  class="middle_align">
+                                         <label style="color:white;">
+                                             <span>Send confirmation By:</span>
+                                               <input  id="" name="IsTCPAAgreed" type="checkbox" class="mt-0">
+                                               <span style="font-weight:normal">Email</span>
+                                             <input  id="" name="IsTCPAAgreed" type="checkbox" class="mt-0">
+                                               <span style="font-weight:normal">SMS</span>
+                                          </label>
+                                         </div>
+                                     </div>
+                                        <div class="col-lg-12 col-12 pl-2 pr-2">
+                                            <button class="btn btn-Brand" style="border-radius:5px;">Pay Now</button>
+                                        </div>
+										@*<div class="form-inline col-lg-12 col-12  mt-4 pl-2 pr-2 mb_20">
+											<label class="clr_wht" for="name">Expiration Month:</label>
+                                            <select id="ddlExpMonth" class="form-control ValidateControl" onchange=" Val_ccExpiryDate()"></select>
+											<input type="number" id="ddlExpMonth" class="form-control col-lg-2 ml-4" onchange="Val_ccExpiryDate()" required>
+											<label class=" ml-2 clr_wht" for="name">Year:</label>
+                                            <select id="ddlExpYear" class="form-control ValidateControl" onchange="Val_ccExpiryDate()"></select>
+											<label class="ml-2 clr_wht" for="name">CVV Code:</label>
+											<input type="number" id="txtCvcCode" class="form-control col-lg-2 ValidateControl" onkeypress="return isNumber(event)"  required>
+										</div>*@
+										
+								</div>
+								<div id="menu1" class="tab-pane p-0 bg-blue " style="height: 415px; padding: 18px !important;">
+
+                                </div>
+                                <div id="menu2" class="Home_p tab-pane p-0 bg-blue " style=" height: auto;padding: 17px !important;padding-top: 10px !important;">
+                                    <div class="astrik form-group col-lg-6 col-12 mt-5 mb_20">
+								        <input type="text" id="AccountName" class="form-control ValidateControl" required>
+								        <label class="form-control-placeholder f_12" for="name">Name as on Bank Account</label>
+							        </div>
+							        <div class="astrik form-group col-lg-6 col-12 mt-5 mb_20">
+								        <input type="text" id="RoutingNumber" class="form-control ValidateControl" required>
+								        <label class="form-control-placeholder" for="name">Routing Number</label>
+							        </div>
+                                    <div class="astrik form-group col-lg-6 col-12 mt-4 mb_20">
+								        <input type="text" id="AccountNumber" class="form-control ValidateControl" required>
+								        <label class="form-control-placeholder" for="name">Account Number</label>
+							        </div>
+							        <div class="astrik form-group col-lg-6 col-12 mt-4 mb_20">
+								        @*<input type="text" id="AccountType" class="form-control ValidateControl" required>*@
+                                          <select class="form-control" id="AccountType">
+												<option value="0"></option>
+												<option  value="Checking">Checking</option>
+												<option  value="Saving">Saving</option>
+                                              </select>
+								        <label class="form-control-placeholder" for="name">Account Type</label>
+							        </div>
+                                    <div style="color:White; margin-bottom:30px; margin-left:45%;position:static" >
+                                        <span onclick="toggleMsg()">
+                                    VIEW AUTO BILL PAY TERMS AND CONDITIONS
+                                        <span class="fa fa-chevron-down"></span>
+                                            </span>
+                                        </div>
+								 <div id="Echeckmsg" style="display:none; margin-top:4%!important;color:white">
+                                    
+By selecting the Auto Pay checkbox and providing your financial data as your electronic signature, you authorize '@Html.Raw(@TempData.Peek("BrandName"))'  or its payment processor to automatically debit your bank account/debit card or charge your credit card, on a recurring basis on your due date or the first business day after your due date until you terminate your authorization online. The amount of each monthly recurring payment will be the full price reflected on your monthly bill for electricity service, plus any additional services, equipment, taxes, fees and other charges applicable to your '@Html.Raw(@TempData.Peek("BrandName"))' purchase(s). If you find a billing error and notify '@Html.Raw(@TempData.Peek("BrandName"))' before your monthly bill is due, we will attempt to correct the error before the next recurring payment (otherwise you may cancel Auto Bill Pay to prevent the automatic payment). Also, if you sign up for, cancel or make changes to Auto Bill Pay on the day of the due date, the change may not take effect until the following payment cycle. Otherwise, we will automatically debit/charge the amount reflected on your monthly bill. After terminating your authorization, you will be responsible for scheduling payments for subsequent monthly charges. See “Bill Payment Programs” in your Terms of Service for additional information about Auto Bill Pay.
+                                </div>
+								</div>
+                               
+							</div>
+						</div>
+					</div>	
+			</div>
+                        <div class="form-inline col-lg-12 col-12 mt-4 pl-2 pr-2 mb_20">
+                            <div  class="middle_align">
+                                 <div  class="input_field_item radio_input stylized_radio_input user_language_selection required">
+							<span style="display: block;font-size: 15px;font-weight: bold;" class="pb-2" >I would like to add another authorized user of this account.</span>
+
+							    <input   id="AnotherAuthUser" name="OtrAuthrizeUser" type="radio" value="Yes" class="ng-untouched ng-pristine ng-valid" onclick="show_AnotherUser_Panel()">
+							<label  class="dual_select_radio left_select_radio" for="AnotherAuthUser"><img src="~/images/checkbox.png" id="imgOtrUserYes" width="20" /> Yes</label>
+							<input checked="" id="AnotherAuthUserNo" name="OtrAuthrizeUser" type="radio" value="No" class="ng-untouched ng-pristine ng-valid" onclick="show_AnotherUser_Panel()">
+							<label  class="dual_select_radio right_select_radio" for="AnotherAuthUserNo"><img src="~/images/checkbox.png" id="imgOtrUserNo" width="20"/> No</label>
+							
+						</div>
+@*                                <label>
+                                    <input  id="AnotherAuthUser" name="paperless_billing" type="checkbox" class="ng-valid ng-dirty ng-touched mt-0" onclick="show_AnotherUser_Panel()">
+                                    <span style="font-weight:normal">I would like to add another authorized user of this account.</span>
+                                </label>
+                                <img src="~/images/ccques.png" alt="Cell"    data-toggle="tooltip" data-placement="right" class="red-tooltip"  title="By authorizing an additional individual on your account, changes to your account can be requested along with the release of account information. Please note authorized individuals must be 18 years of age or older and legally authorized immediate family member. If you wish to authorize an additional individual on your account, please complete the fields below."  />    
+                                *@
+                            </div>
+                        </div>
+                        <div  class="col-lg-12 col-12" id="AnotherUserInfo" style="display:none">
+                        <div style="padding-top:1px;border-radius:5px;" id="PSBillingSame3" class="bg-blue pb-2 mt_po col-lg-12 col-12 mb_20 Home_p">
+                       
+							<div class="astrik form-group col-lg-6 col-12 mt-5">
+								<input type="text" id="txtautUserFirstName"    onkeypress="return blockSpecialChar(event)" @*onkeyup="ValidationaUserFirstName()"*@ maxlength="50" class="form-control ValidateControl" required>
+								@*<input type="text" id="txtautUserFirstName"  maxlength="50" class="form-control ValidateControl" required>*@
+								<label class="form-control-placeholder" for="name">First Name</label>
+												     <span style="color: red;display:none;position: absolute;" class="txtaUserFirstNameEror">Please enter valid Name</span>
+
+							</div>
+							<div class="astrik form-group col-lg-6 col-12 mt-5">
+								<input type="text" id="txtautUserLastName"    onkeypress="return blockSpecialChar(event)" @*onkeyup="ValidationaUserLastName()"*@ maxlength="50" class="form-control ValidateControl" required>
+					            @*<input type="text" id="txtautUserLastName"  maxlength="50" class="form-control ValidateControl" required>*@
+
+								<label class="form-control-placeholder" for="name">Last Name</label>
+												     <span style="color: red;display:none;position: absolute;" class="txtaUserLastNameEror">Please enter valid Name</span>
+
+							</div>
+                       
+							<div class="astrik form-group col-lg-6 col-12 mt-5">
+								<input type="text" id="txtautUserContactNumber"   class="form-control ValidateControl" onkeypress="return isNumber(event)" size="10" maxlength="10" required>
+								<label class="form-control-placeholder" for="name">Phone Number</label>
+							</div>
+                            </div>
+                            
+                         </div>
+                 
+
+					
+						
+				</div>
+                
+             @*   @if (@Html.Raw(TempData["PrePayYN"])!=null)
+                     
+                 {
+                //    TempData.Keep();
+                   
+                 //      if (@Html.Raw(TempData["PrePayYN"]).ToString().ToLower() != "y")
+                       {
+                    
+                *@<div  class="col-lg-9 col-12 user_information" id="IdentityVerification">
+						<h3 >IDENTITY VERIFICATION and CREDIT CHECK 
+                            <img src="~/images/ccques.png" alt="Cell" class="orange_tool"   data-toggle="tooltip" data-placement="right"  title="The State of Texas requires a government-issued identification number to be used for account and identity verification. Based on your credit score, a deposit may be required to enroll, which will be refunded consistent with your terms of service."  />    
+						</h3>
+                    <div>
+                        <span style="display: block;font-size: 15px;font-weight: bold;" class="pb-2" >
+                       We will perform a credit check to determine whether we can waive the deposit requirement. Providing your Social Security Number is the easiest way to get an accurate credit match.                              Credit bureaus are limited to SSN and DL forms of ID when they perform a soft credit check. 
+
+                            							</span>
+                        <br />
+                        <input type="hidden" id="vType" />
+							<ul class="Home_p nav nav-tabs" role="tablist">
+								<li class="nav-item item_2">
+                                    
+								  <a class="nav-link active" id="ddlPaymentMethod" data-toggle="tab" href="#menu5" onclick="GetSocialSecurityType()">Social Security #</a>
+								</li>
+								<li class="nav-item item_2">
+								  <a class="nav-link" id="ddlPaymentMethod2" data-toggle="tab" href="#menu4" onclick="GetSocialSecurityType('Gov')">Government ID</a>
+								</li>
+                        
+							</ul>
+								  <!-- Tab panes -->
+							<div class="tab-content">
+								<div id="menu5" class=" Home_p tab-pane active p-0 bg-blue " style="height:80px;;padding: 17px !important;padding-top: 10px !important;">
+                                    <div class="form-inline col-lg-12 col-12 mt-2 p-0 mb_20">
+							@*<label class="clr_wht col-12" for="name">Social Security #:</label>*@
+                                                 <input type="text" id="txtSSN1"  runat="server" size="3" onkeyup="movetoNext(this, 'txtSSN2')"
+                                                                            onblur="OnBlur_ssn(this)" maxlength="3" class="form-control col-lg-1 col-3 ml-4 ValidateControl" clientidmode="Static"
+                                                                            onkeypress="return isNumber(event)" />-<input type="text" id="txtSSN2" runat="server"
+                                                                                size="3" onkeyup="movetoNext(this, 'txtSSN3')" maxlength="2" class="form-control col-lg-1 col-3 ml-4 ValidateControl"
+                                                                                onblur="OnBlur_ssn(this)" clientidmode="Static" onkeypress="return isNumber(event)" />-<input type="text" runat="server" 
+                                                                                     id="txtSSN3" size="4" maxlength="4" class="form-control ValidateControl" clientidmode="Static" onblur="OnBlur_ssnlast(this)"
+                                                                                     onkeypress="return isNumber(event)" style="border-width: 2px;border-style: solid;border-image: initial;width: 63px;">
+                                        
+                                        &nbsp;<img src="~/images/icon-lock.png" id="lock" width="4%" alt="Cell"    data-toggle="tooltip" data-placement="right"  title="We use a number of security measures to help protect your personal information." />
+						</div>		
+								</div>
+<span style="color: red;position: absolute;left: -1px; display:none" class="socialsecurityEror">Please enter a valid social security number</span>
+								<div id="menu4" class="tab-pane p-0" >
+                                    <div  class="col-lg-12 col-12 mb_20">
+                                    <div style="display:;border-radius:5px;" id="PSBillingSame" class="bg-blue  pb-2 mt_po col-lg-12 col-12 mb_20 Home_p">
+                       
+                                        <div class="form-group col-lg-4 col-12"  style="margin-top:8px;">
+								             <label class="clr_wht "for="sel1">Select list:</label>
+                                            <select class="form-control" id="GovId" onchange="show_UserIdentity_Panel()">
+												  
+											  </select>
+							            </div>
+                                         <div class="form-group col-lg-4 col-12"  style="margin-top:8px;" id="statePanel">
+								             <label class="clr_wht "for="sel1">State</label>
+                                            <select class="form-control" id="GovIdState">
+												   <option Value="AL">Alabama</option>
+                                                                            <option Value="AK">Alaska</option>
+                                                                            <option Value="AZ">Arizona</option>
+                                                                            <option Value="AR">Arkansas</option>
+                                                                            <option Value="CA">California</option>
+                                                                            <option Value="CO">Colorado</option>
+                                                                            <option Value="CT">Connecticut</option>
+                                                                            <option Value="DC">District of Columbia</option>
+                                                                            <option Value="DE">Delaware</option>
+                                                                            <option Value="FL">Florida</option>
+                                                                            <option Value="GA">Georgia</option>
+                                                                            <option Value="HI">Hawaii</option>
+                                                                            <option Value="ID">Idaho</option>
+                                                                            <option Value="IL">Illinois</option>
+                                                                            <option Value="IN">Indiana</option>
+                                                                            <option Value="IA">Iowa</option>
+                                                                            <option Value="KS">Kansas</option>
+                                                                            <option Value="KY">Kentucky</option>
+                                                                            <option Value="LA">Louisiana</option>
+                                                                            <option Value="ME">Maine</option>
+                                                                            <option Value="MD">Maryland</option>
+                                                                            <option Value="MA">Massachusetts</option>
+                                                                            <option Value="MI">Michigan</option>
+                                                                            <option Value="MN">Minnesota</option>
+                                                                            <option Value="MS">Mississippi</option>
+                                                                            <option Value="MO">Missouri</option>
+                                                                            <option Value="MT">Montana</option>
+                                                                            <option Value="NE">Nebraska</option>
+                                                                            <option Value="NV">Nevada</option>
+                                                                            <option Value="NH">New Hampshire</option>
+                                                                            <option Value="NJ">New Jersey</option>
+                                                                            <option Value="NM">New Mexico</option>
+                                                                            <option Value="NY">New York</option>
+                                                                            <option Value="NC">North Carolina</option>
+                                                                            <option Value="ND">North Dakota</option>
+                                                                            <option Value="OH">Ohio</option>
+                                                                            <option Value="OK">Oklahoma</option>
+                                                                            <option Value="OR">Oregon</option>
+                                                                            <option Value="PA">Pennsylvania</option>
+                                                                            <option Value="RI">Rhode Island</option>
+                                                                            <option Value="SC">South Carolina</option>
+                                                                            <option Value="SD">South Dakota</option>
+                                                                            <option Value="TN">Tennessee</option>
+                                                                            <option Value="TX" Selected="True">Texas</option>
+                                                                            <option Value="UT">Utah</option>
+                                                                            <option Value="VT">Vermont</option>
+                                                                            <option Value="VA">Virginia</option>
+                                                                            <option Value="WA">Washington</option>
+                                                                            <option Value="WV">West Virginia</option>
+                                                                            <option Value="WI">Wisconsin</option>
+                                                                            <option Value="WY">Wyoming</option>
+											  </select>
+							            </div>
+							          
+							            <div class="form-group col-lg-4 col-12 " id="IdNumberPanel" style="width: 217px;">
+                                            
+								            <label class="clr_wht  form-control-placeholder" for="name" style="clear: both;">ID Number</label><div style="width: 170px;clear:both;margin-top: 31px;"><input type="text" id="txtIdNumber" maxlength="50" onkeypress="allowAlphaNumericSpace(event)" class="form-control ValidateControl" style="
+    width: 85%;
+    float: left;
+    
+    margin-top: 2px;
+"></div>
+								            
+                                            
+                                             @*<img src="/images/lock.png" width="15%" alt="Cell" data-toggle="tooltip" data-placement="right" title="" data-original-title="We use a number of security measures to help protect your personal information." style="padding-top: 5px;">*@
+                                             &nbsp;<img src="~/images/icon-lock.png"  width="15%" id="lock2" alt="Cell" data-toggle="tooltip" data-placement="right" title="" data-original-title="We use a number of security measures to help protect your personal information." style="padding-top: 5px;" />
+                                                
+							            </div>
+                                        
+                                        </div>
+                                     </div>
+							    </div>
+						    </div>
+                    </div>
+                </div>
+                   
+
+			
+           
+
+
+               <div id="contractExpiryNote" runat="server" clientidmode="Static" visible="false" style="display:none">
+                                                
+                   To avoid paying early termination fees to your current REP, your existing contract
+                                                                        must expire before &nbsp;
+                                                                        <label id="lblMoveSwitchDate"  Text="" Font-Bold="True"
+                                                                            Style="color: #333;" />
+                   <input type="checkbox" ID="chkAcceptContract" Checked="false" Text="I Understand." ClientIDMode="Static" BorderColor="Red" BorderStyle="Solid" />
+                                                                
+                                                                
+                                                            <button id="btnAcceptContract" OnClick="chkAcceptContract_CheckedChanged" ClientIDMode="Static"
+                                                                Style="display: none;" />
+                                                       
+                                            </div>
+            
+            <input type="hidden"  ID="dobDay_HF" Value="1" />
+            <input type="hidden" id="HiddenFieldDepAmount" />
+              
+		<div  class="form-group col-lg-9 col-12" id="disclaimer">
+					
+                      
+					
+				</div>
+                
+                	
+				<div  class="form-group col-lg-9 col-12">
+					<label for="email_contact">
+                        <input  id="IsTCPAAgreed" name="IsTCPAAgreed" type="checkbox" class="ng-valid ng-dirty ng-touched mt-0">
+						@*<input  id="chkAutorizedPerson" name="email_contact" type="checkbox" >*@
+						@*<span>I verify that I am authorized to switch service at the above premises. I understand a move-in or a switch can only be made by the electric service applicant or the 
+                                applicant's authorized agent.
+                        </span>*@
+                        <span  id="spp1">
+                        I agree to be contacted by or on behalf of @Html.Raw(@TempData.Peek("BrandName")) at the telephone number(s) provided about product and service offers, including via autodialed calls and text messages, and calls that use an artificial or prerecorded voice. I understand that I do not need to give this consent in order to purchase goods or services from @Html.Raw(@TempData.Peek("BrandName")).
+                            </span>
+					</label>
+				</div>
+                	<div  class="form-group col-lg-12 col-12">
+					<label for="email_contact">
+						<input  id="chkAutorizedSwitch" name="email_contact" type="checkbox" >
+						
+                        <span>
+                            I have read, understand and agree to the Terms of Service below and in my contract document.
+                        </span>
+					</label>
+				</div>
+                </div>
+
+				<div  class="col-lg-9 col-12 mt-2 " id="cck">
+                    <div class="div_scroll">
+					<p  id="spp">
+						@*<input  id="chkAll" name="email_contact" type="checkbox" onclick="javascript: return CheckAllClick(this)"/>*@
+
+						<span><span id="legalTerm"> I confirm that I am at least eighteen years of age and legally authorized to change REPs for the address listed above. I understand that I am authorizing @Html.Raw(@TempData.Peek("BrandName")) to become my new Retail Electric Provider (REP) in place of my current REP, if applicable. </span>I authorize @Html.Raw(@TempData.Peek("BrandName")) to perform the necessary tasks in order to make this change. If requesting to switch REPs, I understand that I will have three federal business days to cancel my enrollment in this plan, without penalty, after I receive my Terms of Service. I understand that @Html.Raw(@TempData.Peek("BrandName")) or its agent will investigate my personal credit and financial records. I hereby authorize @Html.Raw(@TempData.Peek("BrandName")) to request and obtain consumer credit reports and/or credit references on me in connection with any account(s) or other transactions with @Html.Raw(@TempData.Peek("BrandName")). The credit check will be used to determine if a deposit is required. If a deposit is required the amount will be $@Html.Raw(@TempData.Peek("DepositAmount")).
+I have read and understand the contract documents for this plan, which include the Terms of Service, Electricity Facts Label and Your Rights as a Customer documents. I can print and save copies of these documents which are provided above. I understand that after submitting this enrollment request, I will also receive a copy of these documents, including the Terms of Service, from @Html.Raw(@TempData.Peek("BrandName")) via email, and upon request, via US mail, and that these documents, including the Terms of Service, explain all the terms of the agreement and how to exercise the right of rescission, if applicable.
+I understand that my eligibility to receive a promotional incentive in connection with this enrollment, if any, is subject to the applicable terms and conditions for such promotional incentive.</span>
+					</p>
+                        </div>
+				</div>
+               <div  class="col-lg-9 col-12 mt-2">
+                  
+					<label for="email_contact" id="errormsg" style="white-space: pre-wrap;">
+						
+					</label>
+				</div>
+			
+		</div>
+
+
+		</div>
+
+        <div class="container" style="background:#fff; padding:0px; margin:0px auto">
+                <div  class="col-lg-12 col-12 mt-4 text-left" style="margin-bottom:50px">
+					<button class="plan_order_button btn-Brand" id="Enroll" style="border-radius:5px;">Place My Order</button>
+                    <div class="row">
+                <div class="col-xl-12 col-12">
+                    <section class="pricing_disclaimers">
+                        <app-price-disclaimers _nghost-wql-c7=""><em _ngcontent-wql-c7="">
+                       
+					                                         </em>
+				<em _ngcontent-wql-c7="">
+                    @* <div id="tabFooter">@Html.Raw(@TempData.Peek("tabFooter"))</div>*@
+              <div id="tabFooter">@Html.Raw(@TempData.Peek("tabFooter"))</div>
+				</em>
+				</app-price-disclaimers>
+                    </section>
+
+                    <section>
+                        <footer class="">
+                            <div class="footer parbase base text-center">
+                                <section class="footer content footer-links">
+                                    <div class="copyright">
+                                        <div class="container">
+                                            <div class="row links_col">
+                                                <div class="col-xl-12 text-center">
+                                                    <ul class="social-icons">
+                                                        <li>
+                                                            <a href="" target="_blank" id="facebook"><i style="font-size: 30px;" class="fab fa-facebook-square"></i></a>&nbsp
+												  <a href="" target="_blank" id="twitter"><i style="font-size: 30px;" class="fab fa-twitter-square"></i></a>&nbsp
+                                                  <a href="" id="linkdin" target="_blank"><i style="font-size: 30px;" class="fab fa-linkedin"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="social-links">
+                                                        <li><a target="_blank" href="" id="termsofUse">Terms of Use</a></li>
+                                                        <li><a target="_blank" href="" id="privacy">Privacy Policy</a></li>
+
+
+                                                        <li id="lNT" class="legalnotice"><a  target="_blank" href="" id="legalNotice">Legal Notice and Terms</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-12 text-center">
+                                                    <div id="copyRight"></div>
+                                                    <br>
+                                                    <a href="" id="bbb" target="_blank">
+                                                        <img alt="better business bureau logo" src="~/images/bbb.png" id="bbLogo" style="margin-top: 10px" title=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </footer>
+                    </section>
+                </div>
+            </div>
+				</div>
+			
+     </div>         	
+		
+  @*Start Edit Service popup*@
+    
+      @*<div class="modal message-popup" id="EditModal" style="width: 100% !important; z-index:99999" data-backdrop="static" data-keyboard="false">*@
+          <div class="modal message-popup" id="myDifferntTDSPMsg" style="width: 100% !important; z-index:99999" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog" style="top: 25%;">
+
+                    <div class="modal-content">
+                        <div style="float: right; color: red !important; top: 10%">
+                            <button type="button" id="btnhide" class="close pop_design_11" style="color: red; font-size: xx-large" data-dismiss="modal" >&times;</button>
+                        </div>
+                        <!-- Modal Header -->
+  
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Error Message</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="display:none;">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Your offer selected is not valid for this service address. Would you like to select new offer?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="EditButtonAddress_yes" class="btn btn-primary">Yes</button>
+                            <button type="button" id="EditButtonAddress_no"class="btn btn-secondary" data-dismiss="modal" onclick="disablebutton2()">No</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+     @*End Edit Service popup*@
+  @*Start Please Review Errors popup*@
+      <div class="modal message-popup" id="EditReviewModal" style="width: 100% !important;" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog" style="top: 25%;">
+   
+                    <div class="modal-content">
+                        <div style="float: right; color: red !important; top: 10%">
+                            <button type="button" id="btnReviewhide" class="close pop_design_11" style="color: red; font-size: xx-large" data-dismiss="modal" >&times;</button>
+                        </div>
+                        <!-- Modal Header -->
+  
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleReviewModalLabel">Error Message</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="display:none;">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="eMsg">
+                           Please Review Errors   
+                        </div>
+                        <div class="modal-footer">
+                            @*<button type="button" id="EditButtonReview_yes" class="btn btn-primary">Yes</button>*@
+                            <button type="button" id="EditButtonReview_no"class="btn btn-secondary" data-dismiss="modal">OK</button>
+                            <button type="button" id="EditButtonReview_no2"class="btn btn-secondary" data-dismiss="modal" onclick="GotoIndexpage()" style="display:none">OK</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+  @*End Please Review Errors popup*@
+ 
+     <!--The Modal For Address-->
+  <div class="modal" id="myAddressModal" style="width:100% !important; z-index: 9999">
+        
+    <div class="modal-dialog" style="top:30%;">
+        
+      <div class="modal-content">
+      <div style="float:right; color:red !important; top:10%">
+           <button type="button" class="close pop_design_1" style="color:red; font-size:xx-large" id="btSubmit" data-dismiss="modal" onclick="addressPopUpReset()">&times;</button>
+              </div>
+        <!-- Modal Header -->
+        
+        <div class="modal-header" style="border-bottom:0px !important">
+            
+          <h3 class="modal-title text-center" style="color:black!important;width:100%;text-align:center;">Enter Your Full Address</h3>
+              
+             
+
+         
+        </div>
+         <div class="modal-body">
+            Zip Code 
+             
+       <input type="text" id="txtZipCode2" value='@Html.Raw(@TempData.Peek("ZipCode"))'  class="form-control" size="5" maxlength="5" onblur="ValidateZipCode()"
+                                                                                     class="round-field" clientidmode="Static"
+                                                                                    onkeypress="return isNumber(event)" onkeyup="showButton2()" />
+             <h1></h1> 
+              
+             Address
+             <div class="autocomplete">
+           
+          <input type="text" id="txtAddress" class="form-control" style="width:100%" autocomplete="stopdoingthat" />
+                 <input type="hidden" id="hdnServiceAddress" />
+                 <div id="loadingAddress" class="loadingmessage" style="display:none">
+
+</div>
+            <div id="serAddMsg" style="margin-top:20px"></div>
+                 
+                 </div>
+        </div>
+        <!-- Modal body -->
+        
+        <!-- Modal footer -->
+        <div class="modal-footer" style="border-top:0px !important">
+                     <input type="button" value="Submit" id="btAddress" class="button solid_orange plan_order_button" style="display:none" onclick="EditChangeServiceAddress()"   />        
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+    <!--The Modal For Product Details-->
+    
+  <div class="modal" id="ProductDetails" style="width:100% !important">
+        
+    <div class="modal-dialog pop_design" style="top:15%;">
+        
+      <div class="modal-content" style="border:0px;">
+      <div style="float:right; color:red !important; top:10%">
+           <button type="button" class="close pop_design_1" style="color:red; font-size:xx-large" data-dismiss="modal">&times;</button>
+              </div>
+        <!-- Modal Header -->
+        
+       @* <div class="modal-header" style="border-bottom:0px !important">
+            
+  
+             
+
+         
+        </div>*@
+           <div class="modal-body">
+        <div id="ProductDetailInfo"></div>
+        <!-- Modal body -->
+       
+     
+            
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer" style="border-top:0px !important">
+            
+   
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    
+     <!--The Modal For TDSP selection-->
+        <div class="modal" id="tdspselection" style="width: 20% !important;top:0%;left:0%; border-radius:5px;  width: 100% !important; height: 100vh !important;    background: rgba(0, 0, 0, 0.21);z-index:10000">
+            <div class="modal-dialog">
+                <div class="modal-content" style="border-radius: 5px; border: 0px; border: 0px; width: 220px; height: 200px; top: 35%; left:40%; position: fixed;   margin: 0px auto;">
+                  
+                    <!-- Modal Header -->
+                    <div class="modal-body">
+                        <b>TDSP</b>
+                        <div id="tdspInfo">
+
+                          @*  <input type="radio" id="tdTDSP" name="tdsp" onchange="setTDSPCode()" />*@
+                        </div>
+                        <!-- Modal body -->
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="border-top: 0px !important">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+     
+    <!---------------End--------------------------!-->
+    <!---------------------End------------------------------------>
+  @*   @if (ViewBag.JavaScriptFunction != null)
+     {
+        <script type="text/javascript">
+            @Html.Raw(ViewBag.JavaScriptFunction)
+        </script>
+     }*@
+    
+</body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id='@System.Web.Configuration.WebConfigurationManager.AppSettings["GoogleTrackingCode"]'"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+</html>
+<script type="text/javascript">
+
+    $("body").delegate("a", "click", function () {
+
+        var VerificationType = $(this).attr('id');
+        var vt = "SSN";
+        if (VerificationType == "ddlPaymentMethod") {
+            vt = "SSN";
+
+        }
+        else if (VerificationType == "ddlPaymentMethod2") {
+            vt = "GOV";
+
+        }
+
+        $("#vType").val(vt);
+    });
+    jQuery(document).ready(function ($) {
+        $('#lock').tooltip({ trigger: 'manual' });
+        $('#lock').on("taphold", function () {
+          //  alert("hello");
+            $(this).tooltip('show');
+        });
+        $('#lock2').tooltip({ trigger: 'manual' });
+        $('#lock2').on("taphold", function () {
+            //  alert("hello");
+            $(this).tooltip('show');
+        });
+        GetSwitchMoveInfo("No");
+        if (window.history && window.history.pushState) {
+
+            //  window.history.pushState('forward', null, './#forward');
+            window.history.pushState('forward', null);
+
+            //$(window).on('popstate', function () {
+            $(window).bind('popstate', function () {
+                // alert("clis");
+                //alert('Back button was pressed.');
+                AddEnrollInformtion();
+                Partnerpage();
+
+            });
+
+        }
+
+    });
+
+    //   $(document).ready(function () {
+
+    @* var disclaimer = '@TempData.Peek("Disclaimer")';
+    
+    if (disclaimer != '') {
+        $("#disclaimer").empty();
+        $("#disclaimer").html('@TempData.Peek("Disclaimer")');
+    }*@
+    
+  @*  var tabfooter = '@TempData.Peek("tabFooter")';
+    $("#tabfooter").empty();
+    $("#tabfooter").append(tabfooter);*@
+    $('#ddlSwitchDates').bind("cut copy paste", function (e) {
+        e.preventDefault();
+    });
+    var data = '@TempData.Peek("PrePayYn")';
+        
+         @*  @TempData.Keep();*@
+
+    if (data.toLowerCase() == "n") {
+        $("#IdentityVerification").show();
+        $("#Carrier").hide();
+        //$("#PayMentInfo").show();
+    }
+    else {
+        $("#IdentityVerification").hide();
+        $("#Carrier").show();
+        $("#PayMentInfo").hide();
+    }
+    LoadBrandData();
+    Loadbrandlinks();
+
+
+
+
+
+    $("#txtName").val('@((Session["pInfo"] as PersonalInformation).first_name)');
+         $("#txtLName").val('@((Session["pInfo"] as PersonalInformation).last_name)');
+    $("#DateofBirth").val('@((Session["pInfo"] as PersonalInformation).date_of_birth)');
+    $("#txtCell1").val('@((Session["cInfo"] as ContactInformation).contactno)');
+    $("#txtEmail").val('@((Session["cInfo"] as ContactInformation).email)');
+    var eBill = '@((Session["cInfo"] as ContactInformation).eBill)'.toString().toLowerCase();
+
+    if (eBill == "true") {
+        $("#Yes").prop("checked", true);
+        $("#imgYes").show();
+        $("#imgNo").hide();
+        $("#divInvoice").hide();
+        PlessComm = "Yes";
+        $("#rbPaperlessBilling_Yes").prop("checked", true);
+    }
+    else {
+        $("#rbPaperlessBilling_Yes").prop("checked", false);
+        $("#imgYes").hide();
+        $("#imgNo").show();
+        $("#divInvoice").css("display", "block");
+
+        PlessComm = "No";
+
+    }
+    var paperlessB = '@((Session["enrollmentObject2"] as EnrollmentData).IsPaperless)'.toString().toLowerCase();
+         if (paperlessB == "true") {
+             $("#rbPaperlessBilling_Yes").prop("checked", true);
+         }
+         else {
+             $("#rbPaperlessBilling_Yes").prop("checked", false);
+         }
+         var langcode = '@((Session["cInfo"] as ContactInformation).langCode)';
+
+         if (langcode.toLowerCase() == "english" || langcode == "") {
+             $("#english").prop("checked", true);
+             $("#spanish").prop("checked", false);
+             $("#imgEnglish").show();
+             $("#imgSpanish").hide();
+         }
+         else {
+             $("#imgEnglish").hide();
+             $("#imgSpanish").show();
+             $("#english").prop("checked", false);
+             $("#spanish").prop("checked", true);
+         }
+
+         var isBill = '@((Session["enrollmentObject2"] as EnrollmentData).isBillingSame)'.toString().toLowerCase();
+         //var isTrue = document.getElementById("rbBillingSameYes").checked;
+         if (isBill == "true") {
+             $("#rbBillingSameYes").prop("checked", true);
+             $("#rbBillingSameNo").prop("checked", false);
+             $("#PSBillingSameAddress").css("display", "none");
+             $("#imgBYes").show();
+             $("#imgBNo").hide();
+         }
+         else {
+
+             $("#rbBillingSameYes").prop("checked", false);
+             $("#rbBillingSameNo").prop("checked", true);
+             $("#imgBYes").hide();
+             $("#imgBNo").show();
+             $("#PSBillingSameAddress").css("display", "block");
+             //$("#chkPOBox").prop('checked', false);
+             //var isPOBoxTrue = document.getElementById("chkPOBox").checked;
+             //if (isPOBoxTrue == false) {
+             //    $("#POBoxDiv").css("display", "block");
+             //    document.getElementById("txtStreetNo_Billing").focus();
+
+             //}
+             //else {
+             //    document.getElementById("txtPOBoxNo").focus();
+             //}
+
+             var pobox = '@Session["IsPoBox"]';
+             if (pobox.toLowerCase() == "yes") {
+                 $("#chkPOBox").prop('checked', true);
+                 $("#POBoxDiv").css("display", "block");
+                 $('#txtPOBoxNo').val('@Session["PoBoxno"]');
+
+             }
+             else {
+                 $("#chkPOBox").prop('checked', false);
+             }
+             $("#txtStreetNo_Billing").val('@((Session["enrollmentObject2"] as EnrollmentData).billingAddress.StreetNum)');
+             $("#txtStreetName_Billing").val('@((Session["enrollmentObject2"] as EnrollmentData).billingAddress.StreetName)');
+             $("#txtAptNo_Billing").val('@((Session["enrollmentObject2"] as EnrollmentData).billingAddress.AptNum)');
+             $("#txtCity_Billing").val('@((Session["enrollmentObject2"] as EnrollmentData).billingAddress.CityName)');
+             $("#ddlState").val('@((Session["enrollmentObject2"] as EnrollmentData).billingAddress.StateName)');
+             $("#txtZip_Billing").val('@((Session["enrollmentObject2"] as EnrollmentData).billingAddress.ZipCode)');
+         }
+
+
+         $("#ddlSwitchDates").val('@(Session["switchDate"])');
+    var Ischecked = '@((Session["enrollmentObject2"] as EnrollmentData).isPreviousAddress)'.toLowerCase();
+    //var Ischecked = document.getElementById("I'm Moving").checked;
+    if (Ischecked == "yes") {
+        //$("#I'm Moving").prop("checked", true);
+        document.getElementById("I'm Moving").checked = true;
+        document.getElementById("I'm Switching").checked = false;
+        //$("#I'm Switching").prop("checked", false);
+        IsMoving = "Yes";
+        $("#MovingDetail").show();
+        $("#Move_Or_Switch").empty();
+        $("#Move_Or_Switch").append("Move Date");
+        $("#imgMoving").show();
+        $("#imgSwitching").hide();
+        $("#txtStreetName_BillingPrevious").val('@((Session["enrollmentObject2"] as EnrollmentData).previousAddress.StreetName)');
+             $("#txtAptNo_BillingPrevious").val('@((Session["enrollmentObject2"] as EnrollmentData).previousAddress.AptNum)');
+             $("#txtCity_BillingPrevious").val('@((Session["enrollmentObject2"] as EnrollmentData).previousAddress.CityName)');
+             $("#ddlStatePrevious").val('@((Session["enrollmentObject2"] as EnrollmentData).previousAddress.StateName)');
+             $("#txtZip_BillingPrevious").val('@((Session["enrollmentObject2"] as EnrollmentData).previousAddress.ZipCode)');
+         }
+         else {
+             IsMoving = "No";
+             $("#imgMoving").hide();
+             $("#imgSwitching").show();
+             document.getElementById("I'm Moving").checked = false;
+             document.getElementById("I'm Switching").checked = true;
+             $("#MovingDetail").hide();
+             $("#Move_Or_Switch").empty();
+             $("#Move_Or_Switch").append("Switch Date");
+         }
+
+         var isAuthrizeUser = '@(Session["AuthrizeUser"])'.toLowerCase();
+    if (isAuthrizeUser == "yes") {
+        $("#AnotherUserInfo").show();
+        $("#AnotherAuthUser").prop("checked", true);
+        $("#imgOtrUserYes").show();
+        $("#AnotherAuthUserNo").prop("checked", false);
+        $("#imgOtrUserNo").hide();
+        var isAuthUserFName = '@((Session["enrollmentObject2"] as EnrollmentData).AuthrizedUserFirstName)';
+        var isAuthUserLName = '@((Session["enrollmentObject2"] as EnrollmentData).AuthrizeduserLastName)';
+        var isAuthuserContactNumber = '@((Session["enrollmentObject2"] as EnrollmentData).AuthrizeduserContactNumber)';
+        $("#txtautUserFirstName").val(isAuthUserFName);
+        $("#txtautUserLastName").val(isAuthUserLName);
+        $("#txtautUserContactNumber").val(isAuthuserContactNumber);
+    }
+    else {
+        $("#AnotherUserInfo").hide();
+        $("#AnotherAuthUser").prop("checked", false);
+        $("#imgOtrUserYes").hide();
+        $("#AnotherAuthUserNo").prop("checked", true);
+        $("#imgOtrUserNo").show();
+    }
+    //history.pushState(null, null, location.href);
+
+
+    //window.onpopstate = function () {
+    //    history.go(1);
+    //};
+
+
+    //$("#DateofBirth").on("change", function () {
+    //    var fromdate = $(this).val();
+
+
+    // });  //});
+    //});
+    function allowAlphaNumericSpace(e) {
+        var code = ('charCode' in e) ? e.charCode : e.keyCode;
+        if (!(code == 32) && // space
+          !(code > 47 && code < 58) && // numeric (0-9)
+          !(code > 64 && code < 91) && // upper alpha (A-Z)
+          !(code > 96 && code < 123)) { // lower alpha (a-z)
+            e.preventDefault();
+        }
+    }
+    function blcokandsign(e) {
+        var code = ('charCode' in e) ? e.charCode : e.keyCode;
+        if (code == 38) { // blcok & sign
+            e.preventDefault();
+        }
+    }
+    function allowNumericSpace(e) {
+        var code = ('charCode' in e) ? e.charCode : e.keyCode;
+        if (!(code == 32) && // space
+          !(code > 47 && code < 58)) { // numeric (0-9)        
+            e.preventDefault();
+        }
+    }
+    $(function () {
+        $('#txtIdNumber').on('keypress', function (e) {
+            if (e.which == 32)
+                return false;
+        });
+        $('#txtAptNo_BillingPrevious').on('keypress', function (e) {
+            if (e.which == 32)
+                return false;
+        });
+        //$('#txtautUserFirstName').on('keypress', function (e) {
+        //    if (e.which == 32)
+        //        return false;
+        //});
+        //$('#txtautUserLastName').on('keypress', function (e) {
+        //    if (e.which == 32)
+        //        return false;
+        //});
+        $('#txtPOBoxNo').on('keypress', function (e) {
+            if (e.which == 32)
+                return false;
+        });
+    });
+
+    //Special Characters Validation
+    $('#txtStreetName_BillingPrevious').keypress(function (e) {
+        //validationForSpecialchar(e);
+        //allowAlphaNumericSpace(e);
+    });
+    function validationForSpecialchar(e) {
+        var regex = new RegExp("^[()*:,<>.a-zA-Z0-9-\s]+$");
+        var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+        if (regex.test(str)) {
+            return true;
+        }
+        e.preventDefault();
+        return false;
+    }
+    // ;
+    var Produrl = "";
+    Produrl = $("#hnProdUrl").val();
+    function show_Moviing_Panel() {
+
+        var Ischecked = document.getElementById("I'm Moving").checked;
+        if (Ischecked == true) {
+            IsMoving = "Yes";
+            $("#MovingDetail").show();
+            $("#Move_Or_Switch").empty();
+            $("#Move_Or_Switch").append("Move Date");
+        }
+        else {
+            IsMoving = "No";
+            $("#MovingDetail").hide();
+            $("#Move_Or_Switch").empty();
+            $("#Move_Or_Switch").append("Switch Date");
+        }
+        GetSwitchMoveInfo(IsMoving);
+    }
+    var availableDates = new Array();
+    var availableDates2 = "";
+    //var array = new Array();
+    function GetSwitchMoveInfo(IsMoving) {
+
+        var ddlSwitcchDates = $("#ddlSwitchDates");
+
+        ddlSwitcchDates.empty().append('<option selected="selected" value="0" disabled = "disabled">Loading.....</option>');
+        $("#loading_message").show();
+        //availableDates = '['
+        $.ajax({
+            type: 'POST',
+            dataType: 'json',
+            contentType: "application/json; charset=utf-8",
+
+            //url: "/OnlineEnrollment" + "/Home/GetSwitchMoveInfo?Switch_Or_Move=" + IsMoving,
+            url: Produrl + "/Home/GetSwitchMoveInfo?Switch_Or_Move=" + IsMoving,
+            success: function (response) {
+
+                ddlSwitcchDates.empty().append('<option selected="selected" value="0">Please select</option>');
+                // availableDates = [response.toString()];
+
+
+
+                $.each(response, function (i) {
+
+                    ddlSwitcchDates.append($("<option></option>").val(response[i]).html(response[i]));
+                    //availableDates += '"' + response[i] + '",';
+                    availableDates += response[i] + ',';
+
+                })
+
+                availableDates = availableDates.toString().substring(0, availableDates.length - 1);
+                $('#ddlSwitchDates').datepicker({ dateFormat: 'mm-dd-yy', beforeShowDay: available });
+
+
+                $("#loading_message").hide();
+            },
+        });
+
+        show_hideSwitchorMove_img();
+    }
+
+    function available(date) {
+        var aD = new Array();
+        availableDates = availableDates.replace(/^,|,$/g, '');
+        aD = availableDates.toString().split(',');
+        var month = (date.getMonth() + 1);
+        if (month < 10) {
+            month = "0" + month;
+        }
+        var dd = date.getDate();
+        if (dd < 10) {
+            dd = "0" + dd;
+        }
+        dmy = dd + "-" + month + "-" + date.getFullYear();
+        if ($.inArray(dmy, aD) != -1) {
+
+            return [true, "", "Available"];
+        }
+        else {
+            return [false, "", "unAvailable"];
+        }
+    }
+    //Added New Jquery DatePicker Function.
+    var MinDatetoday = new Date();
+    var MinlastDate = new Date(MinDatetoday.getFullYear() - 100, 11, 31);
+    var Maxtoday = new Date();
+    var MaxlastDate = new Date(Maxtoday.getFullYear() - 18, 11, 31);
+    $('#DateofBirth').datepicker('hide');
+
+    function DateFormatValidation() {
+        
+        //Get the date from the TextBox.
+        var dateString = document.getElementById("DateofBirth").value;
+        //var regex = /^(((((((0?[])|(1[02]))[\.\-/]?((0?[1-9])|([12]\d)|(3[01])))|(((0?[469])|(11))[\.\-/]?((0?[1-9])|([12]\d)|(30)))|((0?2)[\.\-/]?((0?[1-9])|(1\d)|(2[0-8]))))[\.\-/]?((\d{2})?([\d][\d]))))|((0?2)[\.\-/]?(29)[\.\-/]?(((19)|(20))?(([02468][048])|([13579][26])))))$/;
+        var regex = /^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$/;
+
+        //Check whether valid dd/MM/yyyy Date Format.
+        var parts = dateString.split("-");
+        var dtDOB = new Date(parts[0] + "-" + parts[1] + "-" + parts[2]);
+        var day = parts[1];
+        var month = parts[0];
+        var year = parts[2];
+        var dtCurrent = new Date();
+        if ((month == 04 || month == 06 || month == 09 || month == 11) && day == 31) {
+            $(".DateofBirthEror").show();
+            $("#DateofBirth").css('border-color', 'red');
+            $(".DateofBirthEror").text("Please enter the valid date.");
+            $('#DateofBirth').val("");
+            return false;
+        }
+        if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+            //if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+            //    $(".DateofBirthEror").show();
+            //    $("#DateofBirth").css('border-color', 'red');
+            //    $(".DateofBirthEror").text("Please enter date of birth in mm-dd-yyyy format.");
+            //    $('#DateofBirth').val("");
+            //    return false;
+            // }
+        }
+        if (month == 2) { // check for february 29th
+            var isleap = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+            if (day > 29 || (day == 29 && !isleap)) {
+                $(".DateofBirthEror").show();
+                $("#DateofBirth").css('border-color', 'red');
+                $(".DateofBirthEror").text("Wrong Date.");
+                $('#DateofBirth').val("");
+                return false;
+            }
+        }
+
+        if (day == "00") {
+            $(".DateofBirthEror").show();
+            $("#DateofBirth").css('border-color', 'red');
+            $(".DateofBirthEror").text("Please enter in mm-dd-yyyy format.");
+            $('#DateofBirth').val("");
+            return false;
+        }
+        if (month == "00") {
+            $(".DateofBirthEror").show();
+            $("#DateofBirth").css('border-color', 'red');
+            $(".DateofBirthEror").text("Please enter in mm-dd-yyyy format.");
+            $('#DateofBirth').val("");
+            return false;
+        }
+        if (regex.test(dateString)) {
+
+            if (dateString.charAt(2) != "-") {
+                $(".DateofBirthEror").show();
+                $("#DateofBirth").css('border-color', 'red');
+                $(".DateofBirthEror").text("Please enter in mm-dd-yyyy format.");
+                $('#DateofBirth').val("");
+                return false;
+            }
+            if (dateString.charAt(5) != "-") {
+                $('#DateofBirth').val("");
+                return false;
+            }
+
+
+            //lblError.innerHTML = "Eligibility 18 years ONLY."
+            if (dtCurrent.getFullYear() - dtDOB.getFullYear() < 18) {
+                $(".DateofBirthEror").show();
+                $("#DateofBirth").css('border-color', 'red');
+                $(".DateofBirthEror").text("You must be at least 18 years old to sign up for electricity service.");
+                $('#DateofBirth').val("");
+                return false;
+
+            }
+
+            if (dtCurrent.getFullYear() - dtDOB.getFullYear() == 18) {
+
+                //CD: 11/06/2018 and DB: 15/07/2000. Will turned 18 on 15/07/2018.
+                if (dtCurrent.getMonth() < dtDOB.getMonth()) {
+                    $(".DateofBirthEror").show();
+                    $("#DateofBirth").css('border-color', 'red');
+                    $(".DateofBirthEror").text("You must be at least 18 years old to sign up for electricity service.");
+                    $('#DateofBirth').val("");
+                    return false;
+                }
+                if (dtCurrent.getMonth() == dtDOB.getMonth()) {
+                    //CD: 11/06/2018 and DB: 15/06/2000. Will turned 18 on 15/06/2018.
+                    if (dtCurrent.getDate() < dtDOB.getDate()) {
+                        $(".DateofBirthEror").show();
+                        $("#DateofBirth").css('border-color', 'red');
+                        $(".DateofBirthEror").text("Please enter date of birth in mm-dd-yyyy format.");
+                        $('#DateofBirth').val("");
+                        return false;
+                    }
+                }
+            }
+
+            if (day.length < 2 || (month.length < 2)) {
+                $(".DateofBirthEror").show();
+                $(".DateofBirthEror").text("Please enter date of birth in mm-dd-yyyy format.");
+                $("#DateofBirth").css('border-color', 'red');
+                $('#DateofBirth').val("");
+            }
+            else {
+                $(".DateofBirthEror").hide();
+                $("#DateofBirth").css('border-color', '');
+                // return true;
+            }
+            if (month.length < 2) {
+                $(".DateofBirthEror").show();
+                $(".DateofBirthEror").text("Please enter date of birth in mm-dd-yyyy format.");
+                $("#DateofBirth").css('border-color', 'red');
+                $('#DateofBirth').val("");
+            }
+            else {
+                $(".DateofBirthEror").hide();
+                $("#DateofBirth").css('border-color', '');
+                // return true;
+            }
+        }
+        else {
+            $(".DateofBirthEror").show();
+            $("#DateofBirth").css('border-color', 'red');
+            $(".DateofBirthEror").text("Please enter date of birth in mm-dd-yyyy format.");
+            $('#DateofBirth').val("");
+
+        }
+
+
+    }
+    //New Method for datevalidation
+    //End
+</script>
+<script>
+    $(document).ready(function () {
+
+        $("#ddlSwitchDates").keydown(false);
+        $('#EditButtonAddress_no').click(function () {
+            $('#txtAddress').val("");
+            $('#serAddMsg').hide();
+            $("#btAddress").css("display", "none");
+        });
+        //});
+        //$(document).ready(function () {
+        $('#EditButtonAddress_yes').click(function () {
+
+            var userAddress = $("#txtAddress").val();
+            var zipcode = $("#txtZipCode2").val();
+            var ser = {
+                userAddress: userAddress,
+                zipcode: zipcode
+            };
+            $.ajax({
+                type: 'POST',
+                data: ser,
+                url: Produrl + "/Home/EditServiceAddress",
+                success: function (response) {
+
+                    if (response != null) {
+                        var response2 = response.ProductBox;
+                        // var url = "/Home/Index?zip" + zipcode;
+                        
+                        var tdsp=response[2];
+                        var refid = response[3];
+                        if (refid) {
+                            //window.location.href = Produrl + "/Home/Index?refid="+refid+"&zip=" + zipcode + "&TDSP=" + tdsp;
+                            window.location.href = Produrl + "/Home/Index?zip=" + zipcode + "&TDSP=" + tdsp+"&"+refid;
+                        }
+                        else {
+                            window.location.href = Produrl + "/Home/Index?zip=" + zipcode + "&TDSP=" + tdsp;
+                        }
+                        $("#txtZipCode2").val(zipcode);
+                        //window.history.replaceState("object or string", "Title", Produrl + "/Home/" + tbName + "/OrderNow");
+                    }
+
+                }
+            });
+
+        });
+        //});
+        @*</script>*@
+ @*<script>
+     $(document).ready(function () {*@
+        document.getElementById('txtCell1').addEventListener('onblur', function (e) {
+
+
+            var x = e.target.value.replace(/\D/g, '').match(/(\d{3})(\d{3})(\d{4})/);
+            e.target.value = '(' + x[1] + ') ' + x[2] + '-' + x[3];
+        });
+        $("#txtCell1").on("input", function () {
+            if (/^0/.test(this.value)) {
+                this.value = this.value.replace(/^0/, "")
+            }
+        })
+
+
+        //$(window).scroll(function () {
+
+        //    if ($(this).scrollTop() > 0) {
+        //        $('.backbutton').fadeOut();
+        //    }
+        //    else {
+        //        $('.backbutton').fadeIn();
+        //    }
+        //});
+        $("#lock").click(function () {
+            var $title = $(this).find(".title");
+            if (!$title.length) {
+                $(this).append('<span class="title">' + $(this).attr("title") + '</span>');
+            } else {
+                $title.remove();
+            }
+        });
+    });
+
+
+    </script>
+ <script type="text/javascript">
+     function preventBack() {
+         window.history.forward();
+     }
+
+     setTimeout("preventBack()", 0);
+
+     window.onunload = function () { null };
+    </script> 

@@ -1,0 +1,612 @@
+﻿@model WebEnrollmentNewDesign.Models.FunEnrollment
+@{
+    ViewBag.Title = "TestConfirmation";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head name="confirmHead">
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+     
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+
+    @System.Web.Optimization.Styles.Render("~/css/Confirmationcss")
+    @System.Web.Optimization.Scripts.Render("~/scripts/Confirmationjs")
+
+    <link rel="icon" type="image/x-icon" href="~/images/frontier.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   
+    <link href="~/IndexCSS/common.css" rel="stylesheet" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154959559-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154959559-1');
+    </script>
+     
+</head>
+
+<body class="frontier conf">
+    <input type="hidden" id="hnProdUrl" value='@System.Web.Configuration.WebConfigurationManager.AppSettings["ProdURL"]'/>
+    <input type="hidden" id="brandcNumber" value="" />
+   
+    <div class="frontier_confirm">
+        <div class="container-fluid" style="padding: 0px;">            
+            <div class="row p_fixed">
+                <div class="header">
+                    <div class="logo">
+                    <img src="https://frontierutilities.com/images/logo%202.png" width="300" />
+                        </div>
+                </div>
+            </div>
+            <div id="loading_message" style="display: none;">
+            </div>
+
+            <div class="container">
+                <input type="hidden" id="hdnPaymentValue" />
+                <div id="CompleteInfo">
+                    <div class="row mt_data user_information">
+                        <div class="message ">
+                               <div class="icon-success"></div>
+
+                                <div>
+                                    <div class="" style='font-size: large; color: #0B3958;'>
+                                        <b>One last thing, we need a deposit.<br />
+                                            Complete your deposit payment below and you'll be all set!</b>
+                                    </div>
+                                    <div class="col-lg-12 col-12 mt-4 mb_20">
+                                        <div class="amount">
+                                            <div>
+                                                Deposit Amount:</div>   <div><label id="depAmtValue"></label>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="clear">
+
+                                        <div class=" center">
+                                        <button id="btPayNow" class="plan_order_button btn-frontier" style="border-radius: 5px;">Continue with Deposit</button></div>
+                                        <div id="divResponse" style="display: none">
+                                            Account Number:<label id="lbCustNumber" style="color: #ee8d40"></label><br />
+                                            <br />
+                                            Please select your payment option from following 
+                                        </div>
+                                        <div id="ErrorResponse">
+
+                                            <label id="lbErrorMsg" style="font-size: larger; color:red"></label>
+                                            <br />
+                                            <br />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="WithoutDeposit" style="display: none">
+                                    <div class="mt-5" style='color: #0B3958;' id="msgWithoutDeposit">
+                                        We have completed your order. Your account details are below and we have emaild your account information and plan.
+                                 
+                                    </div>
+                                    <div class="mt-3 mb-3" style='color: #0B3958;'>
+                                        <b>Your account number is:
+                                            <label id="custNum1"></label>
+                                        </b>
+
+                                    </div>
+                                    <button id="btAutoPayment3" class="plan_order_button btn-frontier col-xl-3 col-12" style="border-radius: 5px;">Setup Autopay</button>
+                                </div>
+                                <div class="mt-5" style='font-size: large; color: #0B3958;'>
+                                    <b>You’re Signed Up for Electricity!</b><br />
+                                    Thanks for choosing us. You’ll be receiving your welcome email & letter soon. Stay tuned!
+                                 
+                                </div>
+                                <div class="mt-5" style='font-size: large; color: #0B3958;'>
+                                    <b>Your account number is:
+                                        <label id="custNum2"></label>
+                                    </b>
+
+                                </div>
+                                <button id="btAutoPayment2" class="plan_order_button btn-frontier" style="border-radius: 5px;">Setup Autopay</button>
+                                        
+                                <button id="btAutoPayment" class="btn btn-frontier" style="border-radius: 5px;">Setup Autopay</button>
+                                   
+                                <div class="col-lg-9 col-12 user_information mt_105 p-0" id="PrePaySetup">
+                                 
+                                    <h4 style="color: #ee8d40">Setup Fees</h4>
+                                    <div>
+                                    <div class="table-responsive">
+                                        <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered m-0" id="gvTaxInfo">
+                                            <thead>
+                                                <tr>
+                                                    <th>Fee Description
+                                                    </th>
+                                                    <th>Charges
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                            <tfoot>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <div class="col-lg-12 col-12 mt-4 pl-2 pr-2 mb_20">
+                                        <label for="name" style="color: #ee8d40">To begin service, you will need to purchase kilowatt hours (kWh) of power.</label><br />
+                                        <label>Enter the amount you wish to spend (and press Tab)</label>
+                                        $
+                                        <input type="text" id="txtPurchaseAmt" value="100" clientidmode="Static" class="form-control  col-lg-3 col-12" style="float: none; display: inline-block; width: 97% !important;" />
+
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered m-0" id="gvPaymentFees">
+                                            <thead>
+                                                <tr>
+                                                    <th>Fee Description
+                                                    </th>
+                                                    <th>Charges
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                            <tfoot>
+                                                
+                                                
+                                                
+                                                <tr>
+                                                        <th></th>
+                                                    <th>
+                                                        <button id="btPayNow2" class="btn btn-frontier" style="border-radius: 5px;" href="#paymentcciframe">Pay Now</button>
+                                                        </th>
+                                                </tr>
+                                                 
+                                            </tfoot>
+                                        </table>
+                                        <br />
+                                      
+                                    </div>
+                                    <br />
+                                </div>
+                                    </div>
+                                <div>
+    
+                                </div>  
+                               
+                            <div class="col-lg-12 col-12 mb_20">
+                                <div class="middle_align">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-12" id="paymentDiv" style="display: none">
+
+                            <iframe id="paymentcciframe" class="Ifr_hght" scrolling="no"></iframe>
+                        </div>
+                        <div class="col-lg-12 col-12" id="paymentDiv2" style="display: none;">
+
+                            <iframe id="paymentcciframe2" class="Ifr_hght" scrolling="no"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    var CustNumber = "";
+    var CustId = "";
+    var CustEmailId = "";
+    var CustContactNo = "";
+    var PaymentAmt = "";
+    var PayOrSchedule = "";
+    var prePay = "";
+    $(function () {
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+
+        var ProdUrl = "";
+        ProdUrl = '@(System.Configuration.ConfigurationManager.AppSettings["ProdURL"].ToString())';
+        var url = '@(System.Configuration.ConfigurationManager.AppSettings["Enrollmentcciframe"].ToString())';
+        $("#paymentcciframe").attr('src', url);
+        var url2 = '@(System.Configuration.ConfigurationManager.AppSettings["Enrollmentcciframe2"].ToString())';
+        $("#paymentcciframe2").attr('src', url2);
+        var data = '@Model.ProdDetails.Prepay_YN';
+
+        PaymentAmt = '@TempData["DepositAmount"]';
+        PendingError = '@TempData["PendingMsgData"]';
+        var ttno = '@TempData.Peek("BrandTellNo")';
+
+        if (PendingError != "") {
+
+
+            var tollFreeNum = ttno;
+            $("#ErrorResponse2").show();
+            $("#PendingMsg").empty();
+            $("#PendingMsg").append("<b>Almost there!</b> <br />It looks like we need more information to finish signing you up. Please give our team a call at " + tollFreeNum + " to complete your enrollment.");
+            $("#PendingMsg").append("<br/>" + PendingError);
+
+            InsertMileStone("PendingForReview");
+            $("#WithoutDeposit").hide();
+            $("#btAutoPayment").hide();
+            PaymentAmt = 0;
+            window.history.replaceState("object or string", "Title", Produrl + "/Home/Confirmation/PendingForReview");
+        }
+        if (PaymentAmt > 0) {
+            PayOrSchedule = "Pay";
+            $("#DepAmount").show();
+            $("#WithoutDeposit").hide();
+            $("#depAmtValue").text("$" + PaymentAmt);
+            window.history.replaceState("object or string", "Title", Produrl + "/Home/Confirmation/Continuewithdeposit");
+            InsertMileStone("DepositRequired");
+        }
+        else if (PaymentAmt == 0 && PendingError == '') {
+
+            //window.history.replaceState("object or string", "Title", Produrl+"/Home/Confirmation/Continuewithoutdeposit");
+            window.history.replaceState("object or string", "Title", Produrl + "/Home/Confirmation/Success");
+            // InsertMileStone("EnrollmentCompleted");
+            CustNumber = '@TempData["CustomerNumber"]';
+            CustId = '@TempData["CustomerId"]';
+           
+            
+            if (CustId != "0" || CustId != "") {
+                $("#custNum1").text(CustNumber);
+                $("#custNum2").text(CustNumber);
+                //  $("#custNumPrePay").text(CustNumber);
+                $("#WithoutDeposit").show();
+                PayOrSchedule = "Schedule";
+                $("#msgWithoutDeposit").empty();
+                $("#msgWithoutDeposit").append("<b>You’re Signed Up for Electricity!</b><br/>Thanks for choosing us. You’ll be receiving your welcome email & letter soon. Stay tuned!");
+            }
+            else {
+                window.history.replaceState("object or string", "Title", Produrl + "/Home/Confirmation/PendingForReview");
+                $("#ErrorResponse2").show();
+                $("#PendingMsg").empty();
+                $("#PendingMsg").append("<b>Almost there! </b><br />It looks like we need more information to finish signing you up. Please give our team a call at " + tollFreeNum + "to complete your enrollment.");
+                $("#PendingMsg").append("<br/>" + PendingError);
+                $("#WithoutDeposit").hide();
+                $("#btAutoPayment").hide();
+            }
+        }
+
+        else if (PaymentAmt == -1) {
+            $("#ErrorResponse2").show();
+            $("#lbErrorMsg2").text('Your enrollment cannot be proceed now. Please try after some time.');
+        }
+        $("#hdnPaymentValue").val(PaymentAmt);
+
+        if (data.toLowerCase() == "y") {
+            $("#btPayNow2").css("display", "block");
+            $("#btAutoPayment2").css("display", "none");
+            $('#gvTaxInfo').dataTable({
+                // bProcessing: true,
+
+                serverSide: true,
+                processing: true,
+                language: {
+                    processing: '<i><img src="/images/loading.gif" width="200px" /></i>'
+                },
+                searching: false, paging: false, info: false, "bSort": false,
+                sAjaxSource: Produrl + '/Home/GetFeeInfo'
+
+            });
+            getPaymentfees();
+
+            function getPaymentfees() {
+                var purchaseAmt = $('#txtPurchaseAmt').val();
+                $('#gvPaymentFees').dataTable({
+                    destroy: true,
+                    // bProcessing: true,
+                    searching: false, paging: false, info: false, "bSort": false,
+                    serverSide: true,
+                    processing: true,
+                    language: {
+                        processing: '<i><img src="/images/loading.gif" width="200px"/></i>'
+                    },
+                    sAjaxSource: Produrl + '/Home/fillTaxAndUsage?purchaseAmt=' + purchaseAmt
+
+                });
+            }
+            $('#txtPurchaseAmt').change(function () {
+                $('#paymentDiv').hide();
+                getPaymentfees();
+
+
+            });
+        }
+        else {
+            // $("#PrePaySetup").hide();
+        }
+
+
+
+    });
+$(function () {
+
+    $('#btPayNow').click(function () {
+
+        InsertMileStone("DepositPayment");
+        window.history.replaceState("object or string", "Title", Produrl + "/Home/Confirmation/Continuewithdeposit");
+        $("#loading_message").show();
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            contentType: "application/json; charset=utf-8",
+
+            url: Produrl + '/Home/SubmitCustomerEnrollInfo',
+            success: function (response) {
+                $("#loading_message").hide();
+                $('#btPayNow').hide();
+
+                if (response != "") {
+                    $("#DepAmount").show();
+                    CustNumber = response[0];
+
+                    CustId = response[1];
+                    CustEmailId = 'frontierutilities.com';
+                    CustContactNo = '96867897584'
+                    if (CustNumber == "0") {
+                        var tollFreeNum = $("#brandcNumber").val();
+                        var errorMsg = "There was an error while processing your enrollment. Please contact customer care at " + tollFreeNum;
+                        $("#ErrorResponse").show();
+                        $("#lbErrorMsg").text(errorMsg);
+                    }
+                    else {
+                        $("#divResponse").show();
+                        $("#lbCustNumber").text(CustNumber);
+
+                        $('#paymentDiv').show();
+
+                        GetSessionObject();
+                    }
+                }
+
+
+            },
+        });
+
+    });
+    function bindEvent(element, eventName, eventHandler) {
+        if (element.addEventListener) {
+            element.addEventListener(eventName, eventHandler, false);
+        } else if (element.attachEvent) {
+            element.attachEvent('on' + eventName, eventHandler);
+        }
+    }
+    $(document).ready(function () {
+        bindEvent(window, 'message', function (e) {
+            try {
+                var response = JSON.parse(e.data);
+                var validatepci = response.IsValidate;
+                var childid = response.ChildUniqueId;
+                var sessionid = response.PCISessionId;
+                if (validatepci == "1") {
+                    var serializedform = {
+                        ChildId: childid,
+                        PCISessionId: sessionid
+                    };
+                    $.ajax({
+                        url: Produrl + '/Home/ValidatePCITransactionLog',
+                        // url: '@Url.Action("ValidatePCITransactionLog")',
+                            type: "POST",
+                            data: serializedform,
+                            success: function (result) {
+                                // Post message to Child to enable button
+                                //PostRequestInfoToChild(result.resultMessage);
+                                PostRequestInfoToChild(result.requestMessage);
+                            }
+                        });
+                    }
+                    else {
+                        fncInsertTransaction(response);
+                        RefreshDashboard();
+                    }
+                }
+                catch (err) {
+                    // the JSON.parse call failed, handle the error appropriately
+                    //alert(err);
+                }
+            });
+        });
+
+    $('#btPayNow2').click(function () {
+
+        $('#paymentDiv').show();
+        PaymentAmt = $('#txtPurchaseAmt').val();
+        prePay = "Y";
+        GetSessionObject();
+    });
+    $('#btAutoPayment').click(function () {
+        //   $('#paymentDiv').hide();
+        $('#paymentDiv2').show();
+
+        GetSessionObject2();
+    });
+
+    $('#btAutoPayment2').click(function () {
+        //   $('#paymentDiv').hide();
+        $('#btAutoPayment2').hide();
+        $('#paymentDiv2').show();
+        CustNumber = '@TempData["CustomerNumber"]';
+            CustId = '@TempData["CustomerId"]';
+        CustEmailId = 'frontierutilities.com';
+            CustContactNo = '96867897584'
+            GetSessionObject2();
+        });
+    $('#btAutoPayment3').click(function () {
+
+        $('#paymentDiv').hide();
+        $('#btAutoPayment3').hide();
+        $('#paymentDiv2').show();
+        CustNumber = '@TempData["CustomerNumber"]';
+            CustId = '@TempData["CustomerId"]';
+        CustEmailId = 'frontierutilities.com';
+        CustContactNo = '96867897584'
+            GetSessionObject2();
+        });
+
+    $(function () {
+        //kendo.ui.progress($("#divMainAutopay"), true);
+        window.onmessage = function (e) {
+
+            if (e.data == '1') {
+                window.history.replaceState("object or string", "Title", Produrl + "/Home/Confirmation/SuccessDeposit");
+            }
+        };
+    });
+    //************For pay Now**********************
+    function GetSessionObject() {
+
+        $.ajax({
+            //url: '@Url.Action("GetSessionObject")',
+                url: Produrl + '/Home/GetSessionObject',
+                success: function (result) {
+
+                    PostToChild(result.PCISessionId);
+                    //       PostRequestInfoToChild(1);
+                },
+                error: function (result) {
+                }
+            });
+        }
+    function PostToChild(PCISessionId) {
+
+        var iframeEl = document.getElementById('paymentcciframe');
+        var sendMessage = function (msg) {
+            iframeEl.contentWindow.postMessage(msg, '*');
+        };
+        var serializedobject = {
+            PCISessionId: PCISessionId,
+            CustomerNumber: CustNumber,
+            IsInsertPCILog: "1",
+        }
+
+        sendMessage(JSON.stringify(serializedobject));
+    }
+
+    function PostRequestInfoToChild(result) {
+
+
+        //if (result == "1") {
+
+        var jsArray = JSON.parse('@Html.Raw(Json.Encode(@Model.personalInfo))');
+            PrepareIframeObject(jsArray);
+            var myaccountiframe = document.getElementById('paymentcciframe');
+            myaccountiframe.contentWindow.postMessage(JSON.stringify(iframeobject), '*');
+            //kendo.ui.progress($("#divMainAutopay"), false);
+            $("#divTryAgain").hide();
+            $("#paymentDiv").show();
+            //  kendo.ui.progress($("#dvdashboard-body"), false);
+            kendo.ui.progress($("#divTryAgain"), false);
+           
+    function GetSessionObject2() {
+        $.ajax({
+            //url: '@Url.Action("GetSessionObject")',
+                url: Produrl + '/Home/GetSessionObject',
+                success: function (result) {
+
+                    PostToChild2(result.PCISessionId);
+                    PostRequestInfoToChild2(1);
+                },
+                error: function (result) {
+                }
+            });
+        }
+    function PostToChild2(PCISessionId) {
+
+        var iframeEl = document.getElementById('paymentcciframe2');
+        var sendMessage = function (msg) {
+            iframeEl.contentWindow.postMessage(msg, '*');
+        };
+        var serializedobject = {
+            PCISessionId: PCISessionId,
+
+            CustomerNumber: CustNumber,
+            IsInsertPCILog: "1",
+        }
+        sendMessage(JSON.stringify(serializedobject));
+    }
+
+    function PostRequestInfoToChild2(result) {
+
+        if (result == "1") {
+
+
+            var jsArray = JSON.parse('@Html.Raw(Json.Encode(@Model.personalInfo))');
+                PrepareIframeObject(jsArray);
+                var myaccountiframe = document.getElementById('paymentcciframe2');
+                myaccountiframe.contentWindow.postMessage(JSON.stringify(iframeobject), '*');
+                //kendo.ui.progress($("#divMainAutopay"), false);
+                $("#paymentcciframe").hide();
+                $("#divTryAgain").hide();
+                $("#paymentDiv").hide();
+                $("#paymentDiv2").show();
+                //  kendo.ui.progress($("#dvdashboard-body"), false);
+                //  kendo.ui.progress($("#divTryAgain"), false);
+            }
+            else {
+                // Insert PCI Log
+                var serialize = {
+                    message: "Try Again CustNo: " + '',
+                    SourcePage: "Source Page: OEF",
+                };
+                $.ajax({
+                    url: '@Url.Action("InsertPCILog")',
+                    type: "POST",
+                    data: serialize,
+                    success: function (result) { }
+                });
+                $("#divTryAgain").show();
+                $("#paymentDiv2").hide();
+                //  kendo.ui.progress($("#dvdashboard-body"), false);
+
+            }
+        }
+
+});
+</script>
+
+<script type="text/javascript">
+
+    var zpCode = '54545454';
+
+
+    var iframeobject = {};
+    function PrepareIframeObject(model) {
+        iframeobject = {
+            custno: CustNumber,
+            email: CustEmailId,
+
+            phoneno: CustContactNo,
+            custid: CustId,
+            firstname: model.first_name,
+            lastname: model.last_name,
+            autopay: "",
+            ZipCode: zpCode,
+            PaymentAmt: PaymentAmt,
+            IsInsertPCILog: "0",
+            PCISessionId: "",
+            PrePay: prePayDepAmount
+        };
+    }
+
+
+</script>
+
+@*<link href="~/IndexCSS/common.css" rel="stylesheet" />*@

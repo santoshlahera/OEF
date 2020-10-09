@@ -1,0 +1,662 @@
+orange{color:#ee8d40 !important}
+.airline label{color:#000!important}
+.Brand .Brand_enroll h3{font-weight:700 !important;color:#ee8d40 !important}
+.astrik label::after {
+    content: '*';
+	color:#ee8d40 !important
+}
+div.stylized_radio_input input:checked+label {background-color:#ee8d40 !important}
+div.stylized_radio_input label {border-color:#ee8d40 !important;}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #259cc0 !important;
+    border-color: #dee2e6 #dee2e6 #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-tabs .nav-link {font-size: 18px;}
+.nav-tabs .nav-link {text-decoration: none;}
+section.user_identity_verification div.id_verify_entry { background-color: #259cc0 !important;}
+div.order_form_left {margin-right:0px !important;}
+ div.order_form_right div.plan_head_text h3 {font-size:34px !important;}
+.electricity_summary a {
+    color: #007bff !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+.electricity_summary a:hover {
+    color: #0056b3 !important;
+    text-decoration: underline !important;
+}
+.links_col a {
+    color: #007bff !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+.links_col a:hover {
+    color: #0056b3 !important;
+    text-decoration: underline !important;
+}
+
+
+
+.nav-tabs .nav-link {
+    text-decoration: none;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    margin: 0px 46px !important;
+    padding: 10px 21px !important;
+	
+}
+.plan_price_symbol{color:#ee8d40 !important}
+.plan_price_value{color:#ee8d40 !important}
+.Home_p .nav-link{margin:0px !important;background-color: #efefef !important;border-color: #efefef !important;color: #259cc0 !important;}
+.Home_p .nav-link.active{color:white !important;border-color:#259cc0 !important;}
+
+/* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New *//* New */
+.Brand .Brand_enroll .user_information {
+    padding: 40px;
+    margin: 0 0 40px 0;	
+	    background-color: #efefef;
+}
+.Brand .Brand_enroll .user_information h3 {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 0 0 10px 0;
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.Brand .Brand_enroll .mb_20 {margin-bottom:20px;}
+.Brand .Brand_enroll .form-control {height:45px;}
+
+.Brand .Brand_enroll .btn-Brand {
+    color:black !important;
+    background-color:#ee8d40 !important;
+        border-color:#ee8d40 !important;
+        box-shadow:2px 5px 10px 1px #999;
+}
+.Brand .Brand_enroll .p_fixed {
+        background-color: white;
+        border-bottom: 1px solid #d9d9d9;
+        position: fixed;
+        z-index: 1;
+        width:100% !important;
+    }
+.Brand .Brand_enroll  .mt_data {
+        margin-top:10% !important;
+    }
+
+@media only screen and (min-width:320px )and (max-width: 767px) {
+    .liwidth_css {
+    width:100% !important;
+}
+    #home,#menu2,#menu4,#menu5 {
+        height:auto !important;
+    }
+    .mt_img {
+        margin-top:10px !important;
+    }
+    .mt_50 {
+        margin-top:50px !important;
+    }
+    .Brand .Brand_enroll .mb_20 {margin-bottom:20px;margin-top:30px !important;}
+    .mbl_style_sidebar {
+        position:absolute !important;
+    }
+    .mt_105 {
+        margin-top:570px !important;
+    }
+    .nav-tabs .item_2 {
+        width:44% !important;
+    }
+    /*.nav-tabs .item_1 {
+        width:33% !important;
+    }*/
+    .nav-tabs .item_1  .nav-link {
+        font-size:10px !important;
+    }
+     .nav-tabs .item_2  .nav-link {
+        font-size:16px !important;
+    }
+.Brand .Brand_enroll .f_12 {
+    font-size:12px !important;
+    }
+    .btn {
+		width:100% !important;
+	}
+    #box20 {
+        margin-top:70px !important;
+    }
+}
+@media only screen and (min-width:320px )and (max-width: 375px) {
+.Brand .Brand_enroll .display_b {display:block !important;}
+.Brand .Brand_enroll .m_0 {margin:0px !important;}
+}
+
+
+@media only screen and (min-width:320px) and (max-width: 767px) {
+    .Brand .Brand_enroll .col-12 {
+    padding-left:16px !important;
+    padding-right:16px !important;
+}
+.Brand .Brand_enroll .mbl_tab {
+        width:100% !important;
+        text-align:center !important;
+    }
+       br {
+    clear: both;
+    display: none !important;
+    }
+.Brand .Brand_enroll .mt_20 {
+        margin-top:20px !important;
+    }
+    input[type="radio"] {
+        margin-top:0px !important;
+    }
+.Brand .Brand_enroll .mt_30 {
+        margin-top:30% !important;
+    }
+.Brand .Brand_enroll #sideBar {
+        position:static !important;
+        width:100% !important;
+    }
+.Brand .Brand_enroll #box20 {
+        width:100% !important;
+    }
+.Brand .Brand_enroll .mbl_style_sidebar {
+        padding:0px !important;
+        margin-bottom:40px !important;
+    }
+.Brand .Brand_enroll .box202,.box200,#box201,#box202 {
+        width:90% !important;
+    }
+.Brand .Brand_enroll .p_fixed {
+        background-color: white;
+        border-bottom: 1px solid #d9d9d9;
+        position: fixed;
+        z-index: 1;
+        width:100% !important;
+    }
+.Brand .Brand_enroll .mt_data {
+        margin-top:25% !important;
+    }
+    /*08/11/2019 Changes*/
+  
+}
+/*08/11/2019 Changes*//*08/11/2019 Changes*//*08/11/2019 Changes*//*08/11/2019 Changes*//*08/11/2019 Changes*/
+.Brand .Brand_enroll .liwidth_css {
+    width:100% !important;
+}
+.Brand .Brand_enroll .pop_design {
+    max-width: 50%;
+    max-height: 60%;
+    overflow-y: scroll;
+}
+.Brand .Brand_enroll .pop_design_1 {
+    color: white !important;
+    background-color: #c80000 !important;
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    right: 0px;
+    border-radius: 50%;
+    opacity: 1 !important;
+    font-size: 26px !important;
+    font-weight: 100 !important;
+}
+
+/*26-11-2019*/
+.Brand .Brand_enroll .modal-dialog {
+            pointer-events:all !important;
+}
+.Brand .Brand_enroll .orange_tool:hover {
+        background-color:orange !important;
+        border-radius:6px;
+        color:white !important;
+}
+.Brand .Brand_enroll .changeBorderColor {border-color:red;}
+.Brand .Brand_enroll .form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.Brand .Brand_enroll label {
+        font-weight:normal !important;
+}
+
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.Brand .Brand_enroll  .form-control-placeholder {
+  position: absolute;
+  top: 6px;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+.Brand .Brand_enroll .Home_p .form-control:focus + .form-control-placeholder,
+.Brand .Brand_enroll .form-control:valid + .form-control-placeholder {
+color:white !important;
+}
+.Brand .Brand_enroll .form-control:valid + .form-control-placeholder {
+color:#555555 !important;
+}
+.Brand .Brand_enroll .Home_p .form-control:valid + .form-control-placeholder {
+        color:white !important;
+    } 
+.Brand .Brand_enroll .form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder  {
+  font-size: 100%;
+  transform: translate3d(0, -110%, 0);
+  opacity: 1;
+  bottom:0px;
+}
+
+.Brand .Brand_enroll .disable-outside-clicks {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Brand .Brand_enroll .enabled-clicks {
+  width: 200px;
+  margin: 0 auto;
+}
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px Arial;  
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+  width:100%;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  /*background-color: #f1f1f1;
+  width: 100%;*/
+  padding-left:12px !important;
+}
+input[type=text]:hover {
+  background-color:white !important;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Brand .Brand_enroll .autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  height:200px;
+   overflow-y: scroll;
+}
+
+.Brand .Brand_enroll .autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+.Brand .Brand_enroll .m_b_20 {
+        margin-bottom:20px;
+    }
+.Brand .Brand_enroll .b_p_ul {
+        border-bottom:1px solid #ccc;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+.Brand .Brand_enroll #loading_message {
+          display:;
+   position: fixed;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  overflow: none;
+  /*margin: auto;*/
+  /*margin-left:20%;
+  margin-top:20%;*/
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+    background: url('../images/loading.gif') 50% 50%  no-repeat rgb(249,249,249);
+  opacity:0.8;
+}
+.Brand .Brand_enroll .loadingmessage{
+   position:absolute;
+  z-index: 999;
+  height: 100%;
+  width: 20%;
+  overflow: none;
+  margin: auto;
+  /*margin-left:20%;
+  margin-top:-4%;*/
+  top: 70px;
+  left: 0;
+  bottom: 0;
+ 
+    background: url('../images/loader.gif') 50% 50%  no-repeat rgb(249,249,249);
+  opacity:0.8;
+}
+.Brand .Brand_enroll .Home_p .clr_wht{color:white;}
+.Brand .Brand_enroll .genral_label{margin-bottom:0px;background-color:#989998 !important;color:white;width: 100%;height: 35px;padding: 6px;border-top-left-radius: 7px;border-top-right-radius: 7px;}
+.Brand .Brand_enroll .form-check{padding-left:0px ! important;}
+.Brand .Brand_enroll .w_30{display:inline-block;width:24%;}
+.Brand .Brand_enroll .form-control:focus{border-color:#66afe9;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) !important;    border-color: #80bdff !important;}
+.Brand .Brand_enroll .celltooltip {
+    display: inline;
+    position: relative;
+}
+.mt_4 {
+    margin-top:4px;
+}
+.Brand .Brand_enroll #menu4 {
+    height: 120px;
+    background-color: #259cc0;
+    padding: 18px !important;
+}
+.Brand .Brand_enroll .div_scroll {
+    height: 100px;
+    overflow-y: scroll;
+    border: 1px solid #d9d9d9;
+}
+.Brand .Brand_enroll .col-lg-12 {
+    padding-left:16px !important;
+    padding-right:16px !important;
+}
+.Brand .Brand_enroll .size_36 {
+    font-size:36px !important;
+}
+@media (min-width: 1024px) {
+.container {
+    max-width: 1200px !important;
+    width:100% !important;
+    padding-left:0px !important;
+}
+}
+
+/*Confirmation Css*//*Confirmation Css*//*Confirmation Css*//*Confirmation Css*/
+.Brand .Brand_confirm .btn-frontier {width:100% !important;box-shadow:2px 5px 10px 1px #999}
+.Brand .Brand_confirm .orange_tool:hover {
+            background-color: orange !important;
+            border-radius: 6px;
+            color: white !important;
+}
+.Brand .Brand_confirm .changeBorderColor {border-color: red;}
+
+.Brand .Brand_confirm .form-group {position: relative;margin-bottom: 1.5rem;}
+
+label {font-weight: normal !important;}
+
+.Brand .Brand_confirm .unstyled::-webkit-inner-spin-button,.unstyled::-webkit-calendar-indicator {
+     display: none;
+    -webkit-appearance: none;
+}
+.form-control-placeholder {
+    position: absolute;
+    top: 6px;
+    padding: 7px 0 0 13px;
+    transition: all 200ms;
+    opacity: 0.5;
+}
+.Home_p .form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+            color: white !important;
+}
+
+.form-control:valid + .form-control-placeholder {color: #555555 !important;}
+
+.Home_p .form-control:valid + .form-control-placeholder {color: white !important;}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+            font-size: 100%;
+            transform: translate3d(0, -110%, 0);
+            opacity: 1;
+            bottom: 0px;
+}
+
+.Brand .Brand_confirm  .disable-outside-clicks {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+}
+
+.enabled-clicks {
+            width: 200px;
+            margin: 0 auto;
+}
+
+* {
+            box-sizing: border-box;
+}
+
+body {
+            font: 16px Arial;
+ }
+
+        /*the container must be positioned relative:*/
+.Brand .Brand_confirm .autocomplete {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+input {
+            border: 1px solid transparent;
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+            input[type=text] {
+                /*background-color: #f1f1f1;
+  width: 100%;*/
+                padding-left: 12px !important;
+            }
+
+                input[type=text]:hover {
+                    background-color: white !important;
+                }
+
+            input[type=submit] {
+                background-color: DodgerBlue;
+                color: #fff;
+                cursor: pointer;
+            }
+
+.Brand .Brand_confirm .autocomplete-items {
+            position: absolute;
+            border: 1px solid #d4d4d4;
+            border-bottom: none;
+            border-top: none;
+            z-index: 99;
+            /*position the autocomplete items to be the same width as the container:*/
+            top: 100%;
+            left: 0;
+            right: 0;
+            height: 200px;
+            overflow-y: scroll;
+        }
+
+            .autocomplete-items div {
+                padding: 10px;
+                cursor: pointer;
+                background-color: #fff;
+                border-bottom: 1px solid #d4d4d4;
+            }
+
+                /*when hovering an item:*/
+                .autocomplete-items div:hover {
+                    background-color: #e9e9e9;
+                }
+
+        /*when navigating through the items using the arrow keys:*/
+        .autocomplete-active {
+            background-color: DodgerBlue !important;
+            color: #ffffff;
+        }
+
+.Brand .Brand_confirm  .m_b_20 {
+            margin-bottom: 20px;
+        }
+
+.Brand .Brand_confirm  .b_p_ul {
+            border-bottom: 1px solid #ccc;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #loading_message {
+            display:;
+            position: fixed;
+            z-index: 999;
+            height: 100%;
+            width: 100%;
+            overflow: none;
+            /*margin: auto;*/
+            /*margin-left:20%;
+  margin-top:20%;*/
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: url('../images/loading.gif') 50% 50% no-repeat rgb(249,249,249);
+            opacity: 0.8;
+        }
+
+        .loadingmessage {
+            position: absolute;
+            z-index: 999;
+            height: 100%;
+            width: 20%;
+            overflow: none;
+            margin: auto;
+            /*margin-left:20%;
+  margin-top:-4%;*/
+            top: 70px;
+            left: 0;
+            bottom: 0;
+            background: url('/images/loader.gif') 50% 50% no-repeat rgb(249,249,249);
+            opacity: 0.8;
+        }
+
+        .Home_p .clr_wht {
+            color: white;
+        }
+
+        .genral_label {
+            margin-bottom: 0px;
+            background-color: #989998 !important;
+            color: white;
+            width: 100%;
+            height: 35px;
+            padding: 6px;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+        }
+
+        .form-check {
+            padding-left: 0px !important;
+        }
+
+        .w_30 {
+            display: inline-block;
+            width: 24%;
+        }
+
+        .form-control:focus {
+            border-color: #66afe9;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) !important;
+            border-color: #80bdff !important;
+        }
+
+.celltooltip {
+    display: inline;
+    position: relative;
+}
+#divPlanDetail .size_36{margin-top:0px !important;}
+
+.Brand .Brand_enroll .order_page_customer_service a {
+    color:grey !important;
+}
+
+
+
+/*Punitha 01/10/2020 */
+
+
+div.stylized_radio_input input:checked + label {
+background:#f58522 !important;}
+.Brand .Brand_enroll h3 {
+    color: #f58522 !important;
+}
+.Brand .Brand_enroll .btn-frontier{background:#f58320 !important;border:solid 0px #fff;color: #fff !important;
+    font-size: 15px;
+    padding: 5px 10px;
+    height: 34px;
+    font-weight: 600; min-width:90px; width:auto}
+
+
+
+.add-on {
+  background:url('/images/cal.svg')   no-repeat  center !important; opacity:0.3;
+     height: 24px;
+    width: 24px;
+    margin-top: -34px;
+    position: absolute;
+    right: 0px !important;
+    margin-right: 29px;
+
+}
+.DateofBirth {
+    background-position: right; 
+    background:url('/images/cal.svg')   no-repeat  center !important; opacity:0.3;
+    /*background-image: url("https://cdn3.iconfinder.com/data/icons/mini-icon-set-general-office/91/General_-_Office_41-512.png") !important;*/ 
+    background-repeat: no-repeat; 
+    background-size: 10%; 
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu ul {
+padding:0px 10px}

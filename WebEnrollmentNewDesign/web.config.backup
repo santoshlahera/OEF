@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<configuration>
+  <connectionStrings>
+    <add name="FUNEnrollment" connectionString="data source=FROTCISD1.frontier1.local;Initial Catalog=FrontierEnroll_DEV;User ID=b2buser;Password=Frontier&amp;&amp;)%^;Trusted_connection=false;Asynchronous Processing=true" providerName="System.Data.SqlClient"/>
+    
+  </connectionStrings>
+	
+  <appSettings>
+    <!--<add key="WCFServiceURL" value="http://10.10.180.52:8083/MyFUNCommonWS/FUNCommonWebService.svc" />-->
+    
+    <add key="WCFServiceURL" value="http://localhost:57790/FUNCommonWebService.svc" />
+    <!--<add key="WCFServiceURL" value="http://10.10.180.38:8085/MyFUNCommonWS/FUNCommonWebService.svc" />-->
+	  <!---->
+    <!--<add key="WCFServiceURL" value="http://10.10.180.38:8085/MyFUNCommonWS/FUNCommonWebService.svc" />-->
+    <!--<add key="WCFServiceURL" value="http://10.10.180.52:8083/MyFUNCommonWS/FUNCommonWebService.svc" />-->
+    <add key="efl_url" value="https://www.frontierutilities.com:8088/TestFrontierEFL2/" />
+
+    
+    <add key="Enrollmentcciframe" value="http://localhost:22216/oefpayment/index"></add>
+    <add key="Enrollmentcciframe2" value="http://localhost:22216/oefschedulepayment/index"></add>
+
+
+    <!--<add key="Enrollmentcciframe" value="https://payment.gexaenergy.com/PaymentUI/OEFPayment"></add>
+    <add key="Enrollmentcciframe2" value="https://payment.gexaenergy.com/PaymentUI/OEFSchedulePayment"></add>-->
+    
+    <!--<add key="Enrollmentcciframe" value="http://10.10.180.38:8087/FrontierPaymentUI/oefpayment/index"></add>
+    <add key="Enrollmentcciframe2" value="http://10.10.180.38:8087/FrontierPaymentUI/oefschedulepayment/index"></add>-->
+
+    <add key="MobileEnrollmentURL" value="http://training.frontierutilities.com:8089/TX/MobileIndex"/>
+    <!--LIVE-->
+    <!--<add key="MobileEnrollmentURL" value="https://portal.frontierutilities.com/Enrollment/TX/MobileIndex"/>-->
+
+    <!--Local-->
+    <!--<add key="PartnerImagesPath" value="http://mail.frontierutilities.com:50388/webenrollment/webimages/"/>-->
+    <!--Live-->
+    <add key="PartnerImagesPath" value="https://portal.frontierutilities.com/webenrollment/webimages/" />
+                                        
+                                        
+    <!--<add key="BrandCode" value="FROTX"/>-->
+    <add key="BrandCode" value="GEXAIX"/>
+    <!--<add key="GoogleTrackingCode" value="GTM-NG43CX5"/> --><!--Frontier-->
+    <add key="GoogleTrackingCode" value="GTM-55BXGV"/> <!--Gexa-->
+    
+    <!--<add key="GoogleTrackingFrontier" value="UA-154959559-1"/>
+    <add key="GoogleTrackingGEXAIX" value="UA-113808020-1"/>-->
+    <!--<add key="GoogleTrackingFrontier" value="GTM-NG43CX5"/>
+    <add key="GoogleTrackingGEXAIX" value="GTM-55BXGV"/>-->
+
+
+
+
+    <add key="SalespersonCode" value="SF_WEBENR" />
+    <add key="MobileSalesPersonCode" value="SF_MOBENR" />
+    <add key="IsOldMobileTX" value="1" />
+    <add key="disable_switch_hold" value="N" />
+    <add key="mobile_verification" value="false" />
+    <add key="contract_expiry_alert" value="N" />
+    <add key="InitialPurchaseAmount" value="75" />
+    <add key="AllowPrepaidForHouse" value="1" />
+    <add key="source" value="WebTX" />
+    <!--<add key="IsFrontierCommonService" value="1" />-->
+    <add key="credit_module_type" value="EXPERIAN" />
+    <!--Production URL-->
+    <!--<add key="ProdURL" value="/OnlineEnrollment"/>-->
+    <add key="ProdURL" value=""/>
+    <add key="DepositAmount" value="400"/>
+    <add key="NEEnrollmentPortal" value="https://portal.frontierutilities.com/Enrollment/NE/Index?Zip_Code="/>
+    <add key="ZipCode" value="77056"/>
+    <add key="UL" value="2000"/>
+<!--IPtoZIP-->
+    <add key="IptoZip" value="http://api.ipstack.com/"/>
+    <add key="KeyforZip" value="03e240d6c9d0595a3bb849e234893403"/>
+    <add key="ConfirmationErrorMessage" value="We will call you shortly to process your enrollment."/>
+    <!--End-->
+    <!--<add key="IsCompareCreditData" value="0" />-->
+    <!--<add key="IsCreditScoreNameMismatch" value="1" />-->
+    <!--<add key="IsCreditScoreAddrDobMismatch" value="1" />-->
+    <!--<add key="IsNewCreditCheckDepositHold" value="1" />-->
+    <!--<add key="MinPrepayPaymentAmount" value="20" />-->
+    <!--<add key="MyAccountAuthKey" value="26m0+pKS2IEaMPLMYl+C+A==" />-->
+    <!--<add key="ACHManageProfileBatchCode" value="WFACHMANAGEPROFILE" />-->
+    <!--<add key="IsACHEnabled" value="1" />-->
+    <!--<add key="MinPaymentAmount" value="5" />-->
+    
+    
+    <add key="webpages:Version" value="2.0.0.0" />
+    <add key="webpages:Enabled" value="false" />
+    <add key="PreserveLoginUrl" value="true" />
+    <add key="ClientValidationEnabled" value="true" />
+    <add key="UnobtrusiveJavaScriptEnabled" value="true" />
+    <add key="PartnerImagesPath" value="https://portal.frontierutilities.com/webenrollment/webimages/" />
+    <add key="ImagePath" value="https://portal.frontierutilities.com/webenrollment/webimages/" />
+    <!--<add key="ImagePath" value="https://quicklink.gexaenergy.com/GexaImages/" />-->
+    <!--<add key="ImagePath" value="https://quicklink.frontierutilities.com/FrontierImages/" />-->
+    <!--Testing Server-->
+    <add key="MyAccountURL" value="http://10.10.180.38:8084/GexaMyAccount"/>
+    <!--End-->
+    <!--Production Server-->
+    
+    <!--<add key="MyAccountURL" value="https://myaccount.gexaenergy.com/"/>-->
+	 <!-- <add key="LogoUrl" value=""/> -->   <!--Frontier-->
+  <add key="LogoUrl" value="https://www.gexaenergy.com"/>    <!--Gexa-->
+  </appSettings>
+  <system.web>
+    <customErrors mode="Off"></customErrors>
+    <httpRuntime targetFramework="4.5" executionTimeout="240" />
+    <compilation debug="true" targetFramework="4.5" />
+    <pages>
+      <namespaces>
+        <add namespace="System.Web.Helpers" />
+        <add namespace="System.Web.Mvc" />
+        <add namespace="System.Web.Mvc.Ajax" />
+        <add namespace="System.Web.Mvc.Html" />
+        <add namespace="System.Web.Routing" />
+        <add namespace="System.Web.WebPages" />
+      </namespaces>
+    </pages>
+    <httpHandlers>
+      <add verb="*" path="routes.axd" type="AttributeRouting.Web.Logging.LogRoutesHandler, AttributeRouting.Web" />
+	
+    </httpHandlers>
+  </system.web>
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false" />
+    <handlers>
+      
+      <remove name="ExtensionlessUrlHandler-ISAPI-4.0_32bit" />
+      <remove name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" />
+      <remove name="ExtensionlessUrlHandler-Integrated-4.0" />
+      <add name="ExtensionlessUrlHandler-ISAPI-4.0_32bit" path="*." verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" modules="IsapiModule" scriptProcessor="%windir%\Microsoft.NET\Framework\v4.0.30319\aspnet_isapi.dll" preCondition="classicMode,runtimeVersionv4.0,bitness32" responseBufferLimit="0" />
+      <add name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" path="*." verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" modules="IsapiModule" scriptProcessor="%windir%\Microsoft.NET\Framework64\v4.0.30319\aspnet_isapi.dll" preCondition="classicMode,runtimeVersionv4.0,bitness64" responseBufferLimit="0" />
+      <add name="ExtensionlessUrlHandler-Integrated-4.0" path="*." verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" type="System.Web.Handlers.TransferRequestHandler" preCondition="integratedMode,runtimeVersionv4.0" />
+      <add name="AttributeRouting" path="routes.axd" verb="*" type="AttributeRouting.Web.Logging.LogRoutesHandler, AttributeRouting.Web" />
+    </handlers>
+  </system.webServer>
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_ICommonService" />
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://10.10.180.38:8085/FrontierCommonServices/CommonService.svc"
+        binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ICommonService"
+        contract="CommonService.ICommonService" name="BasicHttpBinding_ICommonService" />
+    </client>
+  </system.serviceModel>
+  
+  
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Mvc" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.0.0" newVersion="4.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.WebPages" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-2.0.0.0" newVersion="2.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="WebGrease" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-1.5.2.14234" newVersion="1.5.2.14234" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

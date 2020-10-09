@@ -1,0 +1,843 @@
+﻿@model WebEnrollmentNewDesign.Models.FunEnrollment
+@{
+    ViewBag.Title = "Confirmation";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head name="confirmHead">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script type="text/javascript">
+        //history.pushState(null, null, location.href);
+        //window.onpopstate = function () {
+        //    history.go(1);
+        //};
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+
+    @System.Web.Optimization.Styles.Render("~/css/Confirmationcss")
+    @System.Web.Optimization.Scripts.Render("~/scripts/Confirmationjs")
+
+    <link rel="icon" type="image/x-icon" id="favicon_Font_Brand">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="~/IndexCSS/common.css" rel="stylesheet" />
+
+
+
+    <style type="text/css">
+        
+    </style>
+   <!-- Google Tag Manager -->
+        <script>
+            $(document).ready(function () {
+                var BCode = '@System.Web.Configuration.WebConfigurationManager.AppSettings["BrandCode"]';
+                var Gtag = '@System.Web.Configuration.WebConfigurationManager.AppSettings["GoogleTrackingFrontier"]';
+                var Ftag = '@System.Web.Configuration.WebConfigurationManager.AppSettings["GoogleTrackingGEXAIX"]';
+                var gt = getGoogleTrackingCode(BCode, Ftag, Gtag);
+
+                (function (w, d, s, l, i) {
+
+                    w[l] = w[l] || []; w[l].push({
+                        'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                    }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', gt);
+            });
+                </script>
+
+        <!-- End Google Tag Manager -->
+
+</head>
+
+<body class="Brand conf">
+    <noscript></noscript>
+    <input type="hidden" id="hnProdUrl" value='@System.Web.Configuration.WebConfigurationManager.AppSettings["ProdURL"]'/>
+    <input type="hidden" id="hdnConfirmationErrorMessage" value='@System.Web.Configuration.WebConfigurationManager.AppSettings["ConfirmationErrorMessage"]'/>
+    <input type="hidden" id="brandcNumber" value="" />
+    <input type="hidden" id="BrandCode" value='@System.Web.Configuration.WebConfigurationManager.AppSettings["BrandCode"]' />
+   
+    <div class="Brand_confirm">
+        <div class="container-fluid" style="padding: 0px;">
+
+            <div class=" p_fixed">
+                <div class="container">
+                    <div class="row">
+                        <div class="logo">
+                        </div>
+                        <div class="call">
+                            <h3 class="mb-0 mt_0 mt-4">Questions?</h3>
+                            <h3 class="mt-0" id="ContactNo" x-ms-format-detection="none">
+                                @*1-877-437-7442*@
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="loading_message" style="display: none;">
+            </div>
+
+            <div class="container" id="cont">
+                <input type="hidden" id="hdnPaymentValue" />
+                <div id="CompleteInfo">
+                    <div class="row mt_data user_information">
+                        <div class="message ">
+
+                            <div>
+                                <div class="" style='font-size: large; color: #0B3958;'>
+                                    @if (@Model != null)
+                                    {
+                                        {
+                                        <div id="ErrorResponse2" class="">
+
+                                            <div id="PendingMsg" style="font-size: large">
+                                                 </div>
+                                            <br /><br />
+                                                <div id="pError" style="display:none">
+                                                    <div style="text-align:left;">
+
+In order to complete the enrollment, both a photo ID and proof of residency must be provided from the primary account holder.
+ 
+Identification that satisfies both requirements
+    <ul><li>Unexpired Texas driver’s license</li>
+        <li>         Texas identification card</li></ul>
+Address must match the enrollment’s service address
+Examples of Photo ID
+    <ul><li>         Unexpired U.S. Passport</li>
+        <li>         Unexpired Foreign Passport or Visa</li>
+        <li>         Unexpired State Identification card</li></ul>
+Examples of Proof of Residency
+    <ul><li>      Current Mortgage or Lease statement</li>
+        <li>         Current Homeowners Insurance policy or statement</li>
+        <li>         Current Utility bill (ex: electric, water, gas)</li>
+        <li>         Current Auto Insurance policy or statement</li>
+    </ul>
+Address must match the enrollment’s service address
+Please send copies of the approved documentation to @*enrollment.documents@gexaenergy.com*@<span id="contNumber"></span> with the email subject line: Enrollment Follow Up.  In the email, please include the primary account holder’s full name, service address, enrollment number and ESIID listed at the top of this letter. 
+ 
+Please note your enrollment will not be completed and your requested start date will be no sooner than 5 business days after receipt and approval of the requested documents. Your incomplete enrollment will be deleted if the documents are not provided within 16 calendar days from today.”
+
+</div>
+                                                </div>
+                                           
+                                            <label id="lbErrorMsg2" style="color: red"></label>
+                                            <br />
+                                            <br />
+
+                                        </div>
+                                            if (Model.ReasonCode != null)
+                                            {
+                                        <div class="col-lg-12 col-12 mb_20">
+                                            <div class="middle_align">
+
+                                                @*  @if ((@productDetail != null))
+                                {
+                               @Html.Raw(@productDetail.ToString());
+                                }*@
+                                            </div>
+                                        </div>
+                                            }
+                                            if (Model.ReasonCode == null)
+                                            {
+
+                                                if (Model.ProdDetails.Prepay_YN == "N")
+                                                {
+
+                                        <div id="DepAmount" style="display: none">
+                                            <div>
+
+
+                                              @*  <svg version="1.1" id="Svg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 126.84 131" style="enable-background: new 0 0 126.84 131;" xml:space="preserve" width="200px" height="200px">
+
+                                                    <circle class="st0" cx="274.5" cy="67.5" r="55.5" />
+                                                    <path class="st1" d="M242.02,63.87c7.1,7.28,14.2,14.55,21.3,21.83c14.55-12.42,29.11-24.85,43.66-37.27" />
+                                                    <circle class="st0" cx="63.5" cy="67.5" r="55.5" />
+                                                    <path class="st1" d="M30.02,76.87C30.5,77.5,36.5,95.5,63.5,95.5c25,0,34-19,34-19" />
+                                                    <g>
+                                                        <line class="st2" x1="40.18" y1="51.51" x2="44.14" y2="57.54" />
+                                                        <line class="st2" x1="44.14" y1="51.51" x2="40.18" y2="57.54" />
+                                                    </g>
+                                                    <g>
+                                                        <line class="st2" x1="82.18" y1="51.85" x2="86.14" y2="57.88" />
+                                                        <line class="st2" x1="86.14" y1="51.85" x2="82.18" y2="57.88" />
+                                                    </g>
+                                                    <circle class="st0" cx="-195.5" cy="62.5" r="55.5" />
+                                                    <path class="st1" d="M-220,85.76c0.36-0.42,4.9-12.26,25.3-12.26C-175.8,73.5-169,86-169,86" />
+                                                    <g>
+                                                        <line class="st2" x1="-218.82" y1="46.51" x2="-214.86" y2="52.54" />
+                                                        <line class="st2" x1="-214.86" y1="46.51" x2="-218.82" y2="52.54" />
+                                                    </g>
+                                                    <g>
+                                                        <line class="st2" x1="-176.82" y1="46.85" x2="-172.86" y2="52.88" />
+                                                        <line class="st2" x1="-172.86" y1="46.85" x2="-176.82" y2="52.88" />
+                                                    </g>
+
+
+                                                </svg>*@
+
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 2 2;" xml:space="preserve" width="200px" height="200px">
+<style type="text/css">
+	.ct0{fill:#1EB897;}
+	.ct1{fill:#3A4F6B;}
+</style>
+<title></title>
+<g id="Layer_58">
+	<path class="ct0" d="M16,26c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S17.1,26,16,26z"></path>
+	<path class="ct0" d="M16,20c-0.6,0-1-0.4-1-1v-8c0-0.6,0.4-1,1-1c0.6,0,1,0.4,1,1v8C17,19.6,16.6,20,16,20z"></path>
+	<path class="ct1" d="M27.8,30H4.2c-1.1,0-2.2-0.6-2.8-1.6c-0.6-1-0.6-2.2-0.1-3.1L13.2,3.7C14,2.1,16,1.5,17.6,2.4
+		c0.5,0.3,1,0.7,1.3,1.3l11.8,21.6c0.5,1,0.5,2.2-0.1,3.1C30,29.4,28.9,30,27.8,30z M16,4c-0.4,0-0.9,0.2-1.1,0.6L3.2,26.3
+		c-0.2,0.4-0.2,0.8,0,1.2c0.2,0.4,0.6,0.6,1,0.6h23.6c0.4,0,0.8-0.2,1-0.6c0.2-0.4,0.2-0.8,0-1.2L17.1,4.6C16.9,4.2,16.4,4,16,4z"></path>
+</g>
+</svg>
+
+                                            </div>
+                                            <div class="mt-5" style="font-size: large; color: #0B3958; ">
+                                                @*We have completed your order and a deposit is required to activate your account. Your account details are below and we have emaild your account information and plan.*@
+                                                <b>One last thing, we need a deposit.<br />
+                                                    Complete your deposit payment below and you'll be all set!</b>
+
+                                            </div>
+                                            <div class="col-lg-12 col-12 mt-4 mb_20">
+                                                <div class="middle_align">
+                                                    <div class=" amount">
+                                                        <div>Deposit Amount:</div>
+                                                        <div id="depAmtValue"></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button id="btPayNow" class="button solid_orange  plan_order_button" style="border-radius: 5px;">Continue with Deposit</button>
+                                                <div id="divResponse" style="display: none">
+                                                    Account Number:<label id="lbCustNumber" style=""></label><br />
+                                                    <br />
+                                                    Please select your payment option from following 
+                                                </div>
+                                                <div id="ErrorResponse">
+
+                                                    <label id="lbErrorMsg" style="font-size: larger; color: red"></label>
+                                                    <br />
+                                                    <br />
+                                                </div>
+                                            </div>
+                                        </div>
+                                       <div id="WithoutDeposit" style="display: none">	
+                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.77 54.77" width="200px" height="200px">	
+                                                <circle class="one" cx="27.38" cy="27.38" r="25.38" />	
+                                                <path class="two" d="M86.3,98.51l8.79,9,18-15.39" transform="translate(-72.32 -72.44)" />	
+                                            </svg>	
+                                            <div class="mt-5" style='color: #0B3958;' id="msgWithoutDeposit">	
+                                                We have completed your order. Your account details are below and we have emaild your account information and plan.	
+                                 	
+                                            </div>	
+                                            <div class="mt-3 mb-3" style='color: #0B3958; color: #0B3958;clear:both;padding-top: 20px;'>	
+                                                <b style="height: 20px">Your account number is:	
+                                            <label id="custNum1" style="font-size:28px; font-weight:bold;"></label>	
+                                                </b>	
+                                            </div>	
+                                            <button id="btAutoPayment3" class="plan_order_button btn-Brand col-xl-3 col-12" style="border-radius: 5px;">Setup Autopay</button>	
+                                        </div>	
+                                         <div id="aPaySuccess" style="display: none" class="message">	
+                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.77 54.77" width="200px" height="200px">	
+                                                <circle class="one" cx="27.38" cy="27.38" r="25.38" />	
+                                                <path class="two" d="M86.3,98.51l8.79,9,18-15.39" transform="translate(-72.32 -72.44)" />	
+                                            </svg>	
+                                            <div class="mt-5" style='color: #0B3958;' id="msgaPaySucess">	
+                                             	
+                                            </div>	
+                                            <a id="btMove" class="btn btn-Brand" style="border-radius: 5px; line-height: 32px;" target="_blank">Create MyGexa Account</a>	
+                                            @*<button id="btMove" class="plan_order_button btn-Brand col-xl-3 col-12" style="border-radius: 5px; display:none">Create MyGexa Account</button>*@	
+                                        </div>	
+                                                }
+                                                else
+                                                {
+                                                    if (Model.enrRes != null)
+                                                    {	
+                                        <div class=" ">	
+                                            <div class="message">	
+                                                  <div class="status-prepay">	
+                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.77 54.77" width="200px" height="200px">	
+                                                <circle class="one" cx="27.38" cy="27.38" r="25.38" />	
+                                                <path class="two" d="M86.3,98.51l8.79,9,18-15.39" transform="translate(-72.32 -72.44)" />	
+                                            </svg>	
+                                            <div class="mt-5" style='font-size: large; color: #0B3958;'>	
+                                                <b>You’re Signed Up for Electricity!<br />	
+                                                    Thanks for choosing us. You’ll be receiving your welcome email & letter soon. Stay tuned!	
+                                                </b>	
+                                            </div>	
+                                                </div>	
+                                                </div>	
+                                            <div class="mt-5" style='font-size: large; color: #0B3958; clear: both'>	
+                                                <b>Your account number is:	
+                                        <label id="custNum2" style="font-size:28px; font-weight:bold"></label>	
+                                                </b>	
+                                            </div>	
+                                        </div>	
+                                        	
+                                        <button id="btAutoPayment2" class="plan_order_button btn-Brand" style="border-radius: 5px;">Setup Autopay</button>	
+                                      	
+                                                    }
+                                                }
+                                            }
+                                            else
+                                            {  	
+                                        <button id="btAutoPayment" class="btn btn-Brand" style="border-radius: 5px;">Setup Autopay</button>	
+                                            }
+                                        }
+                                        if (Model.ProdDetails.Prepay_YN == "Y")
+                                        { 	
+                                        <div class="col-lg-9 col-12 user_information   p-0" id="PrePaySetup">	
+                                            <h4 style="color: #ee8d40; text-align: left">Setup Fees</h4>
+                                            <div>
+                                                <div class="table-responsive">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="470px" class="display table table-bordered m-0" id="gvTaxInfo">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Fee Description
+                                                                </th>
+                                                                <th>Charges
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                        <tfoot>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                                <div class="col-lg-12 col-12 mt-4 pl-2 pr-2 mb_20">
+                                                    <label for="name" style="color: #ee8d40">To begin service, you will need to purchase kilowatt hours (kWh) of power.</label><br />
+                                                    <label style="float: left; line-height: 50px;">Enter the amount you wish to spend (and press Tab) </label>
+
+                                                    <input type="text" id="txtPurchaseAmt" value="100" onkeypress="return isNumber(event)" maxlength="10" clientidmode="Static" class="form-control  col-lg-3 col-12" style="left: none; display: inline-block; width: 100px !important;" /><div class="dollar-input">$</div>
+                                                    <span style="color: red;display:none;position: absolute;" class="PurchaseAmtEror">Invalid Amount</span>
+                                                    <span style="color: red;padding: 10px;display:none;position: absolute;" class="PurchaseZeroEror">Invalid Amount</span>
+
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered m-0" id="gvPaymentFees">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Fee Description
+                                                                </th>
+                                                                <th>Charges
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                        <tfoot>
+
+
+
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>
+                                                                    @*<button id="btPayNow2" class="btn btn-Brand" style="border-radius: 5px;" href="#paymentcciframe">Pay Now</button>*@
+                                                                    <a id="btPayNow2" class="btn btn-Brand" style="border-radius: 5px; line-height: 32px;" href="#paymentcciframe">Pay Now</a>
+                                                                    @*<a id="btPayNow2" class="plan_order_button btn-Brand" style="border-radius: 5px;display:none" href="#paymentcciframe">Pay Now</a>*@
+                                                                </th>
+                                                            </tr>
+
+                                                        </tfoot>
+                                                    </table>
+                                                    <br />
+                                                    @*<button id="btPayNow3" class="btn btn-Brand"  style="border-radius:5px;">Pay Now</button>*@
+
+                                                </div>
+                                                <br />
+                                            </div>
+                                        </div>
+                                                   
+                                        }
+                                    }
+
+                                    <div class="col-lg-12 col-12 mb_20">
+                                        <div class="middle_align">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div style="clear: both; float: left; width: 100%">
+                                <div class="col-lg-12 col-12" id="paymentDiv" style="display: none">
+
+                                    <iframe id="paymentcciframe" class="Ifr_hght" scrolling="no"></iframe>
+                                </div>
+                                <br /><br />
+                                <div class="col-lg-12 col-12" id="paymentDiv2" style="display: none;">
+
+                                    <iframe id="paymentcciframe2" class="Ifr_hght" scrolling="no"></iframe>
+                                </div>
+                                <br /><br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+    var CustNumber = "";
+    var CustId = "";
+    var CustEmailId = "";
+    var CustContactNo = "";
+    var PaymentAmt = "";
+    var PayOrSchedule = "";
+    var prePay = "";
+    var ttno = "";
+    $(function () {
+
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+
+        var ProdUrl = "";
+        ProdUrl = '@(System.Configuration.ConfigurationManager.AppSettings["ProdURL"].ToString())';
+        var url = '@(System.Configuration.ConfigurationManager.AppSettings["Enrollmentcciframe"].ToString())';
+        $("#paymentcciframe").attr('src', url);
+        var url2 = '@(System.Configuration.ConfigurationManager.AppSettings["Enrollmentcciframe2"].ToString())';
+        $("#paymentcciframe2").attr('src', url2);
+        var data = '@Model.ProdDetails.Prepay_YN';
+        
+        LoadBrandData();
+
+        PaymentAmt = '@TempData["DepositAmount"]';
+        PendingError = '@TempData["PendingMsgData"]';
+        ttno = '@TempData["BrandTellNo"]';
+        $("#brandcNumber").val('@TempData["BrandTellNo"]');
+        
+        var tollFreeNum = ttno;
+        if (PendingError != "") {
+
+            $("#ErrorResponse2").show();
+            var rejectMsg = '@TempData["RejectMsg"]';
+            if (rejectMsg != '') {
+                $("#PendingMsg").empty();
+                $("#PendingMsg").append(rejectMsg);
+            }
+            else {
+                $("#PendingMsg").append("<b>Almost there!</b> <br />It looks like we need more information to finish signing you up. Please give our team a call at " + tollFreeNum + " to complete your enrollment.");
+                $("#PendingMsg").append("<br/>" + PendingError);
+                $("#pError").css("display", "block");
+            }
+            //$("#PendingMsg").empty();
+            // $("#PendingMsg").append("<b>Almost there!</b> <br />It looks like we need more information to finish signing you up. Please give our team a call at " + tollFreeNum + " to complete your enrollment.");
+            //$("#PendingMsg").append($("#hdnConfirmationErrorMessage").val());
+
+
+            //$("#PendingMsg").append("<br/>" + PendingError);
+            if ($("#BrandCode").val().toLowerCase() == "gexaix") {
+                $("#contNumber").text("enrollment.documents@gexaenergy.com ");
+            }
+            else {
+                $("#contNumber").text("sales@frontierutilities.com ");
+            }
+            InsertMileStone("PendingForReview");
+            $("#WithoutDeposit").hide();
+            $("#btAutoPayment").hide();
+            $("#PrePaySetup").hide();
+            PaymentAmt = 0;
+            window.history.replaceState("object or string", "Title", Produrl + "/Home/Confirmation/PendingForReview");
+        }
+        if (PaymentAmt > 0) {
+            PayOrSchedule = "Pay";
+            $("#DepAmount").show();
+            $("#WithoutDeposit").hide();
+            $("#depAmtValue").text("$" + PaymentAmt);
+            window.history.replaceState("object or string", "Title", Produrl + "/Home/Confirmation/Continuewithdeposit");
+            InsertMileStone("DepositRequired");
+        }
+        else if (PaymentAmt == 0 && PendingError == '') {
+            //window.history.replaceState("object or string", "Title", Produrl+"/Home/Confirmation/Continuewithoutdeposit");
+
+            // InsertMileStone("EnrollmentCompleted");
+            CustNumber = '@TempData.Peek("CustomerNumber")';
+            CustId = '@TempData["CustomerId"]';
+            CustEmailId = '@Model.contactInfo.email';
+            CustContactNo = '@Model.contactInfo.contactno'
+            //  if (CustId != "0" || CustId != "") {
+            if (CustNumber != "0" && CustNumber != "") {
+                window.history.replaceState("object or string", "Title", Produrl + "/Home/Confirmation/Success");
+                $("#custNum1").text(CustNumber);
+                $("#custNum2").text(CustNumber);
+                //  $("#custNumPrePay").text(CustNumber);
+                $("#WithoutDeposit").show();
+                PayOrSchedule = "Schedule";
+                $("#msgWithoutDeposit").empty();
+                $("#msgWithoutDeposit").append("<b>You’re Signed Up for Electricity!</b><br/>Thanks for choosing us. You’ll be receiving your welcome email & letter soon. Stay tuned!");
+            }
+            else {
+                $("#ErrorResponse2").show();
+                //$("#lbErrorMsg2").text('Your enrollment cannot be proceed now. Please give our team a call at ' + tollFreeNum + ' to complete your enrollment.');
+                $("#lbErrorMsg2").text($("#hdnConfirmationErrorMessage").val());
+                //window.history.replaceState("object or string", "Title", Produrl + "/Home/Confirmation/PendingForReview");
+                //$("#ErrorResponse2").show();
+                //$("#PendingMsg").empty();
+                //$("#PendingMsg").append("<b>Almost there! </b><br />It looks like we need more information to finish signing you up. Please give our team a call at " + tollFreeNum + "to complete your enrollment.");
+                //$("#PendingMsg").append("<br/>" + PendingError);
+                //$("#WithoutDeposit").hide();
+                //$("#btAutoPayment").hide();
+            }
+        }
+        else if (PaymentAmt == -1) {
+            $("#ErrorResponse2").show();
+            //$("#lbErrorMsg2").text('Your enrollment cannot be proceed now. Please try after some time.');
+            $("#lbErrorMsg2").text($("#hdnConfirmationErrorMessage").val());
+        }
+        $("#hdnPaymentValue").val(PaymentAmt);
+
+        if (data.toLowerCase() == "y") {
+            $("#btPayNow2").css("display", "block");
+            $("#btAutoPayment2").css("display", "none");
+            $('#gvTaxInfo').dataTable({
+                serverSide: true,
+                processing: true,
+                language: {
+                    processing: '<i><img src="/images/loading.gif" width="200px" /></i>'
+                },
+                searching: false, paging: false, info: false, "bSort": false,
+                sAjaxSource: Produrl + '/Home/GetFeeInfo'
+
+            });
+            getPaymentfees();
+            //getpurchaseAmtfees();
+            function getPaymentfees() {
+                var purchaseAmt = $('#txtPurchaseAmt').val();
+                var phoneNumber = purchaseAmt.replace(/[^0-9]/g, '');
+                if (phoneNumber.length > 10 || purchaseAmt == 0) {
+                    $(".PurchaseZeroEror").show();
+                    $('#btPayNow2').attr('disabled', true);
+                }
+                else
+                {
+                    $(".PurchaseZeroEror").hide();
+                    $('#btPayNow2').attr('disabled', false);
+                }
+                $('#gvPaymentFees').dataTable({
+                    destroy: true,
+                    // bProcessing: true,
+                    searching: false, paging: false, info: false, "bSort": false,
+                    serverSide: true,
+                    processing: true,
+                    language: {
+                        processing: '<i><img src="/images/loading.gif" width="200px"/></i>'
+                    },
+                    sAjaxSource: Produrl + '/Home/fillTaxAndUsage?purchaseAmt=' + purchaseAmt
+
+                });
+            }
+            $('#txtPurchaseAmt').change(function () {
+                $('#paymentDiv').hide();
+                getPaymentfees();
+            });
+        }
+
+    });
+$(function () {
+    $('#btPayNow').click(function () {
+
+        InsertMileStone("DepositPayment");
+
+        var element = document.getElementById("cont");
+        element.classList.add("status");
+        window.history.replaceState("object or string", "Title", Produrl + "/Home/Confirmation/Continuewithdeposit");
+        $("#loading_message").show();
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            contentType: "application/json; charset=utf-8",
+
+            url: Produrl + '/Home/SubmitCustomerEnrollInfo',
+            success: function (response) {
+                $("#loading_message").hide();
+                $('#btPayNow').hide();
+
+                if (response != "") {
+                    $("#DepAmount").show();
+
+                    CustNumber = response[0];
+                    CustId = response[1];
+                    CustEmailId = '@Model.contactInfo.email';
+                    CustContactNo = '@Model.contactInfo.contactno'
+                    if (CustNumber == "0" || CustNumber == "") {
+                        var errorMsg = "There was an error while processing your enrollment. Please contact customer care at " + $("#brandcNumber").val();
+                        $("#ErrorResponse").show();
+                        $("#lbErrorMsg").text(errorMsg);
+                        //$("#lbErrorMsg").text($("#hdnConfirmationErrorMessage").val());
+                    }
+                    else {
+                        $("#divResponse").show();
+                        $("#lbCustNumber").text(CustNumber);
+
+                        $('#paymentDiv').show();
+                        GetSessionObject();
+                    }
+                }
+            },
+        });
+    });
+    $('#btMove').click(function () {
+        if ($("#BrandCode").val().toLowerCase() == "gexaix") {
+            //  window.location.href = "https://mygexa.gexaenergy.com/";	
+            // window.setTimeout(function(){	
+            //  window.open('https://mygexa.gexaenergy.com/', '_blank');
+            var myaccount = '@System.Web.Configuration.WebConfigurationManager.AppSettings["GexaMyAccount_Test"]';
+           // var myaccount = '@System.Web.Configuration.WebConfigurationManager.AppSettings["GexaMyAccount_Prod"]';
+            window.open(myaccount, '_blank');
+            //},5000);	
+        }
+    });
+    function bindEvent(element, eventName, eventHandler) {
+        if (element.addEventListener) {
+            element.addEventListener(eventName, eventHandler, false);
+        } else if (element.attachEvent) {
+            element.attachEvent('on' + eventName, eventHandler);
+        }
+    }
+
+    $(document).ready(function () {
+        bindEvent(window, 'message', function (e) {
+            try {
+                var response = JSON.parse(e.data);
+                var validatepci = response.IsValidate;
+                var childid = response.ChildUniqueId;
+                var sessionid = response.PCISessionId;
+                if (validatepci == "1") {
+                    var serializedform = {
+                        ChildId: childid,
+                        PCISessionId: sessionid
+                    };
+                    $.ajax({
+                        url: Produrl + '/Home/ValidatePCITransactionLog',
+                        type: "POST",
+                        data: serializedform,
+                        success: function (result) {
+                            // Post message to Child to enable button
+                            PostRequestInfoToChild(result.requestMessage);
+                        }
+                    });
+                }
+                else {
+                    fncInsertTransaction(response);
+                    RefreshDashboard();
+                }
+            }
+            catch (err) {
+                // the JSON.parse call failed, handle the error appropriately
+                //alert(err);
+            }
+        });
+    });
+
+    $('#btPayNow2').click(function () {
+        //var element = document.getElementById("cont");
+        //element.classList.add("status");
+        $('#paymentDiv').show();
+        PaymentAmt = $('#txtPurchaseAmt').val();
+        prePay = "Y";
+        GetSessionObject();
+    });
+    $('#btAutoPayment').click(function () {
+        var element = document.getElementById("CompleteInfo");
+        element.classList.add("status");
+        $('#paymentDiv2').show();
+        GetSessionObject2();
+    });
+    $('#btAutoPayment2').click(function () {
+        var element = document.getElementById("CompleteInfo");
+        element.classList.add("status");
+        //   $('#paymentDiv').hide();
+        $('#btAutoPayment2').hide();
+        $('#paymentDiv2').show();
+        CustNumber = '@TempData["CustomerNumber"]';
+        CustId = '@TempData["CustomerId"]';
+        CustEmailId = '@Model.contactInfo.email';
+        CustContactNo = '@Model.contactInfo.contactno'
+        GetSessionObject2();
+    });
+    $('#btAutoPayment3').click(function () {
+        var element = document.getElementById("CompleteInfo");
+        element.classList.add("status");
+        $('#paymentDiv').hide();
+        $('#btAutoPayment3').hide();
+        $('#paymentDiv2').show();
+        CustNumber = '@TempData["CustomerNumber"]';
+        CustId = '@TempData["CustomerId"]';
+        CustEmailId = '@Model.contactInfo.email';
+        CustContactNo = '@Model.contactInfo.contactno'
+        GetSessionObject2();
+    });
+
+    $(function () {
+        window.onmessage = function (e) {
+            if (e.data == '1') {
+                window.history.replaceState("object or string", "Title", Produrl + "/Home/Confirmation/SuccessDeposit");
+            }
+            if (e.data == '2') {
+                window.history.replaceState("object or string", "Title", Produrl + "/Home/Confirmation/Autopay/Success");
+                var element = document.getElementById("cont");
+
+                element.classList.remove("status");
+                $('#paymentDiv').hide();
+                $("#DepAmount").hide();
+                $('#aPaySuccess').show();
+                PayOrSchedule = "Schedule";
+                $("#msgaPaySucess").append("<b>You’re Signed Up for Auto Pay!<b><br/>");
+                if ($("#BrandCode").val().toLowerCase() == "gexaix") {
+                    $("#btMove").show();
+                    $("#msgaPaySucess").append("<b>Manage your online account through MyGexa.</b>");
+                    //$("#msgWithoutDeposit").append(" <a id=btPayNow2" class="btn btn-Brand" style="border-radius: 5px; line-height: 32px;" href="#paymentcciframe">Pay Now</a>");	
+                }
+                else {
+                    $("#btMove").hide();
+                }
+            }
+        };
+    });
+    //************For pay Now**********************
+    function GetSessionObject() {
+        $.ajax({
+            url: Produrl + '/Home/GetSessionObject',
+            success: function (result) {
+                PostToChild(result.PCISessionId);
+            },
+            error: function (result) {
+            }
+        });
+    }
+    function PostToChild(PCISessionId) {
+        var iframeEl = document.getElementById('paymentcciframe');
+        var sendMessage = function (msg) {
+            iframeEl.contentWindow.postMessage(msg, '*');
+        };
+        var serializedobject = {
+            PCISessionId: PCISessionId,
+            CustomerNumber: CustNumber,
+            IsInsertPCILog: "1",
+        }
+        sendMessage(JSON.stringify(serializedobject));
+    }
+
+    function GetSessionObject2() {
+        $.ajax({
+            url: Produrl + '/Home/GetSessionObject',
+            success: function (result) {
+                PostToChild2(result.PCISessionId);
+                PostRequestInfoToChild2(1);
+            },
+            error: function (result) {
+            }
+        });
+    }
+    function PostToChild2(PCISessionId) {
+
+        var iframeEl = document.getElementById('paymentcciframe2');
+        var sendMessage = function (msg) {
+            iframeEl.contentWindow.postMessage(msg, '*');
+        };
+        var serializedobject = {
+            PCISessionId: PCISessionId,
+            CustomerNumber: CustNumber,
+            IsInsertPCILog: "1",
+        }
+        sendMessage(JSON.stringify(serializedobject));
+    }
+});
+</script>
+
+<script type="text/javascript">
+    var zpCode = '@Model.serviceAddressObj.ZipCode';
+    var iframeobject = {};
+    function PrepareIframeObject(model) {
+        iframeobject = {
+            custno: CustNumber,
+            email: CustEmailId,
+            phoneno: CustContactNo,
+            custid: CustId,
+            firstname: model.first_name,
+            lastname: model.last_name,
+            autopay: "",
+            ZipCode: zpCode,
+            PaymentAmt: PaymentAmt,
+            IsInsertPCILog: "0",
+            PCISessionId: "",
+            PrePay: prePay
+        };
+    }
+    function PostRequestInfoToChild(result) {
+        //if (result == "1") {
+        var jsArray = JSON.parse('@Html.Raw(Json.Encode(@Model.personalInfo))');
+        PrepareIframeObject(jsArray);
+        var myaccountiframe = document.getElementById('paymentcciframe');
+        myaccountiframe.contentWindow.postMessage(JSON.stringify(iframeobject), '*');
+        $("#divTryAgain").hide();
+        $("#paymentDiv").show();
+            @*}
+            else {
+                // Insert PCI Log
+                var serialize = {
+                    message: "Try Again CustNo: " + '',
+                    SourcePage: "Source Page: MyAccount - Dashboard,",
+                };
+                $.ajax({
+                    // url: '@Url.Action("InsertPCILog")',
+                   // url: Produrl + '/Home/InsertPCILog',
+                type: "POST",
+                data: serialize,
+                success: function (result) { }
+            });
+            $("#divTryAgain").show();
+            $("#paymentDiv").hide();
+        }*@
+    }
+    //****************End***********
+    //**********For Auto Pay*****************
+    function PostRequestInfoToChild2(result) {
+        if (result == "1") {
+            var jsArray = JSON.parse('@Html.Raw(Json.Encode(@Model.personalInfo))');
+            PrepareIframeObject(jsArray);
+            var myaccountiframe = document.getElementById('paymentcciframe2');
+            myaccountiframe.contentWindow.postMessage(JSON.stringify(iframeobject), '*');
+            $("#paymentcciframe").hide();
+            $("#divTryAgain").hide();
+            $("#paymentDiv").hide();
+            $("#paymentDiv2").show();
+        }
+        else {
+            // Insert PCI Log
+            var serialize = {
+                message: "Try Again CustNo: " + '',
+                SourcePage: "Source Page: OEF",
+            };
+            $.ajax({
+                url: '@Url.Action("InsertPCILog")',
+                type: "POST",
+                data: serialize,
+                success: function (result) { }
+            });
+            $("#divTryAgain").show();
+            $("#paymentDiv2").hide();
+        }
+    }
+   
+</script>

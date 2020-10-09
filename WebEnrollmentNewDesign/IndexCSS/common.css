@@ -1,0 +1,748 @@
+.clear {clear:both}
+.left {float: left;text-align: left;}
+.right{float: right;}
+.center {text-align:center}
+
+
+
+/************* Icons **************/
+.icon-success {background: url(../images/success.svg) center no-repeat;height: 250px;width: 250px;margin: 0 auto;}
+
+.container .row.pt-4.pb-4{justify-content: left !important;width: auto;}
+.Brand .bg_color{width: 1145px;}
+.call {display: inline-block; float: right !important; position: absolute; right: 0px; text-align: right; color: #ee8d40;}
+
+.logo{background: url(../images/logo.png) left no-repeat; height: 82px; width: 250px; display: block;background-size: 100%;
+    background-position: left !important;
+}
+.dollar-input {
+    float: left;
+    line-height: 40px;
+    width: 29px;
+    background: #e7e7e7;
+    margin-left: -28px;
+    height: 45px;
+    padding-left: 10px;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 1px #cfbdb7;
+}
+ 
+ 
+ 	.st0{fill:none;stroke:#3A4F6B;stroke-width:8;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#1EB796;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;
+animation: transform 2s forwards;}
+	.st2{fill:none;stroke:#777777;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+   
+.st1{
+stroke-dashoffset:100; 
+stroke-dasharray:70; }
+ .ie {height:1000px !important;}
+ @keyframes transform{
+ to{
+ stroke-dashoffset:0;
+ }
+ }
+
+
+
+/*SVG*/
+
+
+.one,.two{fill:none;stroke-miterlimit:10;}
+.one{stroke:#3a4f6b;stroke-width:4px;}
+.two{stroke:#1eb897;stroke-linecap:round;stroke-width:3px;}
+
+.one {
+stroke-dashoffset:210; 
+stroke-dasharray:210;
+animation: draw 4s forwards; 
+}
+
+.two{
+stroke-dashoffset:210; 
+stroke-dasharray:210;
+animation: draw 4s forwards; }
+ 
+ @keyframes draw{
+ to{
+ stroke-dashoffset:0;
+ }
+ }
+ 
+ 
+
+ .wrap{margin:100px; margin:0 auto; display:table }
+
+ 
+.one,.two{fill:none;stroke-miterlimit:10;}
+.one{stroke:#3a4f6b;stroke-width:4px;}
+.two{stroke:#1eb897;stroke-linecap:round;stroke-width:3px;}
+
+.one {
+stroke-dashoffset:210; 
+stroke-dasharray:210;
+animation: draw 4s forwards; 
+}
+
+.two{
+stroke-dashoffset:210; 
+stroke-dasharray:210;
+animation: draw 4s forwards; }
+ 
+ @keyframes draw{
+ to{
+ stroke-dashoffset:0;
+ }
+ }
+ 
+ 
+  
+ 
+ 
+ 	.st0{fill:none;stroke:#3A4F6B;stroke-width:8;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#1EB796;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;
+animation: transform 2s forwards;}
+	.st2{fill:none;stroke:#777777;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+   
+.st1{
+stroke-dashoffset:100; 
+stroke-dasharray:70; }
+ 
+ @keyframes transform{
+ to{
+ stroke-dashoffset:0;
+ }
+ }
+ 
+ 
+ 	.sd0{fill:none;stroke:#3A4F6B;stroke-width:4;stroke-miterlimit:10;}
+	.sd1{fill:none;stroke:#1EB796;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.sd2{fill:none;stroke:#777777;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+ 
+ 	.sd0{fill:none;stroke:#3A4F6B;stroke-width:8;stroke-miterlimit:10;}
+	.sd1{fill:none;stroke:#1EB796;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;
+animation: transform 2s forwards;}
+	.sd2{fill:none;stroke:#777777;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+   
+.sd1{
+stroke-dashoffset:100; 
+stroke-dasharray:70; }
+ 
+ @keyframes transform{
+ to{
+ stroke-dashoffset:0;
+ }
+ }
+  
+
+/*****************HEADER******************/
+.banner {
+    width: 1235px;
+    height: auto !important;
+    display: inline-block;
+    margin-top: 62px; 
+} 
+.banner .imgDiv {
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    /*margin-right: -23px;
+    float: right;*/
+}
+
+#divInfo h5{font-size:20px !important}
+ .set1{width: 455px;}
+ .set1 .location_update_action.pt-2{width:100%;padding: 0px;}
+ .set1 .label-prod {width:150px; float:left; display:inline-block}
+ .set1 .zip{/* float:right; */line-height:10px;padding-right:8px;}
+
+
+ 
+
+  ul.info-msg {
+    width: 100%;
+    margin: 0 auto;
+}
+
+ ul.info-msg li{text-align: center;float: left;width: auto;margin-right: 45px;margin-bottom: 25px;}
+
+ /******************** banner info **********************/
+ 
+.bannerinfo-left *{text-align:left}
+.bannerinfo-center *{text-align:center} 
+.bannerinfo-left h1, .bannerinfo-center h1{font-size:42px; color:#00456a; font-weight:500; line-height:46px; }
+.bannerinfo-left p, .bannerinfo-center p{font-size:20px; color:#333; font-weight:400; line-height:31px; }
+.bannerinfo-left h3, .bannerinfo-center h3{ font-weight:700; color:#ee8d40 !important; font-size:20px; margin-bottom:12px;}
+
+
+
+/******************************/
+ .set2{width: 440px;}
+ .set2 span.kwh_choice_container{width: 460px;padding-left: 15px;}
+ .set2 span.kwh_choice_container span.label-prod{margin-right: 0px;margin-left: 10px;margin-right: 0px;clear: both;display: block;float: n;}
+ .set2 .clear{clear: none !important;}
+
+ .modal-content{border-radius:0px !important;}
+ button.close{margin-right:-10px; margin-top:-10px; font-size:16px !important; padding-top:0px !important}
+
+.container-fluid .container {width: 1100px !important;}
+
+
+.conf .header {display:block;height:90px;border-bottom:solid 0px #d9d9d9;width: 1140px;margin: 0 auto;position: initial;text-align: left;}
+.conf .header .logo {margin: 0 auto;float: left;display: block;position: initial;width: 250px;}
+.conf .container {border:solid 0px #fff;}
+.conf .message input.form-control{float:left}
+
+
+
+
+.conf .message {text-align:center;margin-top: 30px;width:100%;}
+.conf .message b{font-size:28px; font-weight:normal; color:#003366;}
+.conf .amount div:first-child {text-align:right; width:53%}
+.conf .amount div {width:40%;float:left;text-align:left;font-size:32px;margin-top:25px;color: #4e9e11;}
+.conf .amount div label{font-size:32px;}
+.conf .amount {text-align:right;}
+.conf .table-responsive{border:0px solid #fff; overflow:hidden !important}
+
+ 
+.conf button, .Brand.conf .Brand_confirm .btn-frontier {width:auto !important; min-width:120px;}
+
+.conf .status .message , .conf .message .status-prepay {height:100px;background:#CCEEDC;width: 100%;margin: 0 auto;border-radius:0px 0px 15px 15px;margin-left: -10px;/* margin-top: -72px !important; */}
+.conf .status .message svg,  .conf .message .status-prepay svg {float:left;width:90px;height:90px;padding: 16px 5px;}
+
+.conf .status .message img,  .conf .message .status-prepay img {float:left;width: 73px;height: 96px;padding: 16px 5px;}
+.conf .status .message .mt-5 b,  .conf .message .status-prepay .mt-5 b{text-align:left;font-size:18px;line-height: 29px;height: auto;display: inline-block;VERTICAL-ALIGN: bottom;MARGIN: 20PX;FLOAT: LEFT;}
+.conf .status .message .mt-5,  .conf .message .status-prepay .mt-5{margin-top: 0px !important;width: calc(100% - 132px);float: left;display: inline-block;}
+.conf .status .message .amount div,  .conf .message .status-prepay .amount div{float:left; font-size:18px;width:auto}
+.conf .status .message .amount div:first-child,  .conf .message .status-prepay .amount div:first-child{color:#828282}
+.conf .status #ErrorResponse2 {display:table-column;}
+.conf .status #divResponse{float:left; text-align:left;}
+.conf .status #lbErrorMsg{float:left;text-align:left;clear: both;}
+
+.conf .message .status-prepay {margin-top: -72px;}
+
+#PrePaySetup{clear:both;}
+#PrePaySetup div{float:left; text-align:left}
+
+.conf .message .message-display{background:#CCEEDC !important;height:auto;display: inline-block;font-size:40px;width: 100%;border-radius: 0px 0px 15px 15px;}
+
+/************* POPUP **************/
+
+.Brand .Brand_index .modal-dialog { overflow: initial;}
+
+
+.modal-body {
+    position: relative;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 70vh; height:auto;
+    margin-top: 30px;
+    min-height: 230px;
+
+}
+.Brand .Brand_index .modal-dialog { 
+    overflow: visible;
+}
+.Brand .Brand_index .autocomplete-items, .Brand .Brand_enroll .autocomplete-items{position:inherit}
+
+.Brand .Brand_enroll .pop_design {overflow: visible !important;}
+
+
+
+
+
+.message-popup {z-index:99999999; margin-top:90px;}
+.message-popup .modal-header{border-bottom :none;padding: 13px;}
+.message-popup .modal-header h5{text-align:center !important;width: 100%;font-size: 19px;font-weight: bold;}
+.message-popup .modal-header .close{margin-top: -36px;margin-right:-32px;background-color:#c80000; border-radius:100px;width: 29px;height: 29px;opacity: 1;color: #fff;line-height: 25px;}
+.message-popup .modal-body{padding:0px 25px;height: auto !important;min-height:50px;margin: 0px;}
+.message-popup .modal-footer{padding: 15px 15px;border: none;margin-top: 0px;}
+.message-popup .modal-footer .btn{border-radius:0px  !important;color: #fff;background: #4993ef;font-size:14px;font-weight:400;width:auto;padding:0px 20px;}
+.message-popup .modal-footer .btn.btn-primary{border:solid 1px #337ec2}
+
+.link {color:#ee8d40}
+
+/************* POPUP - Ends here **************/
+
+img.orange_tool {  margin: 14px 5px; }
+
+.Brand .Brand_enroll .btn-frontier {
+    color: black !important;
+    background-color: #ee8d40 !important;
+    border-color: #ee8d40 !important;
+    box-shadow: 2px 5px 10px 1px #999;
+    padding: 8px 18px;
+    height: auto;
+    }
+
+
+
+
+img.orange_tool {  margin: 14px 5px; }
+
+.Brand .Brand_enroll .btn-frontier {
+    color: black !important;
+    background-color: #f58320  !important;
+    border-color: #ee8d40 !important;
+    box-shadow: 2px 5px 10px 1px #999;
+    padding: 10px 16px;
+    height: auto;
+    font-size: 20px; font-weight:400;
+    }
+
+.container-fluid ul{padding-left: 25px !important;list-style: disc; text-align:left}
+.container-fluid ul li{width:auto !important;text-align:left;display: block;}
+.container-fluid ul li::after{content: '';position: absolute;left: 0;top: 7px;border-radius: 100px;background-color: #ccc;width: 6px;height: 6px;}
+.container-fluid #PendingMsg ul li::after{content: '';position: absolute;left: 0;top:7px;border-radius: 100px;background-color: #ccc;width: 0px;height: 6px;}
+
+.footer .links_col a{color:grey !important}
+.footer .links_col .social-links a{color:#00456b !important;}
+.footer .links_col .social-icons a{color:#00335c !important;}
+section.pricing_disclaimers{padding:0px; margin:0px}
+.pricing_disclaimers #tabFooter{font-size:12px}
+
+
+.ftr{ width:1145px;}
+.ftr section.pricing_disclaimers{padding:0px;margin:0px;text-align: justify;}
+.ftr section.pricing_disclaimers em{padding:0px;text-align: justify;}
+.ftr .pricing_disclaimers #tabFooter{font-size:12px}
+
+.container-fluid ul:before{width:5px; height:5px; background:#f00; display:inline-block}
+
+.green_flag {width:240PX !IMPORTANT;}
+.plan_card .green_flag {width: 95% !IMPORTANT;}
+
+.pricing_plan_item.plan_card ng-star-inserted{margin-top:24PX !IMPORTANT}
+
+.container-fluid .row .green_flag {margin-top:30px; width:95% !important; max-width:274px;}
+.container-fluid .row .col-lg-4 {padding:20px 0px 10px 0px !important}
+.cart-header.row  .col-lg-4{padding:2px !important}
+.hasDatepicker {width: 100% !important; border: #cfbdb7 1px solid !important;}
+.pricing_plan_item.plan_card {margin-top: 20px;}
+
+
+.Home_p .nav-link {border:solid 4px #259cc0 !important; margin-right:1px !important; border-bottom:none 0px #fff !important}
+
+
+
+.ui-datepicker *{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important; font-weight:400;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{background-image:none;}
+.ui-datepicker-header{border-radius:0px !important; background-color:#efefef; background-image:none}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next  {background: #259cc0; border-radius: 0px;}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {color:#f58522; font-weight:700}
+
+input.form-control {
+    font-size: 16px !important;
+}
+
+.bg-blue {background-color:#259cc0 !important;
+}
+
+
+/*.tab-pane.active{display:inline-table;}*/
+.tab-content {margin-top:-5px;}
+
+.form-control:focus + .form-control-placeholder, .form-control:valid + .form-control-placeholder {
+    font-size: 100%;
+    transform: translate3d(-12%, -110%, 0);
+    opacity: 1;
+}
+
+.Brand .Brand_enroll .Home_p .clr_wht {
+    color: white;
+    padding-left: 14px;
+}
+
+
+.cart-header .col-lg-4:nth-child(2) {
+text-align: left;
+padding-left: 46px !important;
+}
+/**************** Media Query ****************/
+
+@media (min-width: 1020px) {
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+float: left !important;
+}
+
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        width: 100% !important;
+        margin: 0px;
+        max-width: 100vw !important;
+    }
+
+.Brand .bg_color {
+    width: 95vw;
+}
+
+.ftr {
+    width: 95vw;
+}
+
+.container-fluid .container {
+    width: 865px !important; 
+    }
+.Brand_confirm .container-fluid .container { 
+    margin: 0px auto;
+    }
+
+.nav-tabs .nav-link{margin:0px 4px !important}
+
+.row .set1, .row .set2, .row .set3{width: 32% !important;}
+.row .set1{width: 39% !important;}
+.row .set1 *, .row .set2 *, .row .set3 *{font-size: 18px !important;}
+.set1 .label-prod{width:95px}
+
+.row .set3 .promo_code_entry {padding:0px !important; border-width:0px 0px 1px 0px !important; border-radius:0px !important;
+ border-color:#00456a; font-size:14px !important}
+}
+
+
+
+
+@media (max-width: 1000px) {
+    
+.container .row.plan{padding-bottom:0px !important}
+.container-fluid ul{text-align}
+.container-fluid .row.cart-header{display:none !important }
+
+.container-fluid .row {padding: 0px 40px  !important;}
+.container-fluid .row .col-lg-4{padding: 0px !important;}
+div.pricing_plan_item.plan_card {margin-bottom: 5px;margin-top: 15px;}
+.container-fluid .row .col-lg-4.col-12.pt-3.p-0 h3{ margin-top:10px}
+
+ #divInfo .container-fluid .row {
+    border-top: solid 0px #efefef !important;
+}
+.container-fluid {width: 89vw;margin: 0px !important;}
+
+.conf .container-fluid {width: 100vw;margin: 0px !important;}
+
+.container-fluid .row .green_flag {max-width: 95%; margin-top:0px }
+.conf .status .message .mt-5 b, .conf .message .status-prepay .mt-5 b {MARGIN: 10PX;}
+
+
+
+}
+
+
+
+/*** iPhone x ***/
+
+  
+@media (max-width: 800px),
+only screen and (-webkit-min-device-pixel-ratio: 3)
+{ 
+    .ftr {
+    width: 98vw !important;
+    padding: 0px 10px;
+    display: block;
+}
+ .set1 .zip_text{display:flex !important}
+
+ 
+.mbl_tab {
+    width: 100% !important;
+    margin: 0px;
+    padding: 0px;
+    }
+
+
+  .amount div{font-size: 145% !important;padding-bottom:30px;}
+
+
+.conf .status .message .mt-5 b, .conf .message .status-prepay .mt-5 b {font-size: 14PX; line-height:24px}
+.container, .Brand .bg_color{width: 95vw !important;/* margin-left: 0px; */margin: 0px  auto !important;max-width: 100%;}
+.Brand .bg_color{width: 95vw !important;margin: 0 auto !important;}
+
+.row .set1, .row .set2, .row .set3{width: 33% !important;}
+.row .set1{width: 33% !important;}
+.row .set2 .clear{width: 100% !important;clear:both !important;}
+.row .set3{width: 18% !important;text-align: center;padding: 10px}
+.row .set1, .row .set2, .row .set3{width: 46% !important;}
+.row .set1 *, .row .set2 *, .row .set3 *{ font-size:12px !important; }
+.row .set3 .btn_pd, .row .set3 span.promo_code_entry{width: auto;padding: 2px !important;margin: 0px !important;word-break: break-word;border: 0px solid #fff !important;border-bottom: 1px solid #044895 !important;border-radius: 0px !important;}
+.set1 .label-prod{width: auto;line-height: 33px;text-align: center;}
+.Brand .Brand_index span.location_update_action{text-align:center;}
+.set2 span.kwh_choice_container{width: 100%;padding-left: 0px !important;}
+.call h3{font-size:14px !important; margin:15px !important}
+span.kwh_choice_container span.rates_text{width:auto !important; float:left}
+span.kwh_choice_container label{width: 30%;}
+.kwh_choice_container .ml_10{margin-left: 0% !important;}
+
+.nav-tabs {width: 95vw;padding:0px;display:inline-block;}
+.nav-tabs .nav-link{font-size:14px !important;  padding: 5px  !important;width: 100%;}
+
+.nav-tabs .nav-link{border-radius:0px !important;}
+
+.Brand .Brand_index .nav-tabs > li > a{ border:solid 1px #efefef !important;}
+
+.container-fluid .container{width: 95vw !important;max-width: 95%;}
+
+.p_fixed .row {width: 100%;}
+section.cta_head_section h1, .cta_container .cta_content h1, .font42{font-size: 38px;}
+.nav > li {font-weight: 600;max-width: 161px;margin: 0px;padding: 0px;}
+/*.nav-tabs .nav-link {padding:50px !important}*/
+.nav-tabs .item_2 .nav-link {
+    font-size: 16px !important;
+    padding:0px !important;
+    text-align: center;
+    }
+.Home_p .nav-link {
+  border:solid 2px #259cc0 !important;
+border-radius:5px 5px 0px 0px !important;border-bottom:0px !important;}
+
+
+#tabs .nav > li {max-width: 100%;}
+
+
+.modal-content{width: 94%;}
+.modal-backdrop.show { height: auto;}
+#divInfo .container-fluid .row {width: 95vw;margin: 0 auto;}
+
+}
+
+
+@media (max-width: 769px) and  (min-width: 765px) /* ipad */
+{
+.row .set3{width: 18% !important;text-align: center;padding: 0px 0px 30px 1px ;}
+}
+
+
+
+@media (max-width: 800px){ 
+
+.row .set1{width:100%!important}
+.set1 .zip_text {display:inline-block !important;float:left}
+.row .set2{width: 65% !important;display:block !important;clear:both !important;}
+
+.Brand .Brand_index span.location_update_action { 
+    float: left !important;}
+    
+.Brand .Brand_index  .set1  span{margin-left:10px !important}
+.row .set2 .clear {width: calc(100% - 150px) !important;float: left;display: inline-block;clear: none !important;}
+.set2{text-align:center;}
+.set2 span.kwh_choice_container span.label-prod{clear:none !important;float:left;display:inline-block;margin-left: 5px;}
+.row .set3{text-align:left !important;width: 30% !important;}
+.row .set3 .btn_right {float:right; width:100%}
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px){
+.message .user_information.mt_105{margin-top: 40px !important;}
+.conf .status .mt_data{margin-top: 85px !important;}
+
+.mt_105 {
+    margin-top: 630px !important;
+}
+
+
+
+
+
+
+.conf .amount {
+    clear: both;}
+.conf .status .message .mt-5 b, .conf .message .status-prepay .mt-5 b {
+    font-size: 10X; line-height:14px}
+
+
+    .conf .status .mb_20 {
+    margin-bottom: 20px;
+    margin-top: 10px !important;}
+
+
+    .conf .logo {
+    background-size: 85%;
+}
+
+
+.Brand_confirm .container-fluid .container.hdr{margin-right :0px !important;padding: 0px !important;width: 100% !important;}
+.Brand_confirm .container-fluid .container.hdr .row{  margin-right:0px !important; padding-right:0px}
+.Brand_confirm .container-fluid .container.hdr .logo { height: 82px;width: 220px;}
+
+
+
+
+}
+
+
+
+
+@media (max-width: 340px) /* iPhone 5 */ {
+  .logo{background-size:80%}
+}
+
+
+
+
+
+
+@media screen and (max-width:1366px){ 
+}
+
+
+@media screen and (max-width:1280px){  
+}
+
+
+@media screen and (max-width:1200px){ 
+}
+
+
+@media screen and (max-width:1024px){  
+}
+
+
+@media screen and (max-width:1023px){ 
+}
+
+
+@media screen and (max-width:800px){ 
+}
+
+@media screen and (max-width:768px){  
+
+}
+
+
+@media screen and (max-width:767px){  
+}
+
+
+@media screen and (max-width:480px) and (min-width:640px){ 
+}
+
+@media screen and (max-width:480px){
+    .location_update_action u {
+        display: block;
+    }
+
+.set1 .location_update_action div{width:100%; clear:both}
+
+.set1 .location_update_action span{width:45%; font-size:10px}
+.set1 .location_update_action .text18{font-size:14px !important; padding:2px 2px}
+.set1 .location_update_action .zip{font-size:14px !important; padding:2px 2px}
+
+
+.row .set2 {margin-top:10px}
+.row .set2 .clear {width: calc(100% - 160px) !important;}
+.row .set2 *{font-size:14px !important;}
+.row .set2 .kwh_choice_container span{clear:both; width:100%}
+.row .set2 span.kwh_choice_container span.rates_text{width: 90vw !important;clear:both;  margin:0px auto;}
+.row .set2 span.kwh_choice_container .clear{width:95vw !important; margin:0px auto;}
+
+
+.kwh_choice_container  .clear{padding-left:20px;}
+.row .set3 {text-align: center !important; width: 100% !important; margin-bottom:10px}
+
+
+ 
+}
+
+@media screen and (max-width:360px){  
+}
+
+            #imgBanner{width:100vw !important; max-width:1140px}
+
+
+@media screen and (min-width:765px) {  
+
+#imgBanner{margin-left:-16px !important}
+
+
+}
+
+
+
+
+
+
+@media (max-width: 375px) {
+    .logo {
+        background-size: 80% !important;
+    }
+}
+
+
+
+.ie {height:1000px !important;}
+
+
+
+@media screen and ( max-height: 800px ) {
+
+.Brand .Brand_index .modal-dialog {top:1% !important}
+
+#serAddMsg2 { margin-top:0px !important;}
+
+}
+
+
+div.plan_head_text h3 {
+    margin: 0 0 20px 0;
+    height: 50px;}
+@media only screen and (min-width:320px )and (max-width: 767px) {
+    .Brand .Brand_enroll .form-control {
+        min-width: 85%;
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+        margin-bottom: 15px !important;
+    }
+
+    /*@media only screen and (max-width: 767px) and (min-width: 320px)*/
+    /*.nav-tabs .item_2 {
+    width: 44% !important;
+    height: 40px;
+}*/
+    @media only screen and (max-width: 767px) and (min-width: 320px) .modal-body {
+        position: relative; padding: 20px; overflow-y: auto; max-height: 70vh; height:auto; margin-top: 30px; min-height: 230px;
+    }
+
+    .Brand .Brand_index .modal-dialog {
+        overflow: visible;
+    }
+
+    .Brand .Brand_index .autocomplete-items, .Brand .Brand_enroll .autocomplete-items {
+        position: inherit;
+    }
+
+    .nav-tabs .item_2 .nav-link {
+        font-size: 16px !important;
+        line-height: 40px;
+    }
+}
+/*.Brand .Brand_index .modal-dialog { overflow: initial;}
+
+
+.modal-body {
+    position: relative;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 70vh; height:auto;
+    margin-top: 30px;
+    min-height: 230px;
+
+}
+.Brand .Brand_index .modal-dialog { 
+    overflow: visible;
+}
+
+.Brand .Brand_index .autocomplete-items, .Brand .Brand_enroll .autocomplete-items {
+    position: inherit;
+}
+.nav-tabs .item_2 .nav-link {
+    font-size: 16px !important;
+    line-height: 40px ;
+}
+    @media only screen and (min-width:40em) {
+  .tooltip .tooltiptext { display:none;}
+}*/
+

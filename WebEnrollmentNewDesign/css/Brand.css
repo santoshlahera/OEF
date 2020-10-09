@@ -1,0 +1,2651 @@
+﻿/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+/*.page {
+    width: 950px;
+    height: auto;
+    background-color: #fff; /*padding:10px;*/
+    /*-webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-left-radius: 15px;
+    margin: 5px auto 0px auto; /*border: 1px solid #496077;*/
+}
+
+/* CSS Document */
+
+/*body {
+    margin: 0px;
+    padding: 0px;
+    background-repeat: repeat-x;
+    background-image: url('../images/body-bg.jpg');
+    background-color: #fdcd9d;
+}
+
+#main {
+    width: 950px;
+    height: auto; /*border:1px #FF0000 dotted;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+/*#banner {
+    width: 950px;
+    height: 80px;
+    padding: 0px;
+    margin-top: 23px;
+}
+
+#logo {
+    width: 530px;
+    height: 80px;
+    margin: 0px;
+    position: relative;
+    left: 0px;
+    float: left;
+}*/
+
+/*#callus {
+    width: 250px;
+    height: 58px;
+    margin: 0px;
+    float: right; 
+    text-align: right;
+    line-height: normal;
+}
+
+.title01 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    color: #5a595a;
+    font-weight: bolder;
+    letter-spacing: 0px;
+}
+
+
+#menu {
+    width: 950px;
+    height: 60px;
+    padding: 0px;
+    font-style: italic;
+}*/
+
+/*#menu-item {
+    width: 282px;
+    height: 55px;
+    padding: 0px;
+    margin: 0px;
+    float: left; 
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    #menu ul li {
+        float: left;
+        padding: 0px 19px;
+        line-height: 40px;
+    }
+
+#menu-01 {
+    width: 950px;
+    height: 80px; 
+    text-align: center;
+}
+
+#menu01-inside {
+    min-width: 660px;
+    height: 23px;
+    display: inline-block;
+ 
+    position: relative;
+    top: 47px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    behavior: url(../pie/PIE.htc);
+    text-align: center;
+}
+
+    #menu01-inside ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+        #menu01-inside ul li {
+            height: 29px;
+            display: inline-table;
+            padding: 0px 5px;
+            line-height: 23px;
+            vertical-align: middle;
+        }
+
+            #menu01-inside ul li a {
+                font-family: 'PT Sans', sans-serif;
+                font-size: 15px;
+                font-weight: bold;
+                color: #5a595a;
+            }
+
+.calc {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #5a595a;
+}
+
+.menu-active {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFF;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+#menu-01-next {
+    width: 951px;
+    height: 50px;
+    padding: 0px;
+    background-color: #f89840;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    color: #FFF;
+    line-height: 50px;
+}
+
+#menu-01-next_partner {
+    width: 100%;
+    height: 40px;
+    padding: 0px;
+    background-color: #f89840;*/
+    /*-webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topright: 15px;*/
+    /*border-top-right-radius: 15px;*/
+    /*text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    color: #FFF;
+    line-height: 40px;
+}
+
+#ref_msg {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    color: #645c59;
+    line-height: 10px;
+}
+
+#choose_energy {
+    width: 951px;
+    height: 50px;
+    padding: 0px;
+    background-color: #FFF;
+    text-align: left;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    color: #645c59;
+    line-height: 20px;
+}
+
+#ce_logo {
+    width: 200px;
+    height: 50px;
+    padding: 0px;
+    background-color: #FFF;
+    float: left;
+    top: 0px;
+}
+
+#ce_prod_desc {
+    width: 741px;
+    height: 50px;
+    padding: 0px;
+    background-color: #FFF;
+    float: right;
+    left: 200px;
+}*/
+
+/*#alllogos {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #777777;
+    text-align: right;
+}*/
+
+#box01 {
+    height: 1200px; /*870px;*/
+    width: 950px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #FFF;
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
+    behavior: url(../../pie/PIE.htc);
+}
+
+#box001 {
+    height: 840px;
+    width: 950px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #FFF;
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
+    behavior: url(pie/PIE.htc);
+}
+
+
+#copyright {
+    width: 930px;
+    height: 80px;
+    padding: 8px 10px;
+    margin-bottom: 24px;
+    background-color: #615652;
+    position: relative;
+    bottom: 0px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-left-radius: 15px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    behavior: url(pie/PIE.htc);
+    clear: both;
+}
+
+#copy01 {
+    float: left;
+    width: 375px;
+    height: auto;
+    padding: 12px;
+}
+
+#copy02 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    float: right;
+    width: 500px;
+    height: 75px;
+    text-align: right;
+}
+
+.copy02top {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*
+#copy02 a
+{
+    color: #f39245;
+}
+*/
+
+
+
+#alllogos {
+    float: none;
+    width: 950px;
+    height: auto;
+    text-align: right;
+}
+
+
+#box10 {
+    width: 575px;
+    height: auto;
+    margin: 30px 0px 30px 20px;
+    float: left; /*border:1px #FF0000 dotted;*/
+    background-color: #f9f8f6;
+}
+
+div#box20 {
+    width: 310px;
+    height: auto;
+    margin: 30px 25px 5px 0px;
+    float: left; /*border:1px #FF0000 dotted;*/
+    background-color: #f9f8f6;
+}
+
+div#sideBar {
+    width: 300px;
+    height: auto;
+    margin-left: 30px;
+    float: left;
+}
+
+.stick {
+    position: fixed;
+    top: 0px;
+}
+
+.box200 {
+    width: 310px;
+    height: 35px;
+    text-align: center;
+    /*border:1px #FF0000 dotted;*/
+    background-color: #f39245;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #FFFFFF;
+    height: 32px;
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: left;
+    background: #FC8513;
+}
+
+#box200 {
+    width: 310px;
+    height: 35px;
+    text-align: center;
+    /*border:1px #FF0000 dotted;*/
+    background-color: #f39245;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+/*
+#box201
+{
+    width: 300px;
+    height: 25px;
+    text-align: center; 
+    font-family: 'PT Sans' , sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #4584b0;
+}
+*/
+#box201 {
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    /*border:1px #FF0000 dotted;*/
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #63abd6;
+}
+
+.new-plan-ext {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    color: #606261;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.edit-btn {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    color: #606261;
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+.box202 {
+    width: 310px;
+    height: auto;
+    text-align: center; /*border:1px #FF0000 dotted;*/
+    width: 270px;
+    margin: 0 auto;
+    background: #ffffff;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 4px 3px 5px 0px rgba(202, 202, 202,1);
+    -moz-box-shadow: 4px 3px 5px 0px rgba(202, 202, 202,1);
+    box-shadow: 4px 3px 5px 0px rgba(202, 202, 202,1);
+}
+
+#box202 {
+    width: 310px;
+    height: auto;
+    text-align: center; /*border:1px #FF0000 dotted;*/
+}
+
+.enrollTitleView {
+    width: 545px;
+    height: 65px;
+    margin: 0px;
+    text-align: left;
+    line-height: 65px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4584b0;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.PersonalTitleView {
+    margin: 0px;
+    text-align: left;
+    line-height: 65px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4584b0;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    float: left;
+}
+
+#pi_min_view {
+    float: right;
+    padding-top: 10px;
+}
+
+.enrollDetailView {
+    width: 545px;
+    height: auto;
+    margin: 0px;
+    text-align: left;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    color: #fcf1e8;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    background-color: #fef4e8;
+}
+
+/*
+.org-title
+{
+    font-family: 'PT Sans' , sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #f47920;
+}
+*/
+.org-title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f47920;
+}
+
+
+
+.org-title01 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f47920;
+}
+
+.org-title02 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #f47920;
+}
+
+
+/*
+.org-title01
+{
+    font-family: 'PT Sans' , sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f47920;
+}
+
+*/
+
+input[type=submit] {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 22px;
+    /*background-color: #f47920;*/
+    background-image: url(../images/btnbg_normal.png);
+    border: #FFF 1px solid;
+    /* box-shadow: #999 2px 2px;*/
+    -webkit-box-shadow: 2px 5px 10px 1px 999;
+    box-shadow: 2px 5px 10px 1px #999;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    behavior: url(../pie/PIE.htc);
+    transition: all 0.5s ease-out;
+}
+
+    /*
+input[type=submit]
+{
+    font-family: 'PT Sans' , sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 22px;
+  
+   
+    border: #FFF 1px solid;
+
+   -webkit-box-shadow: 2px 5px 10px 1px 999;
+    box-shadow: 2px 5px 10px 1px #999;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    behavior: url(pie/PIE.htc);
+    transition: all 0.5s ease-out;
+}
+*/
+    input[type=submit]:hover {
+        /* background-color: #c65127;*/
+        background-image: url(../images/btnbg.jpg);
+    }
+
+.FunButton {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 22px;
+    background-image: url(../images/btnbg.jpg);
+    border: #FFF 1px solid;
+    /*box-shadow: #999 2px 2px;*/
+    -webkit-box-shadow: 2px 5px 10px 1px 999;
+    box-shadow: 2px 5px 10px 1px #999;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    behavior: url(pie/PIE.htc);
+    transition: all 0.5s ease-out;
+}
+/*
+input[type=button]
+{
+    font-family: 'PT Sans' , sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 22px;
+    background-image: url(../images/btnbg.jpg);
+    border: #FFF 1px solid;
+    box-shadow: #999 2px 2px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    behavior: url(pie/PIE.htc);
+    transition: all 0.5s ease-out;
+}
+*/
+/*
+input[type=button]:hover{
+	background-color:#c65127;
+}
+*/
+input[type=text] {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    border: #cfbdb7 1px solid;
+    background-color: #FFF;
+    transition: all .3s ease-out;
+    margin-left: 0px;
+    padding-left: 2px;
+}
+
+    input[type=text]:focus {
+        border: #c05030 1.5px solid;
+        background-color: #ffffff;
+    }
+
+    input[type=text]:hover {
+        border: #009ad1 1.5px solid;
+        background-color: #f7f6f5;
+    }
+/*
+input[type=text]{
+	border:#FFF 1.5px solid;
+	background-color:#e5ddda;
+	transition:all .3s ease-out;
+}
+
+input[type=text]:focus{
+	border:#c05030 1.5px solid;
+	background-color:#ffffff;
+	
+}
+
+input[type=text]:hover{
+	border:#009ad1 1.5px solid;
+	background-color:#ffffff;
+}
+*/
+
+.checkbox {
+    border: #FFF 1.5px solid;
+    background-color: #e5ddda;
+}
+
+#box40 {
+    width: 570px;
+    height: 140px;
+    margin: 10px 0px;
+    padding: 10px;
+    float: right;
+    border: #a9a9a2 1px solid;
+}
+
+.runtext {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    color: #333;
+}
+
+.runtext01 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    color: #000;
+    font-style: italic;
+}
+
+.runtext02 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: #606060;
+    font-weight: 400;
+}
+
+
+.round-field {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    line-height: 20px; /*box-shadow:#999 1px 1px;*/
+    behavior: url(pie/PIE.htc);
+}
+
+.round {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; /*box-shadow:#999 1px 1px;*/
+    behavior: url(pie/PIE.htc);
+}
+
+.ddl {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    border: #cfbdb7 1px solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; /*box-shadow:#999 1px 1px;*/
+    behavior: url(pie/PIE.htc);
+}
+
+#plan-box {
+    width: 180px;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
+}
+
+#plan-box-title {
+    width: 160px;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 3px;
+    background-color: #ef9150;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: #999 0px 2px;
+}
+
+#plan-box-content {
+    width: 164px;
+    height: auto;
+    padding: 8px;
+    background-color: #f7f1f1;
+    text-align: center;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: #999 0px 2px;
+}
+
+
+#cards {
+    height: auto;
+    text-align: center;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.box-title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.runtext01 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    color: #000;
+    font-style: italic;
+}
+
+.box-text {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 11px;
+    color: #333;
+}
+
+.box-text-blue {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 11px;
+    color: #4c8bb7;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 30px;
+}
+
+.box-title-blue {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 25px;
+    color: #4c8bb7;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+input[type=checkbox].css-checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+    input[type=checkbox].css-checkbox + label.css-label {
+        padding-left: 20px;
+        height: 15px;
+        display: inline-block;
+        line-height: 15px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        font-size: 15px;
+        vertical-align: middle;
+        cursor: pointer;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 12px;
+        color: #333;
+    }
+
+    input[type=checkbox].css-checkbox:checked + label.css-label {
+        background-position: 0 -15px;
+    }
+
+.css-label {
+    background-image: url('../images/dark-check-green.png');
+}
+
+/*
+.min-vew
+{
+    width: 300;
+    height: auto;
+    float: right;
+    vertical-align: middle;
+}
+*/
+.min-vew {
+    left: 360px;
+    /*width:60%;*/
+    height: auto;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+
+
+.minview-text {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+#confirm-box1 {
+    width: 780px;
+    height: auto;
+    padding: 20px;
+    margin: 0px auto;
+}
+
+.confirm-title01 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+    color: #faa61a;
+    font-weight: 700;
+    text-align: center;
+}
+
+.confirm-title02 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: #5b5a5a;
+    font-weight: 700;
+    text-align: left;
+}
+
+.confirm-org-title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: #f47920;
+    font-weight: 700;
+    text-align: left;
+}
+
+.confirm-black-title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: #353534;
+    font-weight: 700;
+    text-align: left;
+}
+
+#confirm-box2 {
+    width: 780px;
+    height: auto;
+    padding: 20px 20px 10px 20px;
+    margin: 0px auto;
+}
+
+#confirm-box3 {
+    width: 780px;
+    height: 80px;
+    padding: 5px 20px 5px 20px;
+    margin: 0px auto;
+    overflow: auto;
+}
+
+#confirm-box4 {
+    width: 780px;
+    height: auto;
+    padding: 20px 20px 10px 20px;
+    margin: 0px auto;
+}
+
+.thanks-text {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    color: #8e979c;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.round-10px {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: #000 1px solid;
+    behavior: url(../pie/PIE.htc);
+}
+
+.round_10px_text_arial14 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: #000 1px solid;
+    behavior: url(../pie/PIE.htc);
+}
+
+
+
+.text-arial {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    color: #333;
+}
+
+
+.mGrid, .lGrid {
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    /*  border: solid 1px #525252;  */
+    border-collapse: collapse;
+}
+
+    .mGrid td, .lGrid td {
+        color: #333333;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 12px;
+        padding-bottom: 2px;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 2px;
+        border: solid 1px #c1c1c1;
+    }
+
+    .mGrid th, .lGrid th {
+        padding: 4px 2px;
+        color: #343434;
+        background: #efe9e9; /*#f47920;*/
+        border-left: solid 1px #525252;
+        border-top: solid 1px #525252;
+        font-size: 0.9em;
+        background-image: url(../images/grid_title.png);
+        border: solid 1px #c1c1c1;
+    }
+
+
+
+    .mGrid .alt, .lGrid .alt {
+        background: #fcfcfc url(grd_alt.png) repeat-x top;
+    }
+
+    .mGrid tr:last-child {
+        padding: 4px 2px;
+        color: #343434;
+        background: #efe9e9; /*#f47920;*/
+        border-left: solid 1px #525252;
+        border-top: solid 1px #525252;
+        font-size: 0.9em;
+        background-image: url(../images/grid_title.png);
+    }
+
+.celltooltip {
+    display: inline;
+    position: relative;
+}
+
+    .celltooltip:hover {
+        text-decoration: none;
+    }
+
+        .celltooltip:hover:after {
+            word-wrap: break-word;
+            width: 200px;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 12px;
+            color: #000000;
+            background: white;
+            border-radius: 5px;
+            border-color: #f47920 transparent;
+            bottom: 18px;
+            content: "We may contact you with any problems with this enrollment.";
+            display: block;
+            left: 50%;
+            padding: 5px 15px;
+            position: absolute;
+            z-index: 98;
+        }
+
+        .celltooltip:hover:before {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 11px;
+            border: solid;
+            border-color: white transparent;
+            border-width: 6px 6px 0 6px;
+            bottom: 12px;
+            content: "";
+            display: block;
+            left: 75%;
+            position: absolute;
+            z-index: 99;
+        }
+        
+.cvctooltip {
+    display: inline;
+    position: relative;
+}
+
+    .cvctooltip:hover {
+        text-decoration: none;
+    }
+
+        .cvctooltip:hover:after {
+            word-wrap: break-word;
+            width: 250px;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 12px;
+            color: #000000;
+            background: white;
+            border-color: #f47920 transparent;
+            border-radius: 5px;
+            bottom: 18px;
+            content: "For Visa, MasterCard, and Discover cards, the card code is the last 3 digit number located on the back of your card on or above your signature line. For an American Express card, it is the 4 digits on the FRONT above the end of your card number.";
+            display: block;
+            left: 50%;
+            padding: 5px 15px;
+            position: absolute;
+            z-index: 98;
+        }
+
+        .cvctooltip:hover:before {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 11px;
+            border: solid;
+            border-color: white transparent;
+            border-width: 6px 6px 0 6px;
+            bottom: 12px;
+            content: "";
+            display: block;
+            left: 75%;
+            position: absolute;
+            z-index: 99;
+        }
+
+        
+.enrolltooltip {
+    display: inline;
+    position: relative;
+}
+
+    .enrolltooltip:hover {
+        text-decoration: none;
+    }
+
+        .enrolltooltip:hover:after {
+            word-wrap: break-word;
+            width: 250px;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 12px;
+            color: #000000;
+            background: white;
+            border-color: #f47920 transparent;
+            border-radius: 5px;
+            bottom: 18px;
+            /*content: "If you choose to enroll in Auto-Pay, you will receive an invoice via email 16 days before the payment due date. With Auto-Pay, your amount due will be charged to your card on the payment due date. You can always pay your bill prior to the due date and no auto charge will occur. Auto-Pay guarantees you will never have a late payment."; */
+            /*content:"I understand that by enrolling in Auto-Pay I also agree to have Frontier stop mailing me a paper bill each month. I agree to receive invoices by email."; */
+            content:"If you choose to enroll in autopay, your amount due will charged to your card on the payment due date. You can always pay your bill prior to the due date, and your auto-pay charge will not occur. Auto-Pay guarantees you will never have a late payment.";
+            display: block;
+            left: 50%;
+            padding: 5px 15px;
+            position: absolute;
+            z-index: 98;
+        }
+
+        .enrolltooltip:hover:before {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 11px;
+            border: solid;
+            border-color: white transparent;
+            border-width: 6px 6px 0 6px;
+            bottom: 12px;
+            content: "";
+            display: block;
+            left: 75%;
+            position: absolute;
+            z-index: 99;
+        }
+
+      
+
+.datetooltip {
+    display: inline;
+    position: relative;
+    text-align: left;
+}
+
+    .datetooltip:hover {
+        text-decoration: none;
+    }
+
+        .datetooltip:hover:after {
+            word-wrap: normal;
+            width: 200px;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 12px;
+            color: #000000;
+            background: white;
+            border-radius: 5px;
+            border-color: #f47920 transparent;
+            bottom: 18px;
+            content: "You are able to select a start date 14 days before your current contract expires without being charged an early termination fee from your current provider. Note, fees may apply if choosing a holiday or weekend.";
+            display: block;
+            left: 50%;
+            padding: 5px 15px;
+            position: absolute;
+            z-index: 98;
+        }
+
+        .datetooltip:hover:before {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 11px;
+            border: solid;
+            border-color: white transparent;
+            border-width: 6px 6px 0 6px;
+            bottom: 12px;
+            content: "";
+            display: block;
+            left: 75%;
+            position: absolute;
+            z-index: 99;
+        }
+
+   .carriertooltip {
+    display: inline;
+    position: relative;
+    text-align: left;
+}
+
+    .carriertooltip:hover {
+        text-decoration: none;
+    }
+
+        .carriertooltip:hover:after {
+            word-wrap: normal;
+            width: 200px;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 12px;
+            color: #000000;
+            background: white;
+            border-radius: 5px;
+            border-color: #f47920 transparent;
+            bottom: 18px;
+            content: "Please provide your carrier information to receive important account information such as usage, billing and account updates.";
+            display: block;
+            left: 50%;
+            padding: 5px 15px;
+            position: absolute;
+            z-index: 98;
+        }
+
+        .carriertooltip:hover:before {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 11px;
+            border: solid;
+            border-color: white transparent;
+            border-width: 6px 6px 0 6px;
+            bottom: 12px;
+            content: "";
+            display: block;
+            left: 75%;
+            position: absolute;
+            z-index: 99;
+        }
+
+.twtooltip {
+    display: inline;
+    position: relative;
+    text-align: left;
+}
+
+    .twtooltip:hover {
+        text-decoration: none;
+    }
+
+        .twtooltip:hover:after {
+            word-wrap: normal;
+            width: 200px;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 12px;
+            color: #000000;
+            background: white;
+            border-radius: 5px;
+            border-color: #f47920 transparent;
+            bottom: 18px;
+            content: "A utility credit check and address verification will be performed when you submit your order. Your information will not be shared other than to process your order. Frontier Utilities considers your privacy and security of utmost importance. Our order page uses the lastest SSL technology to protect your information.";
+            display: block;
+            left: 50%;
+            padding: 5px 15px;
+            position: absolute;
+            z-index: 98;
+        }
+
+        .twtooltip:hover:before {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 11px;
+            border: solid;
+            border-color: white transparent;
+            border-width: 6px 6px 0 6px;
+            bottom: 12px;
+            content: "";
+            display: block;
+            left: 75%;
+            position: absolute;
+            z-index: 99;
+        }
+        
+     
+.ebilltooltip {
+    display: inline;
+    position: relative;
+    text-align: left;
+}
+
+    .ebilltooltip:hover {
+        text-decoration: none;
+    }
+
+        .ebilltooltip:hover:after {
+            word-wrap: normal;
+            width: 200px;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 12px;
+            color: #000000;
+            background: white;
+            border-radius: 5px;
+            border-color: #f47920 transparent;
+            bottom: 18px;
+            /*content: "To ensure you receive emails from us, please check your spam folder, and add noreply@frontierutilities.com to your safe sender list or address book.";*/
+            content: "By selecting the checkbox, you consent that any disclosure, notice, invoice, communication or other type of information in connection with your account with Frontier may be provided to you electronically by e-mail and/or text to the email address and/or phone number you provided to Frontier.";
+            display: block;
+            left: 50%;
+            padding: 5px 15px;
+            position: absolute;
+            z-index: 98;
+        }
+
+        .ebilltooltip:hover:before {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 11px;
+            border: solid;
+            border-color: white transparent;
+            border-width: 6px 6px 0 6px;
+            bottom: 12px;
+            content: "";
+            display: block;
+            left: 75%;
+            position: absolute;
+            z-index: 99;
+        }
+        
+.chkAuthorizeSwitchTexttooltip {
+    display: inline;
+    position: relative;
+    text-align: left;
+}
+
+    .chkAuthorizeSwitchTexttooltip:hover {
+        text-decoration: none;
+    }
+
+        .chkAuthorizeSwitchTexttooltip:hover:after {
+            word-wrap: normal;
+            width: 600px;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 12px;
+            color: #000000;
+            background: white;
+            border-radius: 5px;
+            border-color: #f47920 transparent;
+            bottom: 18px;
+            content: "Frontier Utilities protects the rights of its customers and seeks to ensure customers make informed decisions. If a new potential customer has authorized an agent to act on their behalf through a limited power of attorney or other agreement, then Frontier Utilities must verify the agent’s authority before the enrollment can become valid.";
+            display: block;
+            right: 10%;
+            padding: 5px 15px;
+            position: absolute;
+            z-index: 98;
+        }
+
+        .chkAuthorizeSwitchTexttooltip:hover:before {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 11px;
+            border: solid;
+            border-color: white transparent;
+            border-width: 6px 6px 0 6px;
+            bottom: 12px;
+            content: "";
+            display: block;
+            left: 75%;
+            position: absolute;
+            z-index: 99;
+        }
+
+.scroll-pane {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: #000 1px solid;
+    behavior: url(../pie/PIE.htc);
+    overflow: scroll;
+    width: 780px;
+    height: 80px;
+    padding: 5px 20px 5px 20px;
+    margin: 0px auto;
+}
+
+.round-dropdown {
+    border-radius: 5px;
+    -webkit-appearance: none;
+    background: url(../images/arrowhead.png) no-repeat right #ffffff;
+    background-repeat: no-repeat;
+    text-indent: 0.01px;
+    text-overflow: '';
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    border: #cfbdb7 1px solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    behavior: url(pie/PIE.htc);
+    /*overflow-y: scroll;*/
+}
+
+#PSBillingSame td, #tbAccordMain td, #tbContactInfo td, #tbCreditCardInfo td, tbCCError td {
+    padding-top: 3px;
+}
+
+.green-button {
+    font-size: 15px !important;
+    margin-right: 33px;
+    height: 35px !important;
+    width: 270px !important;
+    display: block;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 0px;
+    text-align: center;
+    width: 175px;
+    height: 35px;
+    background-color: #78c8e7;
+    background-image: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    behavior: url(../pie/PIE.htc);
+    background: green;
+    text-align: center;
+    text-decoration: none;
+    line-height: 34px;
+    margin: 0 auto;
+    margin-top: 16px;
+    border: 1px solid #ffffff;
+    box-shadow: #999 2px 2px;
+    -webkit-box-shadow: 2px 5px 10px 1px 999;
+    box-shadow: 2px 5px 10px 1px #999;
+}
+
+/*#plan-box-content input[type=submit] {
+    width: 140px;
+    height:40px;
+    background: #FF8228;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FF8228), to(#AE4900));
+	background: -moz-linear-gradient(top,  #FF8228,  #AE4900);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8228', endColorstr='#AE4900');
+}*/
+#plan-box-content input[type=submit] {
+    width: 140px;
+    height: 40px;
+    background: transparent linear-gradient(180deg, #FF8228, #AE4900) repeat scroll 0% 0% / 200% 150%;
+    font-family: "PT Sans",sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 22px;
+    border: 1px solid #FFF;
+    box-shadow: 2px 5px 10px 1px #999;
+    border-radius: 7px;
+    transition: all 0.5s ease-out 0s;
+}
+
+    #plan-box-content input[type=submit]:hover {
+        background: transparent linear-gradient(180deg, #AE4900, #FF8228) repeat scroll 0% 0%;
+    }
+
+.clear {
+    clear: both;
+}
+
+.main-container {
+    padding: 10px;
+    width: 950px;
+    box-sizing: border-box;
+}
+
+.right-block {
+    width: 260px;
+    float: right;
+}
+
+.left-block {
+    width: 635px;
+    float: left;
+}
+
+.lb-article {
+    margin-bottom: 20px;
+}
+
+.image-block {
+    float: left;
+    width: 290px;
+    margin-right: 20px;
+}
+
+    .image-block img {
+        width: 100%;
+    }
+
+.content-block {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+
+    .content-block h4 {
+        margin: 0 0 10px 0;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 23px;
+        color: #0099ce;
+        font-weight: 700;
+        line-height: 27px;
+        font-style: italic;
+    }
+
+    .content-block p {
+        margin: 0px;
+        padding: 0px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        font-family: arial, sans-serif;
+        text-align: justify;
+    }
+
+
+.right-block h4 {
+    margin: 0 0 10px 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 23px;
+    color: #0099ce;
+    font-weight: 700;
+    line-height: 27px;
+    font-style: italic;
+}
+
+.right-block .faqs-q {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.right-block .faqs-a {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    font-family: arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.faqs-img img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.lbt-quote {
+    color: #f39245;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: arial;
+    display: inline-block;
+    width: 80px;
+}
+
+.lb-testimonials {
+    margin-bottom: 40px;
+}
+
+.lbt-text {
+    display: inline-block;
+    width: 525px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    font-family: arial, sans-serif;
+    font-style: italic;
+    color: #158BB6;
+}
+
+.lbt-name {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: arial, sans-serif;
+    color: #158BB6;
+    text-align: center;
+}
+
+.lb-callus h4 {
+    margin: 0 0 10px 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    color: #0099ce;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.lb-callus p {
+    margin: 0 0 10px 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 23px;
+    color: #0099ce;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.lb-callus {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Shopping Cart redesign - Vamsi - 07-10-2015*/
+
+/* Top header steps section css */
+.clear {
+    clear: both !important;
+}
+
+#menu-item.f-en-step {
+    width: 316px;
+    height: 55px;
+    background: #e8e8e8;
+    border: 2px solid #d4d4d4;
+    color: #b9b9b9;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.f-en-st-title {
+    font-family: Calibri, Arial;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: 50px;
+    font-weight: normal;
+    display: inline-block;
+}
+
+#menu-item.f-en-step-1 {
+    border-right: 0px;
+}
+
+#menu-item.f-en-step-3 {
+    border-left: 0px;
+}
+
+.f-en-st-finish-tick {
+    display: none;
+    width: 21px;
+    height: 21px;
+    float: right;
+    background: url(../images/tick.png) no-repeat top left;
+    margin-right: 27px;
+    margin-top: 16px;
+}
+
+.f-en-st-active-arrow {
+    display: none;
+}
+
+.f-en-s-finish .f-en-st-finish-tick {
+    display: block;
+}
+
+#menu-item.f-en-step.f-en-s-finish {
+    background: #fc8513;
+    border: 0px;
+    color: #ffffff;
+}
+
+#menu-item.f-en-step.f-en-s-active {
+    background: #ffffff;
+    border: 2px solid #fc8513;
+    color: #fc8513;
+}
+
+.f-en-st-active-arrow {
+    display: none;
+    width: 14px;
+    height: 12px;
+    background: url(../images/down-arrow.png) no-repeat top left;
+}
+
+.f-en-s-active .f-en-st-active-arrow {
+    display: block;
+    position: relative;
+    top: 1px;
+    left: 49%;
+}
+
+/* left column - Plan details section css */
+div#box20.f-en-left-col {
+    background: #e8e8e8;
+    box-sizing: border-box;
+}
+
+    div#box20.f-en-left-col .f-en-lc-title {
+        height: 46px;
+        width: 100%;
+        background: #fc8513;
+        font-family: Calibri, Arial;
+        font-size: 19px;
+        text-transform: uppercase;
+        font-style: normal;
+        line-height: 50px;
+        font-weight: normal;
+        border-radius: 3px 3px 0px 0px;
+        -moz-border-radius: 3px 3px 0px 0px;
+        -webkit-border-radius: 3px 3px 0px 0px;
+        -khtml-border-radius: 3px 3px 0px 0px;
+    }
+
+#box201.f-en-plan-title {
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+}
+
+.f-en-plan-title-icon {
+    height: 37px;
+    width: 37px;
+    border-radius: 50% 50%;
+    -moz-border-radius: 50% 50%;
+    -webkit-border-radius: 50% 50%;
+    -khtml-border-radius: 50% 50%;
+    background: url(../images/power-icon.png) no-repeat 14px 10px #fc8513;
+    display: inline-block;
+}
+
+.f-en-plan-title-text {
+    display: inline-block;
+    vertical-align: top;
+    font-family: Calibri, Arial;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: normal;
+    color: #231f20;
+}
+
+#box202.f-en-plan-details {
+    width: 270px;
+    margin: 0 auto;
+    background: #ffffff;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 4px 3px 5px 0px rgba(202, 202, 202,1);
+    -moz-box-shadow: 4px 3px 5px 0px rgba(202, 202, 202,1);
+    box-shadow: 4px 3px 5px 0px rgba(202, 202, 202,1);
+}
+
+.f-en-plan-details .org-title {
+    font-family: Calibri, Arial;
+    font-size: 17px;
+    color: #dc6c00;
+    font-weight: normal;
+}
+
+.f-en-pd-label {
+    font-family: Calibri, Arial;
+    font-size: 17px;
+    color: #231f20;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.f-en-pd-pill-blue {
+    font-family: Calibri, Arial;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    background: #2591c3;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 2px 5px;
+}
+
+.f-en-pd-pill-orange {
+    font-family: Calibri, Arial;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    background: #fc8513;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 2px 5px;
+}
+
+#box200.f-en-lc-title-chk {
+    height: 32px;
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: left;
+    background: #FC8513;
+}
+
+.f-en-chk-title-icon {
+    height: 37px;
+    width: 37px;
+    background: url(../images/cart-icon.png) no-repeat 12px 8px;
+    display: inline-block;
+}
+
+.f-en-chk-title-text {
+    display: inline-block;
+    vertical-align: top;
+    font-family: Calibri, Arial;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: 33px;
+    font-weight: normal;
+}
+
+#box202.f-en-chk-details {
+    width: 270px;
+    margin: 0 auto;
+    background: #ffffff;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 4px 3px 5px 0px rgba(202, 202, 202,1);
+    -moz-box-shadow: 4px 3px 5px 0px rgba(202, 202, 202,1);
+    box-shadow: 4px 3px 5px 0px rgba(202, 202, 202,1);
+}
+
+    #box202.f-en-chk-details .org-title {
+        font-family: Calibri, Arial;
+        font-size: 17px;
+        color: #dc6c00;
+        font-weight: normal;
+        text-align: left;
+    }
+
+.box202 .org-title {
+    font-family: Calibri, Arial;
+    font-size: 17px;
+    color: #dc6c00;
+    font-weight: normal;
+    text-align: left;
+}
+
+#box202.f-en-chk-details .f-en-chk-greenlbl {
+    color: #2c893b;
+}
+
+.f-en-chk-pill-green {
+    font-family: Calibri, Arial;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    background: #65c374;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 2px 5px;
+}
+
+/* Form Section css */
+#box10.f-en-form-wrapper {
+    background: #ffffff;
+    position: relative;
+}
+
+.PersonalTitleView.f-en-top-heading {
+    border: 0px;
+    background: #e8e8e8;
+    height: 44px;
+    float: none;
+    position: relative;
+}
+
+.enrollTitleView.f-en-top-heading {
+    border: 0px;
+    background: #e8e8e8;
+    height: 44px;
+    float: none;
+    position: relative;
+}
+
+.PersonalTitleView.f-en-top-heading-active {
+    border: 1px solid #e8e8e8;
+    background: #ffffff;
+    height: 44px;
+    float: none;
+}
+
+.enrollTitleView.f-en-top-heading-active {
+    border: 1px solid #e8e8e8;
+    background: #ffffff;
+    height: 44px;
+    float: none;
+}
+
+.f-en-form-wrapper .enrollDetailView {
+    background: #ffffff;
+}
+
+.f-en-top-title {
+    font-family: Calibri, Arial;
+    font-size: 17px;
+    color: #7c7c7c;
+    font-weight: normal;
+    display: inline-block;
+    line-height: 45px;
+    vertical-align: top;
+}
+
+.f-en-title-pill {
+    font-family: Calibri, Arial;
+    font-size: 16px;
+    color: #cbcbcb;
+    font-weight: bold;
+    font-style: normal;
+    display: inline-block;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    background: #65c374;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 2px 5px;
+    text-transform: uppercase;
+    background: #ffffff;
+    vertical-align: top;
+    line-height: 16px;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.f-en-heading-active-icon {
+    background: url(../images/title-active-icon.png) no-repeat top left;
+    height: 57px;
+    width: 13px;
+    position: relative;
+    left: -15px;
+    display: inline-block;
+    top: -6px;
+    display: none;
+}
+
+.f-en-top-heading-active .f-en-title-pill {
+    background: #ffa506;
+    color: #ffffff;
+}
+
+.f-en-top-heading-active .f-en-heading-active-icon {
+    display: inline-block;
+}
+
+.f-en-top-heading-active .f-en-top-title {
+    color: #fc8513;
+}
+
+.PersonalTitleView.f-en-top-heading-done {
+    border: 0px;
+    background: #e8e8e8;
+    height: 44px;
+    float: none;
+}
+
+.enrollTitleView.f-en-top-heading-done {
+    border: 0px;
+    background: #e8e8e8;
+    height: 44px;
+    float: none;
+}
+
+.f-en-top-heading-done .f-en-title-pill {
+    color: #fc8513;
+    background: #ffffff;
+}
+
+.f-en-top-heading-done .f-en-heading-active-icon {
+    display: none;
+}
+/*.edit-btn.f-en-edit-btn {display: inline-block; vertical-align: top; position: absolute; right: 0px; top: -10px; }*/
+.f-en-form-wrapper .runtext02 {
+    font-family: Calibri, Arial,sans-serif;
+    font-size: 17px;
+    color: #696969;
+    font-weight: normal;
+}
+
+.f-en-form-wrapper input[type=text] {
+    font-family: Calibri, Arial,sans-serif;
+    font-size: 16px;
+    border: #c7c7c7 1px solid;
+    background-color: #FFF;
+    transition: all .3s ease-out;
+    margin-left: 0px;
+    padding-left: 2px;
+    height: 31px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.f-en-form-wrapper .celltooltip:hover:after {
+    border: 1px solid #FFBE81;
+}
+
+.f-en-form-wrapper .ebilltooltip:hover:after {
+    border: 1px solid #FFBE81;
+}
+
+.f-en-form-wrapper .chkAuthorizeSwitchTexttooltip:hover:after {
+    border: 1px solid #FFBE81;
+}
+
+.f-en-form-wrapper .f-en-submit {
+    font-family: Calibri, Arial,sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    min-width: 140px;
+    height: 40px;
+    background: -moz-linear-gradient(top, #78c7e7 0%, #3e9fc2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#78c7e7), to(#3e9fc2));
+    border: 1px solid #FFF;
+    box-shadow: 0px 2px 6px 0px #bbb;
+    border-radius: 7px;
+}
+
+    .f-en-form-wrapper .f-en-submit:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#3e9fc2), to(#78c7e7));
+        box-shadow: 0px 1px 2px 0px #bbb;
+        transition: all 0.5s ease-out;
+    }
+
+.f-en-form-wrapper .runtext {
+    font-family: Calibri, Arial,sans-serif;
+    font-size: 17px;
+    color: #696969;
+    font-weight: normal;
+}
+
+.f-en-form-wrapper .round-dropdown {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-appearance: none;
+    background: url(../images/dd-arrow-icon.png) no-repeat right #ffffff;
+    background-repeat: no-repeat;
+    text-indent: 0.01px;
+    text-overflow: '';
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    border: #c7c7c7 1px solid;
+    behavior: url(pie/PIE.htc);
+    padding: 5px;
+}
+
+.f-en-top-heading {
+    margin-top: 10px;
+}
+
+.f-en-edit-btn {
+    position: absolute;
+    top: 25px;
+    right: 7px;
+    color: #dc6c00;
+    text-decoration: underline;
+    background: url(../images/f-edit-icon.png) no-repeat top left;
+    padding-left: 29px;
+}
+
+.f-en-form-wrapper #pi_min_view {
+    float: left;
+}
+
+    .f-en-form-wrapper #pi_min_view .f-en-leftlbl {
+        font-family: Calibri, Arial,sans-serif;
+        font-size: 15px;
+        color: #dc6c00;
+        font-weight: normal;
+    }
+
+    .f-en-form-wrapper #pi_min_view .org-title02 {
+        font-family: Calibri, Arial,sans-serif;
+        font-size: 15px;
+        color: #9f9f9f;
+        font-weight: normal;
+    }
+
+.f-en-form-wrapper .enrollDetailView {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+}
+
+.f-en-form-wrapper .twtooltip:hover:after {
+    border: 1px solid #FFBE81;
+}
+
+.f-en-form-wrapper .datetooltip:hover:after {
+    border: 1px solid #FFBE81;
+}
+
+.f-en-step2-view {
+    margin-top: 10px;
+    position: relative;
+}
+
+.f-en-step2-edit {
+    position: absolute;
+    top: -41px;
+    right: 7px;
+    color: #dc6c00;
+    text-decoration: underline;
+    background: url(../images/f-edit-icon.png) no-repeat top left;
+    padding-left: 29px;
+}
+
+.f-en-form-wrapper .f-en-step2-view .f-en-leftlbl {
+    font-family: Calibri, Arial,sans-serif;
+    font-size: 15px;
+    color: #dc6c00;
+    font-weight: normal;
+}
+
+.f-en-form-wrapper .f-en-step2-view .org-title02 {
+    font-family: Calibri, Arial,sans-serif;
+    font-size: 15px;
+    color: #9f9f9f;
+    font-weight: normal;
+}
+
+.f-en-form-wrapper .org-title {
+    font-family: Calibri, Arial,sans-serif;
+}
+
+.f-en-form-wrapper .enrolltooltip:hover:after {
+    border: 1px solid #FFBE81;
+}
+
+.f-en-form-wrapper .cvctooltip:hover:after {
+    border: 1px solid #FFBE81;
+}
+
+.f-en-form-wrapper .confirm-org-title {
+    color: #696969;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.f-en-form-wrapper .confirm-title01 {
+    width: 100%;
+    padding: 20px 20px 0px 0px;
+    color: #dc6c00;
+    font-size: 22px;
+    font-family: Calibri, Arial,sans-serif;
+    text-align: left;
+    font-weight: normal;
+}
+
+.f-en-form-wrapper .confirm-subtitle {
+    margin: 0px;
+    margin-left: 0px;
+    color: #dc6c00;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.f-en-confirmtitle-section {
+    padding-left: 60px;
+    background: url(../images/confirm-title-icon.png) no-repeat 13px 28px;
+}
+
+.f-en-terms {
+    width: 95%;
+    margin-left: 47px;
+}
+
+#confirm-box1.confirm-title01 {
+    width: 100%;
+    padding: 20px 20px 0px 0px !important;
+}
+
+
+/*Partner page css - nov-11-2015 */
+.mainbanner {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    background: #c7c7c7;
+    position: relative;
+}
+
+    .mainbanner img {
+        width: 100%;
+        height: 100%;
+    }
+
+.bannerlogo {
+    width: 238px;
+    height: 172px;
+    position: absolute;
+    left: 26px;
+    bottom: 30px;
+    -webkit-box-shadow: 3px 3px 5px 1px #ccc;
+    -moz-box-shadow: 3px 3px 5px 1px #ccc;
+    box-shadow: 3px 3px 5px 1px #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+}
+
+    .bannerlogo img {
+        width: 100%;
+        height: 100%;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+.partner-offers-block {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0px 30px;
+    display: block;
+    float: left;
+}
+
+.partner-benefits {
+    width: 309px;
+    height: 100%;
+    float: left;
+    padding-top: 15px;
+}
+
+.partner-offers {
+    width: 580px;
+    float: left;
+    text-align: center;
+}
+
+.po-item .card-template-style {
+    width: 256px;
+    min-height: 265px;
+    margin-bottom: 30px;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 25px;
+    text-align: left;
+}
+
+.po-title {
+    height: 33px;
+    background: #f38120;
+    font-family: Calibri, Arial;
+    font-weight: bold;
+    font-size: 23px;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 3px 10px;
+}
+
+.po-details table td {
+    font-size: 16px;
+    font-family: Calibri, Arial;
+    font-weight: normal;
+    color: #333;
+    padding: 4px 5px 4px 10px;
+}
+
+.alt-td {
+    background: #fde9c6;
+}
+
+.po-btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+    .po-btn a {
+        min-width: 145px;
+        height: 30px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        background: #0085be;
+        padding: 0px 15px;
+        text-align: center;
+        font-size: 17px;
+        font-family: Calibri, Arial;
+        font-weight: bold;
+        color: #fff;
+        margin: 0 auto;
+        display: inline-block;
+        line-height: 30px;
+        text-decoration: none;
+    }
+
+.po-note {
+    text-align: left;
+    width: 85%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 13px;
+    font-family: Calibri, Arial;
+    font-weight: normal;
+    color: #999;
+    margin-top: 20px;
+}
+
+.partner-offers-content {
+    box-shadow: 0px 3px 7px 3px rgba(148, 148, 148, 0.75);
+    border-radius: 15px;
+}
+
+.mainbanner {
+    border-radius: 10px;
+}
+    /*.mainbanner img {border-radius: 10px 10px 0px 0px;}*/
+    .mainbanner img {
+        border-radius: 5px !important;
+    }
+
+/*Frontier - Partner Benefit section CSS 24-feb-2016*/
+.fd-wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+/*@font-face {font-family: helveticaneue; src: url(../images/HelveticaNeue.ttf);}
+@font-face {font-family: helveticaneue-bold; src: url(../images/HelveticaNeueBold.ttf);}*/
+.partner-benefits {
+    width: 310px;
+    min-height: 345px;
+}
+
+    .partner-benefits h1 {
+        font-family: arial;
+        font-size: 25px;
+        font-weight: bold;
+        color: #f28020;
+        margin: 0px;
+    }
+
+    .partner-benefits h3 {
+        font-family: arial;
+        font-size: 16px;
+        color: #000000;
+        margin: 0px;
+        font-weight: normal;
+        margin-top: 10px;
+    }
+
+    .partner-benefits ul {
+        margin: 0px;
+        padding: 0px;
+        margin-top: 3px;
+        margin-bottom: 0px;
+        list-style: none;
+    }
+
+        .partner-benefits ul li {
+            margin: 0px;
+            padding: 0px;
+            font-family: arial;
+            font-size: 16px;
+            color: #000000;
+            background: url('../images/fb-list-icon.png') top left no-repeat;
+            padding: 3px 5px 8px 24px;
+            list-style: none;
+        }
+
+    .partner-benefits p {
+        font-family: arial;
+        font-size: 10px;
+        color: #000000;
+        margin: 0px;
+        font-weight: normal;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+.partner-benefits-Text {
+    text-align: left;
+}
+
+    .partner-benefits-Text h1 {
+        font-family: arial;
+        font-size: 22px;
+        font-weight: bold;
+        color: #f28020;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .partner-benefits-Text h3 {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+        color: #000000;
+        margin: 0px;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+
+
+    .partner-benefits-Text ul {
+        margin: 0px;
+        padding: 0px;
+        margin-top: 3px;
+        margin-bottom: 0px;
+        list-style: none;
+    }
+
+        .partner-benefits-Text ul li {
+            margin: 0px;
+            padding: 0px;
+            font-family: arial;
+            font-size: 16px;
+            color: #000000;
+            background: url('../images/fb-list-icon.png') top left no-repeat;
+            padding: 3px 5px 8px 24px;
+            list-style: none;
+        }
+
+    .partner-benefits-Text p {
+        font-family: arial;
+        font-size: 10px;
+        color: #000000;
+        margin: 0px;
+        font-weight: normal;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .partner-benefits-Text .half-width {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+
+    .partner-benefits-Text .full-width {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+.half-width {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.full-width {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+
+
+
+/*srinivas styles on 28_11_16*/
+#MainContent_divAddress {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.mainbanner {
+    display: block;
+    float: left;
+}
+
+.banner-text p {
+    color: #f48222;
+    font-size: 46px;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 0px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    LINE-HEIGHT: 52PX;
+}
+
+.banner-text span {
+    color: #f8a519 !important;
+}
+
+.banner-text {
+    display: block;
+    float: left;
+    width: 46%;
+    position: absolute;
+    left: 27px;
+    top: 9px;
+}
+
+.imagetext-innerdiv {
+    display: block;
+    float: left;
+    position: absolute;
+    left: 10%;
+    text-align: center;
+    margin-top: 9%;
+}
+
+    .imagetext-innerdiv h1 {
+        color: #fff;
+        font-weight: bold;
+        font-size: 70px;
+        margin: 0px;
+        line-height: 1;
+    }
+
+    .imagetext-innerdiv h3 {
+        color: #fff;
+        font-weight: bold;
+        font-size: 43px;
+        margin: 0px;
+    }
+
+.imagetext-div {
+    display: block;
+    float: left;
+    width: 100%;
+    position: absolute;
+}
+
+.do-points {
+    display: block;
+    margin: 0px auto;
+    width: 800px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+    .do-points ol li {
+        margin-bottom: 5px;
+        color: #606261;
+        font-size: 13px;
+    }
+
+    .do-points a {
+        color: #63abd6;
+        font-weight: bold;
+    }
+
+    .do-points h4 {
+        margin-bottom: 0px;
+        color: #5b5a5a;
+    }
+
+.own-business {
+    display: block;
+    margin: 0px auto;
+    width: 800px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+    .own-business a {
+        color: #63abd6;
+        font-weight: bold;
+    }
+
+    .own-business h4 {
+        margin-bottom: 0px;
+        color: #5b5a5a;
+    }
+
+    .own-business p {
+        margin-top: 10px;
+        color: #606261;
+        font-size: 13px;
+    }
+/*#chkAll, #chkAccept, #chkAutorizedPerson, #chkAutorizedSwitch  {
+    height:20px;
+    width:20px;
+}*/
+.spanish-popup-title {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+span.runtext {
+    float: left;
+    width: 100%;
+    margin-bottom: 20PX;
+}
+
+#MainContent_updMsgPopup #message_popup span.runtext:nth-child(5)  {
+    display:none !important;
+}
+table tr td a.altnumnber:hover{
+	text-decoration:underline !important;
+}
+.ebillpaytooltip {
+    display: inline;
+    position: relative;
+ }
+
+.ebillpaytooltip:hover {
+        text-decoration: none;
+    }
+
+        .ebillpaytooltip:hover:after {
+              word-wrap: break-word;
+            width: 250px;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 12px;
+            color: #000000;
+            background: white;
+            border: 1px solid #FFBE81;
+            border-radius: 5px;
+            bottom: 18px;
+            content :"By enrolling in e-bill, I agree to have Frontier stop mailing me a paper bill each month. I agree to receive invoices by email.";
+            display: block;
+            left: 50%;
+            padding: 5px 15px;
+            position: absolute;
+            z-index: 98;
+        }
+
+        .ebillpaytooltip:hover:before {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 11px;
+            border: solid;
+            border-color: white transparent;
+            border-width: 6px 6px 0 6px;
+            bottom: 12px;
+            content: "";
+            display: block;
+            left: 75%;
+            position: absolute;
+            z-index: 99;
+        }

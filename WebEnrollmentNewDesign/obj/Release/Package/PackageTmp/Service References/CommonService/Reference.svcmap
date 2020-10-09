@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3eb441aa-ea00-4efd-aae3-5e4f174cdd56" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.10.180.38:8085/FrontierCommonServices/CommonService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CommonService.disco" MetadataType="Disco" ID="88a18d9b-2b16-4367-a85f-29ece529737f" SourceId="1" SourceUrl="http://10.10.180.38:8085/FrontierCommonServices/CommonService.svc?disco" />
+    <MetadataFile FileName="CommonService.wsdl" MetadataType="Wsdl" ID="a3e06262-77ab-4ebf-b474-3b593eedf48d" SourceId="1" SourceUrl="http://10.10.180.38:8085/FrontierCommonServices/CommonService.svc?wsdl" />
+    <MetadataFile FileName="CommonService.xsd" MetadataType="Schema" ID="85634c8d-5c57-49a2-8aea-372a399703fd" SourceId="1" SourceUrl="http://10.10.180.38:8085/FrontierCommonServices/CommonService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CommonService1.xsd" MetadataType="Schema" ID="d9ca840c-f468-4597-8dd4-d9631dd7bfda" SourceId="1" SourceUrl="http://10.10.180.38:8085/FrontierCommonServices/CommonService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CommonService2.xsd" MetadataType="Schema" ID="39d1423b-cc02-410d-a2d6-a66990bbf0ef" SourceId="1" SourceUrl="http://10.10.180.38:8085/FrontierCommonServices/CommonService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CommonService3.xsd" MetadataType="Schema" ID="9add73cc-a3bb-4be3-ad8f-b01b192d823c" SourceId="1" SourceUrl="http://10.10.180.38:8085/FrontierCommonServices/CommonService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
